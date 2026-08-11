@@ -151,6 +151,14 @@ Instale pelo marketplace do próprio repositório:
 /plugin install dossie@barkoski-skills
 ```
 
+O catálogo `barkoski-skills` traz também a skill [Advocacia Previdenciária Barkoski](https://github.com/Barkoski/advocacia-previdenciaria-barkoski), que lê autos e processo administrativo do INSS com rastreabilidade documental — o passo que vem antes do dossiê:
+
+```text
+/plugin install advocacia-previdenciaria-barkoski@barkoski-skills
+```
+
+O mesmo catálogo é publicado nos dois repositórios, então `/plugin marketplace add Barkoski/advocacia-previdenciaria-barkoski` leva ao mesmo resultado.
+
 Quem já instalou uma versão anterior deve atualizar o catálogo e o plugin:
 
 ```text
@@ -187,6 +195,10 @@ Cole o conteúdo de `SKILL.md` e dos seis arquivos de `references/` nas instruç
 - **Não confere nada.** Toda linha sai marcada para conferência humana. A tabela é roteiro de conferência, não certificado de veracidade.
 - **Não decide.** Organiza a análise; a conclusão é do advogado.
 - **Não busca fora.** Nenhum dado do caso sai para serviço externo. O dossiê gerado contém dados sigilosos e deve ser tratado como tal.
+
+## Autoria
+
+Lucas Barkoski — [github.com/Barkoski](https://github.com/Barkoski). Publicada no catálogo `barkoski-skills`.
 
 ## Licença
 

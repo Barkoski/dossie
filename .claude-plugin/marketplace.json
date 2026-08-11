@@ -4,14 +4,41 @@
     "name": "Lucas Barkoski",
     "url": "https://github.com/Barkoski"
   },
-  "description": "Skills auditáveis para análise jurídica.",
+  "description": "Skills auditáveis para análise jurídica, por Lucas Barkoski.",
   "plugins": [
     {
       "name": "dossie",
-      "source": "./",
-      "description": "Transforma análise jurídica em dossiê auditável e persistente.",
+      "source": {
+        "source": "github",
+        "repo": "Barkoski/dossie"
+      },
+      "description": "Transforma análise jurídica em dossiê auditável e persistente: índice documental, triagem, provas, requisitos, cronologia, grafo, relatório e validação.",
+      "author": {
+        "name": "Lucas Barkoski",
+        "url": "https://github.com/Barkoski"
+      },
+      "repository": "https://github.com/Barkoski/dossie",
+      "homepage": "https://github.com/Barkoski/dossie",
+      "license": "MIT",
       "category": "productivity",
       "tags": ["jurídico", "provas", "grafo", "relatório"]
+    },
+    {
+      "name": "advocacia-previdenciaria-barkoski",
+      "source": {
+        "source": "github",
+        "repo": "Barkoski/advocacia-previdenciaria-barkoski"
+      },
+      "description": "Direito Previdenciário brasileiro com rastreabilidade documental: identificação e índice de peças, análise de autos, cronologia, matriz requisito-prova-risco, revisão de peças e decisão operacional.",
+      "author": {
+        "name": "Lucas Barkoski",
+        "url": "https://github.com/Barkoski"
+      },
+      "repository": "https://github.com/Barkoski/advocacia-previdenciaria-barkoski",
+      "homepage": "https://github.com/Barkoski/advocacia-previdenciaria-barkoski",
+      "license": "MIT",
+      "category": "productivity",
+      "tags": ["previdenciário", "INSS", "jurídico", "PJe", "CNIS", "BPC"]
     }
   ]
 }
