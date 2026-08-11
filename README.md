@@ -8,6 +8,8 @@ Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previden
 
 ## Versão 1.2
 
+O plugin distribuído está na versão **1.2.1**, uma atualização de manutenção que sincroniza o marketplace com todo o conteúdo da v1.2.
+
 - estado persistente e versionado em `dossie.json`;
 - atualização incremental com IDs estáveis e histórico de alterações;
 - consultas de entidade, caminho, contradições e lacunas;
@@ -114,7 +116,7 @@ O diretório [`examples/`](examples/) contém o mesmo caso inteiramente fictíci
 - `caso-ficticio.json` — estado canônico persistente;
 - `caso-ficticio.html` — visual interativo e offline.
 
-Para validar e consultar o exemplo, usando somente a biblioteca padrão do Python:
+Para validar e consultar o exemplo, use **Python 3.9 ou superior**. O script utiliza somente a biblioteca padrão:
 
 ```bash
 python skills/dossie/scripts/dossie_tool.py validate examples/caso-ficticio.json --html examples/caso-ficticio.html
@@ -128,7 +130,22 @@ python skills/dossie/scripts/dossie_tool.py gaps examples/caso-ficticio.json
 
 ### Claude Code
 
-Baixe o repositório e copie a pasta `skills/dossie` para `~/.claude/skills/` (no Windows, `C:\Users\SEU_USUARIO\.claude\skills\`). Reinicie a sessão.
+Instale pelo marketplace do próprio repositório:
+
+```text
+/plugin marketplace add Barkoski/dossie
+/plugin install dossie@barkoski-skills
+```
+
+Quem já instalou uma versão anterior deve atualizar o catálogo e o plugin:
+
+```text
+/plugin marketplace update barkoski-skills
+/plugin update dossie@barkoski-skills
+/reload-plugins
+```
+
+Como alternativa manual, baixe o repositório e copie a pasta `skills/dossie` para `~/.claude/skills/` (no Windows, `C:\Users\SEU_USUARIO\.claude\skills\`). Reinicie a sessão.
 
 O resultado final deve ser `.claude/skills/dossie/SKILL.md`.
 
@@ -143,6 +160,8 @@ O resultado final deve ser `.codex/skills/dossie/SKILL.md`. A skill também incl
 Baixe o arquivo `dossie.plugin`, arraste para uma conversa do Cowork e confirme.
 
 Para gerar o `.plugin` a partir do repositório: selecione o **conteúdo** da pasta (`.claude-plugin`, `skills`, `README.md`) — não a pasta que os contém —, compacte e renomeie de `.zip` para `.plugin`. O `plugin.json` precisa ficar na raiz do arquivo compactado.
+
+O fluxo automático do GitHub também gera um pacote `dossie-plugin` testado a cada atualização.
 
 ### ChatGPT
 
