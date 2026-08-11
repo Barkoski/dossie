@@ -10,4 +10,3 @@
 8. Validar aresta inferida sem base: retornar erro.
 9. Validar HTML com recurso externo, evento inline ou `fetch`: retornar erro.
 10. Gerar Markdown e HTML do JSON: graus, enunciados e contagens devem coincidir.
-
