@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.2",
+  "gerado_em": "2026-08-11T12:00:00Z",
+  "atualizado_em": "2026-08-11T12:00:00Z",
+  "caso": {
+    "identificacao": "Caso rural ficticio",
+    "materia": "Aposentadoria rural",
+    "fase": "Recurso administrativo",
+    "decisao_enfrentada": "Indeferimento por insuficiencia de prova material",
+    "data_referencia": "2026-08-11"
+  },
+  "partes": [
+    {"id":"P1","nome":"Requerente A.","natureza":"parte","papel":"requerente","origem_conversa":"relato inicial","obs":"nome ficticio"},
+    {"id":"P2","nome":"INSS","natureza":"parte","papel":"autarquia","origem_conversa":"decisao citada na conversa","obs":""}
+  ],
+  "documentos": [
+    {"id":"D1","tipo":"nota fiscal","titular":"Requerente A.","localizacao":"p. 10","qualidade":"TEXTO NITIDO","lido":true,"conteudo":"compra de arame em 14/08/2012","origem_conversa":"analise do PDF, p. 10"},
+    {"id":"D2","tipo":"autodeclaracao rural","titular":"Requerente A.","localizacao":"pp. 22-24","qualidade":"TEXTO NITIDO","lido":true,"conteudo":"atividade rural de 2008 a 2022","origem_conversa":"analise do PDF, pp. 22-24"},
+    {"id":"D3","tipo":"CNIS","titular":"Requerente A.","localizacao":"PAGINA NAO IDENTIFICADA","qualidade":"NAO LIDO","lido":false,"conteudo":"?","origem_conversa":"documento mencionado, nao aberto"}
+  ],
+  "fatos": [
+    {"id":"F1","enunciado":"Houve compra de insumo compativel com atividade rural em 2012.","data":"2012-08-14","grau":"FATO COMPROVADO","documentos":["D1"],"origem_conversa":"analise do PDF, p. 10","conferir":true},
+    {"id":"F2","enunciado":"A requerente declarou atividade rural entre 2008 e 2022.","data":"2008-2022","grau":"ALEGACAO","documentos":["D2"],"origem_conversa":"autodeclaracao resumida na conversa","conferir":true},
+    {"id":"F3","enunciado":"Nao ha vinculo urbano no periodo.","data":"2008-2022","grau":"SEM FONTE NA CONVERSA","documentos":[],"origem_conversa":"afirmacao anterior sem fonte identificada","conferir":true}
+  ],
+  "requisitos": [
+    {"id":"R1","enunciado":"Qualidade de segurada especial","situacao":"PARCIALMENTE COMPROVADO","fatos":["F1","F2"],"lacuna":"CNIS nao lido e cobertura documental descontÃ­nua","origem_conversa":"quadro de requisitos anterior"},
+    {"id":"R2","enunciado":"Carencia rural no periodo exigido","situacao":"CONTROVERTIDO","fatos":["F1","F2"],"lacuna":"um documento isolado nao cobre todo o periodo","origem_conversa":"analise adversarial anterior"}
+  ],
+  "teses": [
+    {"id":"T1","enunciado":"A prova material pode ser ampliada por prova oral coerente.","polo":"requerente","apoia_se":["R1","R2"],"forca":"PARCIAL","origem_conversa":"tese discutida na conversa"},
+    {"id":"T2","enunciado":"O conjunto documental e insuficiente para cobrir a carencia.","polo":"INSS","apoia_se":["R2"],"forca":"RELEVANTE","origem_conversa":"motivo do indeferimento resumido"}
+  ],
+  "arestas": [
+    {"de":"P1","para":"D1","tipo":"titulariza","origem_conversa":"nota fiscal, p. 10","inferida":false,"base_inferencia":""},
+    {"de":"D1","para":"F1","tipo":"comprova","origem_conversa":"analise do PDF, p. 10","inferida":false,"base_inferencia":""},
+    {"de":"F1","para":"R1","tipo":"sustenta","origem_conversa":"quadro de requisitos anterior","inferida":false,"base_inferencia":""},
+    {"de":"F1","para":"R2","tipo":"sustenta","origem_conversa":"analise adversarial anterior","inferida":false,"base_inferencia":""},
+    {"de":"R2","para":"T1","tipo":"compoe","origem_conversa":"tese discutida na conversa","inferida":false,"base_inferencia":""},
+    {"de":"T1","para":"T2","tipo":"opoe-se a","origem_conversa":"analise adversarial anterior","inferida":false,"base_inferencia":""}
+  ],
+  "pendencias": {
+    "sem_fonte": ["F3: ausencia de vinculo urbano"],
+    "nao_lidos": ["D3: CNIS"],
+    "conferir": ["D1: data e conteudo da nota fiscal", "D2: periodo declarado"]
+  },
+  "historico": [
+    {"data":"2026-08-11T12:00:00Z","tipo":"criacao","resumo":"Dossie ficticio criado para demonstracao.","origem_conversa":"caso de exemplo do repositorio"}
+  ]
+}
+
