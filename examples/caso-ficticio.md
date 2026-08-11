@@ -11,6 +11,22 @@
 | Decisao enfrentada | Indeferimento por insuficiencia de prova material |
 | Data de referencia | 11/08/2026 |
 
+## Indice documental
+
+| ID | Familia | Tipo | Inicio | Fim | Resumo | Confianca |
+|---|---|---|---|---|---|---|
+| D1 | PROVA_ECONOMICA | Nota fiscal | anexo fiscal / p. 10 | anexo fiscal / p. 10 | Compra de arame em 14/08/2012 | ALTA |
+| D2 | PROVA_PESSOAL | Autodeclaracao rural | anexo autodeclaracao / p. 22 | anexo autodeclaracao / p. 24 | Atividade rural declarada de 2008 a 2022 | ALTA |
+| D3 | PROVA_LABORAL_PREVIDENCIARIA | CNIS | ? | ? | Documento mencionado, mas nao lido | BAIXA |
+
+## Triagem
+
+- Tipo: Recurso administrativo previdenciario
+- Assunto: Aposentadoria por idade rural
+- Questao central: o conjunto apresentado demonstra atividade rural e carencia no periodo exigido?
+- Pontos controvertidos: continuidade da atividade rural; suficiencia da prova material
+- Normas invocadas no material: nenhuma registrada
+
 ## Tabela de provas
 
 | # | Documento | Conteudo concreto | Data/Periodo | Titular | Localizacao | Qualidade | O que prova | Origem na conversa | Conferir |

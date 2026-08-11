@@ -18,8 +18,8 @@ Em caso judicial, incluir tambem como entidade `PARTE` o juizo e o perito quando
 **PARTE/ATOR** — pessoa ou orgao com papel no caso: requerente, requerido, conjuge, dependente, instituidor, terceiro, perito ou orgao julgador. Perito e juizo sao atores processuais, nao polos da demanda.
 `id | nome ou iniciais | natureza | papel | origem_conversa | observacao`
 
-**DOCUMENTO** — peca fisica ou digital dos autos.
-`id | tipo | titular | localizacao | qualidade da leitura | lido? | origem_conversa`
+**DOCUMENTO** — peca fisica ou digital dos autos. Quando o texto dos autos estiver disponivel, aplicar [identificacao-documental.md](identificacao-documental.md).
+`id | familia | tipo normalizado | titular | inicio/fim | resumo | confianca da identificacao | qualidade da leitura | lido? | origem_conversa`
 
 **FATO** — acontecimento ou circunstancia afirmada.
 `id | enunciado | data ou periodo | grau | documento(s) que sustentam | origem_conversa`
@@ -92,10 +92,18 @@ Nao criar aresta por semelhanca de tema, proximidade no texto ou coincidencia de
     "identificacao": "", "materia": "", "fase": "",
     "decisao_enfrentada": "", "data_referencia": ""
   },
+  "triagem": {
+    "tipo_procedimento":"", "assunto_principal":"", "questao_central":"",
+    "pontos_controvertidos":[], "palavras_chave":[], "normas_invocadas":[],
+    "origem_conversa":""
+  },
   "partes":     [{"id":"P1","nome":"","natureza":"parte|ator_processual",
                   "papel":"","origem_conversa":"","obs":""}],
-  "documentos": [{"id":"D1","tipo":"","titular":"","localizacao":"",
-                  "qualidade":"","lido":true,"conteudo":"","origem_conversa":""}],
+  "documentos": [{"id":"D1","familia":"","tipo":"","titular":"",
+                  "evento_inicio":"?","pagina_inicio":"?","evento_fim":"?","pagina_fim":"?",
+                  "localizacao":"","resumo":"","criterio_delimitacao":"",
+                  "confianca_identificacao":"","qualidade":"","lido":true,
+                  "conteudo":"","origem_conversa":""}],
   "fatos":      [{"id":"F1","enunciado":"","data":"","grau":"",
                   "documentos":["D1"],"origem_conversa":"","conferir":true}],
   "requisitos": [{"id":"R1","enunciado":"","situacao":"",
