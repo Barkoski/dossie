@@ -15,8 +15,8 @@ jobs:
       matrix:
         python-version: ["3.9", "3.13"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
       - name: Executar testes
@@ -26,11 +26,12 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Montar plugin
         run: zip -r dossie.plugin .claude-plugin skills README.md LICENSE -x "*/__pycache__/*" "*.pyc"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: dossie-plugin-v1.2.1
           path: dossie.plugin
           if-no-files-found: error
+
