@@ -4,7 +4,7 @@ Formato universal: funciona em qualquer IA, em qualquer interface, e cola em pec
 
 ## Cabecalho do dossie
 
-Abrir sempre com identificacao, materia, fase, decisao enfrentada e data de referencia. Campo desconhecido entra como `?`, nunca omitido â€” a ausencia e informacao.
+Abrir sempre com identificacao, materia, fase, decisao enfrentada e data de referencia. Campo desconhecido entra como `?`, nunca omitido — a ausencia e informacao.
 
 ## Tabela de provas
 
@@ -53,22 +53,21 @@ A coluna de contradicao e o que diferencia este mapa de uma lista de fatos: ela 
 | Tese | Polo | Apoia-se em | Forca | Contra-argumento provavel |
 |---|---|---|---|---|
 
-Toda tese propria precisa de contra-argumento preenchido. Se a conversa nao o discutiu, registrar `nao enfrentado na conversa` â€” lacuna importante, nao detalhe. Nao criar contra-argumento novo apenas para preencher a tabela.
+Toda tese propria precisa de contra-argumento preenchido. Se a conversa nao o discutiu, registrar `nao enfrentado na conversa` — lacuna importante, nao detalhe. Nao criar contra-argumento novo apenas para preencher a tabela.
 
 ## Blocos de fechamento
 
-**Sem fonte na conversa** â€” lista das afirmacoes que entraram sem origem, cada uma com o enunciado. Bloco vazio se declara vazio.
+**Sem fonte na conversa** — lista das afirmacoes que entraram sem origem, cada uma com o enunciado. Bloco vazio se declara vazio.
 
-**Pendente de leitura** â€” documento citado e nao aberto, com localizacao e o que dependeria dele.
+**Pendente de leitura** — documento citado e nao aberto, com localizacao e o que dependeria dele.
 
-**Confirmar antes de usar** â€” itens que exigem conferencia humana, com o motivo.
+**Confirmar antes de usar** — itens que exigem conferencia humana, com o motivo.
 
 ## Cobertura por periodo
 
-Apenas quando o caso exigir prova ao longo do tempo â€” rural, atividade especial, tempo de contribuicao, uniao estavel.
+Apenas quando o caso exigir prova ao longo do tempo — rural, atividade especial, tempo de contribuicao, uniao estavel.
 
 | Periodo | Ha documento? | Quais | Lacuna |
 |---|---|---|---|
 
 Agrupar por ano ou por bloco coerente. Lacuna e informacao tao relevante quanto prova: e o primeiro lugar em que a parte contraria vai olhar.
-
