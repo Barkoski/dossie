@@ -1,8 +1,12 @@
 import importlib.util
+import io
 import json
 import tempfile
 import unittest
+from argparse import Namespace
+from contextlib import redirect_stdout
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -59,6 +63,77 @@ class DossieToolTests(unittest.TestCase):
         data["teses"][0]["apoia_se"] = ["R404"]
         errors, _ = TOOL.validate(data)
         self.assertTrue(any("requisito inexistente" in item for item in errors))
+
+    def capture(self, function, **kwargs):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            status = function(Namespace(**kwargs))
+        return status, output.getvalue()
+
+    def test_explain_returns_entity_and_connections(self):
+        status, output = self.capture(
+            TOOL.command_explain,
+            json=ROOT / "examples" / "caso-ficticio.json",
+            entity_id="R1",
+        )
+        self.assertEqual(status, 0)
+        self.assertIn('"id": "R1"', output)
+        self.assertIn("F1 --sustenta--> R1", output)
+
+    def test_path_returns_registered_route(self):
+        status, output = self.capture(
+            TOOL.command_path,
+            json=ROOT / "examples" / "caso-ficticio.json",
+            start="D1",
+            end="T1",
+        )
+        self.assertEqual(status, 0)
+        self.assertIn("D1 --comprova [AFIRMADA]--> F1", output)
+        self.assertIn("R2 --compoe [AFIRMADA]--> T1", output)
+
+    def test_contradictions_reports_empty_case(self):
+        status, output = self.capture(
+            TOOL.command_contradictions,
+            json=ROOT / "examples" / "caso-ficticio.json",
+        )
+        self.assertEqual(status, 0)
+        self.assertIn("NENHUMA CONTRADICAO REGISTRADA", output)
+
+    def test_gaps_reports_requirements_and_pending_items(self):
+        status, output = self.capture(
+            TOOL.command_gaps,
+            json=ROOT / "examples" / "caso-ficticio.json",
+        )
+        self.assertEqual(status, 0)
+        self.assertIn("R1: PARCIALMENTE COMPROVADO", output)
+        self.assertIn("nao_lidos: D3: CNIS", output)
+
+    def test_main_validate_command(self):
+        argv = [
+            "dossie_tool.py",
+            "validate",
+            str(ROOT / "examples" / "caso-ficticio.json"),
+            "--html",
+            str(ROOT / "examples" / "caso-ficticio.html"),
+        ]
+        output = io.StringIO()
+        with patch.object(TOOL.sys, "argv", argv), redirect_stdout(output):
+            status = TOOL.main()
+        self.assertEqual(status, 0)
+        self.assertIn("VALIDO: 0 aviso(s)", output.getvalue())
+
+    def test_main_reports_missing_entity(self):
+        argv = [
+            "dossie_tool.py",
+            "explain",
+            str(ROOT / "examples" / "caso-ficticio.json"),
+            "R404",
+        ]
+        output = io.StringIO()
+        with patch.object(TOOL.sys, "argv", argv), redirect_stdout(output):
+            status = TOOL.main()
+        self.assertEqual(status, 1)
+        self.assertIn("ENTIDADE NAO ENCONTRADA", output.getvalue())
 
 
 if __name__ == "__main__":
