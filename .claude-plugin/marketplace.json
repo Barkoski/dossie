@@ -1,0 +1,17 @@
+{
+  "name": "barkoski-skills",
+  "owner": {
+    "name": "Lucas Barkoski",
+    "url": "https://github.com/Barkoski"
+  },
+  "description": "Skills auditáveis para análise jurídica.",
+  "plugins": [
+    {
+      "name": "dossie",
+      "source": "./",
+      "description": "Transforma análise jurídica em dossiê auditável e persistente.",
+      "category": "productivity",
+      "tags": ["jurídico", "provas", "grafo", "relatório"]
+    }
+  ]
+}
