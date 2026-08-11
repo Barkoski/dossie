@@ -1,9 +1,9 @@
 ---
 name: dossie
-description: Transforma uma analise juridica ja feita na conversa em dossie estruturado e auditavel, com tabela de provas, requisitos, cronologia, grafo, relatorio e pendencias rastreaveis. Use quando o usuario pedir dossie, tabela ou quadro de provas, mapa ou grafo do caso, linha do tempo, relatorio de analise, exportacao em Markdown ou HTML, ou organizacao do que ja foi analisado. Nao pesquisar nem acrescentar conhecimento externo ao caso.
+description: Transforma uma analise juridica ja feita na conversa em dossie estruturado, persistente e auditavel, com tabela de provas, requisitos, cronologia, grafo, relatorio, pendencias e consultas. Use quando o usuario pedir dossie, tabela ou quadro de provas, mapa ou grafo do caso, linha do tempo, relatorio, exportacao Markdown/JSON/HTML, atualizacao de dossie existente, caminho entre entidades, contradicoes, lacunas ou explicacao de item. Nao pesquisar nem acrescentar conhecimento externo ao caso.
 ---
 
-# Dossie juridico â€” v1.1
+# Dossie juridico â€” v1.2
 
 Transforma o que foi analisado na conversa em dossie estruturado: tabela de provas rastreavel, quadro de requisitos, cronologia, grafo do caso e relatorio.
 
@@ -20,6 +20,12 @@ Nao requer biblioteca, servidor ou recurso externo. Pode gerar Markdown no chat 
 /dossie relatorio            # relatorio em prosa a partir do que foi confirmado
 /dossie --md                 # forcar saida so em markdown, sem HTML
 /dossie --html               # forcar o dossie visual autocontido
+/dossie salvar               # salvar estado persistente em dossie.json
+/dossie atualizar <arquivo>  # incorporar apenas fatos novos ou corrigidos
+/dossie explicar <ID>        # explicar entidade e suas conexoes
+/dossie caminho <ID1> <ID2>  # mostrar caminho rastreavel entre entidades
+/dossie contradicoes         # listar conflitos e suas fontes
+/dossie lacunas              # listar requisitos e leituras pendentes
 ```
 
 Aceitar tambem pedidos em linguagem natural. Sem argumento, entregar o dossie completo em Markdown; gerar HTML junto apenas quando o usuario pedir arquivo, visual ou exportacao.
@@ -46,6 +52,8 @@ Seguir [references/extracao.md](references/extracao.md). Ele define as cinco ent
 
 O resultado interno e um JSON com a estrutura descrita la. Nao mostrar esse JSON ao usuario, salvo pedido expresso. Preservar conflitos e correcoes: nunca escolher silenciosamente uma versao apenas porque apareceu por ultimo.
 
+Quando o usuario pedir salvar, atualizar ou consultar dossie persistente, ler [references/persistencia-e-consultas.md](references/persistencia-e-consultas.md). Manter IDs estaveis e historico de alteracoes. Nao sobrescrever arquivo existente sem pedido expresso.
+
 ### Passo 3 â€” Montar as saidas
 
 Conforme o argumento recebido. As saidas em Markdown seguem [references/tabelas.md](references/tabelas.md). O dossie visual segue [references/html.md](references/html.md).
@@ -62,7 +70,7 @@ Se os tres estiverem vazios, dizer isso explicitamente â€” e uma informacao
 
 ### Passo 5 â€” Validar antes de entregar
 
-Aplicar [references/validacao.md](references/validacao.md). Conferir integridade dos identificadores, correspondencia entre tabelas, grafo e relatorio, neutralizacao de conteudo no HTML, ausencia de conhecimento novo e completude dos blocos de pendencia. Se uma verificacao falhar, corrigir antes de apresentar o dossie como completo.
+Aplicar [references/validacao.md](references/validacao.md). Conferir integridade dos identificadores, correspondencia entre tabelas, grafo e relatorio, neutralizacao de conteudo no HTML, ausencia de conhecimento novo e completude dos blocos de pendencia. Quando Python estiver disponivel e houver `dossie.json`, executar `scripts/dossie_tool.py validate <arquivo>`, acrescentando `--html <arquivo>` quando houver HTML. Se uma verificacao falhar, corrigir antes de apresentar o dossie como completo.
 
 ## Regras de forma
 
