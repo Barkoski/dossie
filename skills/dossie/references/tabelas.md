@@ -8,6 +8,15 @@ Abrir sempre com identificacao, materia, fase, decisao enfrentada e data de refe
 
 ## Tabela de provas
 
+Antes dela, quando houver autos ou anexos identificados, apresentar o **Indice documental**:
+
+| ID | Familia | Tipo normalizado | Inicio | Fim | Resumo | Confianca | Origem na conversa |
+|---|---|---|---|---|---|---|---|
+
+Ordenar pela posicao no processo. Limite desconhecido e `?`; limite estimado deve ser rotulado `INCERTO`, nunca apresentado como pagina confirmada.
+
+Em seguida, apresentar a **Triagem** com tipo de procedimento, assunto principal, questao central, pontos controvertidos, palavras-chave e somente as normas efetivamente invocadas nos documentos.
+
 | # | Documento | Conteudo concreto | Data/Periodo | Titular | Localizacao | Qualidade | O que prova | Origem na conversa | Conferir |
 |---|---|---|---|---|---|---|---|---|---|
 

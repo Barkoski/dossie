@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "gerado_em": "2026-08-11T12:00:00Z",
   "atualizado_em": "2026-08-11T12:00:00Z",
   "caso": {
@@ -9,14 +9,23 @@
     "decisao_enfrentada": "Indeferimento por insuficiencia de prova material",
     "data_referencia": "2026-08-11"
   },
+  "triagem": {
+    "tipo_procedimento": "Recurso administrativo previdenciario",
+    "assunto_principal": "Aposentadoria por idade rural",
+    "questao_central": "O conjunto apresentado demonstra atividade rural e carencia no periodo exigido?",
+    "pontos_controvertidos": ["continuidade da atividade rural", "suficiencia da prova material"],
+    "palavras_chave": ["Aposentadoria rural", "Segurada especial", "Carencia", "Prova material"],
+    "normas_invocadas": [],
+    "origem_conversa": "relato inicial e resumo do indeferimento"
+  },
   "partes": [
     {"id":"P1","nome":"Requerente A.","natureza":"parte","papel":"requerente","origem_conversa":"relato inicial","obs":"nome ficticio"},
     {"id":"P2","nome":"INSS","natureza":"parte","papel":"autarquia","origem_conversa":"decisao citada na conversa","obs":""}
   ],
   "documentos": [
-    {"id":"D1","tipo":"nota fiscal","titular":"Requerente A.","localizacao":"p. 10","qualidade":"TEXTO NITIDO","lido":true,"conteudo":"compra de arame em 14/08/2012","origem_conversa":"analise do PDF, p. 10"},
-    {"id":"D2","tipo":"autodeclaracao rural","titular":"Requerente A.","localizacao":"pp. 22-24","qualidade":"TEXTO NITIDO","lido":true,"conteudo":"atividade rural de 2008 a 2022","origem_conversa":"analise do PDF, pp. 22-24"},
-    {"id":"D3","tipo":"CNIS","titular":"Requerente A.","localizacao":"PAGINA NAO IDENTIFICADA","qualidade":"NAO LIDO","lido":false,"conteudo":"?","origem_conversa":"documento mencionado, nao aberto"}
+    {"id":"D1","familia":"PROVA_ECONOMICA","tipo":"nota fiscal","titular":"Requerente A.","evento_inicio":"anexo fiscal","pagina_inicio":"10","evento_fim":"anexo fiscal","pagina_fim":"10","localizacao":"p. 10","resumo":"Nota fiscal de compra de arame em 14/08/2012.","criterio_delimitacao":"cabecalho e pagina unica","confianca_identificacao":"ALTA","qualidade":"TEXTO NITIDO","lido":true,"conteudo":"compra de arame em 14/08/2012","origem_conversa":"analise do PDF, p. 10"},
+    {"id":"D2","familia":"PROVA_PESSOAL","tipo":"autodeclaracao rural","titular":"Requerente A.","evento_inicio":"anexo autodeclaracao","pagina_inicio":"22","evento_fim":"anexo autodeclaracao","pagina_fim":"24","localizacao":"pp. 22-24","resumo":"Autodeclaracao de atividade rural entre 2008 e 2022.","criterio_delimitacao":"titulo e sequencia de paginas","confianca_identificacao":"ALTA","qualidade":"TEXTO NITIDO","lido":true,"conteudo":"atividade rural de 2008 a 2022","origem_conversa":"analise do PDF, pp. 22-24"},
+    {"id":"D3","familia":"PROVA_LABORAL_PREVIDENCIARIA","tipo":"CNIS","titular":"Requerente A.","evento_inicio":"?","pagina_inicio":"?","evento_fim":"?","pagina_fim":"?","localizacao":"PAGINA NAO IDENTIFICADA","resumo":"Documento mencionado, mas nao lido.","criterio_delimitacao":"INCERTA: arquivo nao aberto","confianca_identificacao":"BAIXA","qualidade":"NAO LIDO","lido":false,"conteudo":"?","origem_conversa":"documento mencionado, nao aberto"}
   ],
   "fatos": [
     {"id":"F1","enunciado":"Houve compra de insumo compativel com atividade rural em 2012.","data":"2012-08-14","grau":"FATO COMPROVADO","documentos":["D1"],"origem_conversa":"analise do PDF, p. 10","conferir":true},

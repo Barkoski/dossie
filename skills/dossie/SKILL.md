@@ -1,9 +1,9 @@
 ---
 name: dossie
-description: Transforma uma analise juridica ja feita na conversa em dossie estruturado, persistente e auditavel, com tabela de provas, requisitos, cronologia, grafo, relatorio, pendencias e consultas. Use quando o usuario pedir dossie, tabela ou quadro de provas, mapa ou grafo do caso, linha do tempo, relatorio, exportacao Markdown/JSON/HTML, atualizacao de dossie existente, caminho entre entidades, contradicoes, lacunas ou explicacao de item. Nao pesquisar nem acrescentar conhecimento externo ao caso.
+description: Transforma uma analise juridica ja feita na conversa em dossie estruturado, persistente e auditavel, com indice e delimitacao de documentos, triagem, tabela de provas, requisitos, cronologia, grafo, relatorio, pendencias e consultas. Use quando o usuario pedir dossie, identificacao ou indice documental, classificacao de pecas, triagem processual, tabela ou quadro de provas, mapa ou grafo do caso, linha do tempo, relatorio, exportacao Markdown/JSON/HTML, atualizacao de dossie existente, caminho entre entidades, contradicoes, lacunas ou explicacao de item. Nao pesquisar nem acrescentar conhecimento externo ao caso.
 ---
 
-# Dossie juridico — v1.2
+# Dossie juridico — v1.3
 
 Transforma o que foi analisado na conversa em dossie estruturado: tabela de provas rastreavel, quadro de requisitos, cronologia, grafo do caso e relatorio.
 
@@ -14,6 +14,8 @@ Nao requer biblioteca, servidor ou recurso externo. Pode gerar Markdown no chat 
 ```
 /dossie                      # dossie completo do caso analisado na conversa
 /dossie provas               # apenas a tabela de provas
+/dossie documentos           # indice, delimitacao e classificacao documental
+/dossie triagem              # classe do caso, questao central e marcadores
 /dossie requisitos           # apenas o quadro requisito-prova-lacuna
 /dossie linha                # apenas a cronologia
 /dossie grafo                # apenas o grafo do caso
@@ -48,7 +50,7 @@ Se a conversa nao contiver analise de caso nenhuma, dizer isso e parar. Nao inve
 
 ### Passo 2 — Extrair
 
-Seguir [references/extracao.md](references/extracao.md). Ele define as cinco entidades (parte, documento, fato, requisito, tese), como classificar cada afirmacao pelo grau de comprovacao, e o que fazer com afirmacao sem fonte.
+Seguir [references/extracao.md](references/extracao.md). Ele define as cinco entidades (parte, documento, fato, requisito, tese), como classificar cada afirmacao pelo grau de comprovacao, e o que fazer com afirmacao sem fonte. Quando houver texto de autos, eventos, anexos ou paginas, ler tambem [references/identificacao-documental.md](references/identificacao-documental.md) para montar o indice documental e a triagem antes de relacionar provas e fatos.
 
 O resultado interno e um JSON com a estrutura descrita la. Nao mostrar esse JSON ao usuario, salvo pedido expresso. Preservar conflitos e correcoes: nunca escolher silenciosamente uma versao apenas porque apareceu por ultimo.
 

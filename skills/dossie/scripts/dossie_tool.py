@@ -16,6 +16,12 @@ VALID_REQUIREMENT_STATES = {
     "COMPROVADO", "PARCIALMENTE COMPROVADO", "CONTROVERTIDO",
     "NAO COMPROVADO", "NAO APLICAVEL", "?",
 }
+VALID_DOCUMENT_FAMILIES = {
+    "PECA_PROCESSUAL", "DECISAO", "ATO_PROCESSUAL", "PROVA_PESSOAL",
+    "PROVA_MEDICA", "PROVA_LABORAL_PREVIDENCIARIA", "PROVA_CIVIL",
+    "PROVA_ECONOMICA", "PROVA_RURAL", "PARECER_OU_LAUDO", "MIDIA", "OUTRO",
+}
+VALID_IDENTIFICATION_CONFIDENCE = {"ALTA", "MEDIA", "BAIXA"}
 
 
 def load_json(path: Path) -> dict:
@@ -48,9 +54,9 @@ def index_entities(data: dict) -> tuple[dict[str, dict], list[str]]:
 def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
-    if str(data.get("schema_version")) != "1.2":
-        errors.append("schema_version deve ser 1.2")
-    for key in ("caso", *COLLECTIONS, "arestas", "pendencias", "historico"):
+    if str(data.get("schema_version")) != "1.3":
+        errors.append("schema_version deve ser 1.3")
+    for key in ("caso", "triagem", *COLLECTIONS, "arestas", "pendencias", "historico"):
         if key not in data:
             errors.append(f"campo obrigatorio ausente: {key}")
 
@@ -58,9 +64,32 @@ def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list
     errors.extend(index_errors)
     documents = {k: v for k, v in index.items() if v.get("_colecao") == "documentos"}
 
+    triage = data.get("triagem", {})
+    if not isinstance(triage, dict):
+        errors.append("triagem: deve ser um objeto")
+    else:
+        for key in ("tipo_procedimento", "assunto_principal", "questao_central", "origem_conversa"):
+            if not triage.get(key):
+                errors.append(f"triagem: campo ausente: {key}")
+        for key in ("pontos_controvertidos", "palavras_chave", "normas_invocadas"):
+            if not isinstance(triage.get(key), list):
+                errors.append(f"triagem: {key} deve ser uma lista")
+
     for entity_id, item in index.items():
         if not item.get("origem_conversa"):
             warnings.append(f"{entity_id}: origem_conversa ausente")
+        if item.get("_colecao") == "documentos":
+            if item.get("familia") not in VALID_DOCUMENT_FAMILIES:
+                errors.append(f"{entity_id}: familia documental invalida")
+            if not item.get("tipo") or not item.get("resumo"):
+                errors.append(f"{entity_id}: tipo ou resumo documental ausente")
+            if item.get("confianca_identificacao") not in VALID_IDENTIFICATION_CONFIDENCE:
+                errors.append(f"{entity_id}: confianca_identificacao invalida")
+            for field in ("evento_inicio", "pagina_inicio", "evento_fim", "pagina_fim", "criterio_delimitacao"):
+                if item.get(field) in (None, ""):
+                    errors.append(f"{entity_id}: campo de delimitacao ausente: {field}")
+            if item.get("confianca_identificacao") == "BAIXA" and item.get("lido"):
+                warnings.append(f"{entity_id}: identificacao documental com confianca baixa")
         if item.get("_colecao") == "fatos":
             grade = item.get("grau")
             if grade not in VALID_FACT_GRADES:
@@ -217,6 +246,29 @@ def command_gaps(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_documents(args: argparse.Namespace) -> int:
+    data = load_json(args.json)
+    print("ID\tFAMILIA\tTIPO\tINICIO\tFIM\tCONFIANCA\tRESUMO")
+    for doc in data.get("documentos", []):
+        start = f"{doc.get('evento_inicio', '?')} / {doc.get('pagina_inicio', '?')}"
+        end = f"{doc.get('evento_fim', '?')} / {doc.get('pagina_fim', '?')}"
+        print(
+            f"{doc.get('id')}\t{doc.get('familia')}\t{doc.get('tipo')}\t{start}\t{end}\t"
+            f"{doc.get('confianca_identificacao')}\t{doc.get('resumo')}"
+        )
+    return 0
+
+
+def command_screening(args: argparse.Namespace) -> int:
+    data = load_json(args.json)
+    triage = data.get("triagem")
+    if not isinstance(triage, dict):
+        print("TRIAGEM NAO ENCONTRADA")
+        return 1
+    print(json.dumps(triage, ensure_ascii=False, indent=2))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -239,6 +291,12 @@ def build_parser() -> argparse.ArgumentParser:
     gaps = sub.add_parser("gaps")
     gaps.add_argument("json", type=Path)
     gaps.set_defaults(func=command_gaps)
+    documents = sub.add_parser("documents")
+    documents.add_argument("json", type=Path)
+    documents.set_defaults(func=command_documents)
+    screening = sub.add_parser("screening")
+    screening.add_argument("json", type=Path)
+    screening.set_defaults(func=command_screening)
     return parser
 
 
