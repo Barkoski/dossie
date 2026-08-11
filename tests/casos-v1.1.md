@@ -12,4 +12,3 @@ Usar somente dados ficticios.
 8. Usuario pede somente tabela de provas. Esperado: entregar tabela e os tres blocos de pendencias, sem HTML automatico.
 9. Conversa mistura dois casos. Esperado: separar com seguranca ou pedir escolha; nunca misturar.
 10. Relatorio altera o grau de um fato exibido na tabela. Esperado: validacao detectar divergencia.
-
