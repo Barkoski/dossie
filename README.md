@@ -6,7 +6,16 @@ Transforma a anÃ¡lise de um caso jurÃ­dico feita na conversa com uma IA em *
 
 ConstruÃ­do por [Lucas Barkoski](https://github.com/Barkoski), advogado previdenciarista.
 
-## VersÃ£o 1.1
+## VersÃ£o 1.2
+
+- estado persistente e versionado em `dossie.json`;
+- atualizaÃ§Ã£o incremental com IDs estÃ¡veis e histÃ³rico de alteraÃ§Ãµes;
+- consultas de entidade, caminho, contradiÃ§Ãµes e lacunas;
+- validador determinÃ­stico opcional, sem bibliotecas externas;
+- exemplos fictÃ­cios completos em Markdown, JSON e HTML offline;
+- testes de regressÃ£o para persistÃªncia, consultas e seguranÃ§a.
+
+### Melhorias herdadas da versÃ£o 1.1
 
 - origem da conversa separada da fonte probatÃ³ria em todas as entidades;
 - conflitos preservados, sem escolher automaticamente a Ãºltima versÃ£o;
@@ -65,6 +74,12 @@ A mesma disciplina vale no grafo: aresta sÃ³ existe se a relaÃ§Ã£o foi **a
 /dossie relatorio      # relatÃ³rio em prosa
 /dossie --md           # forÃ§ar saÃ­da sÃ³ em markdown
 /dossie --html         # forÃ§ar o dossiÃª visual
+/dossie salvar         # persistir em dossie.json
+/dossie atualizar      # incorporar apenas mudanÃ§as novas
+/dossie explicar R1    # explicar entidade e conexÃµes
+/dossie caminho D1 T1  # mostrar caminho entre entidades
+/dossie contradicoes   # listar conflitos registrados
+/dossie lacunas        # listar requisitos e leituras pendentes
 ```
 
 NÃ£o Ã© preciso preparar nada. Analise o caso normalmente e depois chame o comando ou peÃ§a em linguagem natural para organizar a anÃ¡lise como dossiÃª.
@@ -91,6 +106,24 @@ Seis abas: grafo, provas com busca e filtro, requisitos em barras, cronologia, p
 
 Tema claro e escuro. Paleta em tons mÃ©dios, e cor nunca Ã© o Ãºnico portador de significado â€” todo estado vem acompanhado de rÃ³tulo em texto.
 
+## Exemplo completo
+
+O diretÃ³rio [`examples/`](examples/) contÃ©m o mesmo caso inteiramente fictÃ­cio em trÃªs formatos:
+
+- `caso-ficticio.md` â€” entrega legÃ­vel e copiÃ¡vel;
+- `caso-ficticio.json` â€” estado canÃ´nico persistente;
+- `caso-ficticio.html` â€” visual interativo e offline.
+
+Para validar e consultar o exemplo, usando somente a biblioteca padrÃ£o do Python:
+
+```bash
+python skills/dossie/scripts/dossie_tool.py validate examples/caso-ficticio.json --html examples/caso-ficticio.html
+python skills/dossie/scripts/dossie_tool.py explain examples/caso-ficticio.json R1
+python skills/dossie/scripts/dossie_tool.py path examples/caso-ficticio.json D1 T1
+python skills/dossie/scripts/dossie_tool.py contradictions examples/caso-ficticio.json
+python skills/dossie/scripts/dossie_tool.py gaps examples/caso-ficticio.json
+```
+
 ## InstalaÃ§Ã£o
 
 ### Claude Code
@@ -113,7 +146,7 @@ Para gerar o `.plugin` a partir do repositÃ³rio: selecione o **conteÃºdo** d
 
 ### ChatGPT
 
-Cole o conteÃºdo de `SKILL.md` e dos quatro arquivos de `references/` nas instruÃ§Ãµes de um GPT personalizado. Depois Ã© sÃ³ analisar o caso e pedir o dossiÃª.
+Cole o conteÃºdo de `SKILL.md` e dos cinco arquivos de `references/` nas instruÃ§Ãµes de um GPT personalizado. Depois Ã© sÃ³ analisar o caso e pedir o dossiÃª.
 
 ## Limites
 
@@ -125,4 +158,8 @@ Cole o conteÃºdo de `SKILL.md` e dos quatro arquivos de `references/` nas inst
 ## LicenÃ§a
 
 MIT â€” ver [LICENSE](LICENSE).
+
+## InspiraÃ§Ã£o
+
+A ideia geral de representar conhecimento como grafo auditÃ¡vel foi inspirada pelo projeto [Graphify](https://github.com/Graphify-Labs/graphify). O DossiÃª nÃ£o copia cÃ³digo, templates ou implementaÃ§Ã£o do Graphify: sua ontologia, regras de prova, rastreabilidade jurÃ­dica, persistÃªncia e visualizaÃ§Ã£o foram desenvolvidas especificamente para anÃ¡lise de casos jurÃ­dicos.
 
