@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dossie â€” caso rural ficticio</title>
+<style>
+:root{color-scheme:light dark;--bg:#f7f5f2;--panel:#fff;--text:#2c3230;--muted:#66716c;--line:#d8d3ca;--ok:#6e8b6e;--partial:#c6a15b;--risk:#a96a6a;--source:#8c7b9b;--accent:#496f68}
+@media(prefers-color-scheme:dark){:root{--bg:#222724;--panel:#2c332f;--text:#e8e4dc;--muted:#bbc1bc;--line:#4a534e;--accent:#8db4aa}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,sans-serif}main{max-width:1180px;margin:auto;padding:24px}h1,h2{line-height:1.2}header p{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}.card strong{display:block;font-size:1.6rem}.tabs{display:flex;gap:8px;overflow:auto;margin:18px 0}.tabs button,.action{border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--text);padding:9px 13px;cursor:pointer}.tabs button[aria-selected="true"]{background:var(--accent);color:#fff}.tabs button:focus-visible,.action:focus-visible,input:focus-visible{outline:3px solid var(--partial);outline-offset:2px}[role="tabpanel"][hidden]{display:none}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:760px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:9px;vertical-align:top}th{font-size:.84rem;color:var(--muted)}.tag{display:inline-block;border-radius:99px;padding:2px 8px;border:1px solid currentColor;font-size:.78rem}.timeline{border-left:3px solid var(--line);margin-left:8px;padding-left:20px}.event{margin:0 0 18px}.event::before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;background:var(--accent);margin-left:-27px;margin-right:11px}.requirement{margin:14px 0}.bar{height:12px;border:1px solid var(--line);border-radius:99px;overflow:hidden}.bar span{display:block;height:100%}.graph-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(240px,1fr);gap:14px}svg{width:100%;min-height:420px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}.node{cursor:pointer}.node:focus{outline:none}.node circle{stroke:var(--text);stroke-width:1.5}.node:focus circle,.node.selected circle{stroke:var(--partial);stroke-width:5}.node text{font-size:12px;fill:var(--text);paint-order:stroke;stroke:var(--panel);stroke-width:4px;stroke-linejoin:round}.edge{stroke:var(--line);stroke-width:2}.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}input{min-width:260px;padding:9px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text)}footer{margin:24px 0;color:var(--muted);font-size:.9rem}@media(max-width:760px){.graph-grid{grid-template-columns:1fr}main{padding:14px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+<header><h1>Dossie â€” caso rural ficticio</h1><p>Aposentadoria rural Â· recurso administrativo Â· referencia 11/08/2026</p></header>
+<section class="cards" id="cards" aria-label="Indicadores"></section>
+<nav class="tabs" aria-label="Secoes do dossie" role="tablist">
+<button role="tab" aria-selected="true" aria-controls="grafo" id="tab-grafo">Grafo</button>
+<button role="tab" aria-selected="false" aria-controls="provas" id="tab-provas">Provas</button>
+<button role="tab" aria-selected="false" aria-controls="requisitos" id="tab-requisitos">Requisitos</button>
+<button role="tab" aria-selected="false" aria-controls="cronologia" id="tab-cronologia">Cronologia</button>
+<button role="tab" aria-selected="false" aria-controls="pendencias" id="tab-pendencias">Pendencias</button>
+<button role="tab" aria-selected="false" aria-controls="relatorio" id="tab-relatorio">Relatorio</button>
+</nav>
+<section id="grafo" role="tabpanel" aria-labelledby="tab-grafo"><div class="graph-grid"><svg id="graph" viewBox="0 0 720 420" aria-label="Grafo do caso"></svg><aside class="panel" id="detail" aria-live="polite"></aside></div></section>
+<section id="provas" role="tabpanel" aria-labelledby="tab-provas" hidden><div class="panel"><div class="controls"><label>Buscar prova <input id="proof-search" type="search"></label></div><div class="table-wrap"><table><thead><tr><th>ID</th><th>Documento</th><th>Conteudo</th><th>Titular</th><th>Localizacao</th><th>Qualidade</th><th>Conferir</th></tr></thead><tbody id="proof-body"></tbody></table></div></div></section>
+<section id="requisitos" role="tabpanel" aria-labelledby="tab-requisitos" hidden><div class="panel" id="requirements"></div></section>
+<section id="cronologia" role="tabpanel" aria-labelledby="tab-cronologia" hidden><div class="panel timeline" id="timeline"></div></section>
+<section id="pendencias" role="tabpanel" aria-labelledby="tab-pendencias" hidden><div class="panel" id="pending"></div></section>
+<section id="relatorio" role="tabpanel" aria-labelledby="tab-relatorio" hidden><div class="panel"><div class="controls"><button class="action" id="copy-report">Copiar</button><button class="action" id="print-report">Imprimir</button></div><div id="report"></div></div></section>
+<footer>Documento gerado a partir da analise em conversa. Nenhuma linha foi conferida na fonte. Contem dados de caso: tratar como material sigiloso.</footer>
+</main>
+<script>
+const data={
+  documentos:[
+    {id:"D1",tipo:"Nota fiscal",conteudo:"Compra de arame em 14/08/2012",titular:"Requerente A.",localizacao:"p. 10",qualidade:"TEXTO NITIDO",conferir:"SIM"},
+    {id:"D2",tipo:"Autodeclaracao rural",conteudo:"Atividade rural declarada de 2008 a 2022",titular:"Requerente A.",localizacao:"pp. 22-24",qualidade:"TEXTO NITIDO",conferir:"SIM"}
+  ],
+  fatos:[
+    {id:"F1",label:"Compra de insumo rural",grau:"FATO COMPROVADO",origem:"Analise do PDF, p. 10"},
+    {id:"F2",label:"Atividade rural 2008-2022",grau:"ALEGACAO",origem:"Autodeclaracao resumida"},
+    {id:"F3",label:"Ausencia de vinculo urbano",grau:"SEM FONTE NA CONVERSA",origem:"Afirmacao anterior sem fonte"}
+  ],
+  requisitos:[
+    {id:"R1",nome:"Qualidade de segurada especial",situacao:"PARCIALMENTE COMPROVADO",cor:"var(--partial)",lacuna:"CNIS nao lido e cobertura documental descontÃ­nua",contagem:"2 fatos Â· 2 documentos"},
+    {id:"R2",nome:"Carencia rural",situacao:"CONTROVERTIDO",cor:"var(--risk)",lacuna:"Um documento isolado nao cobre todo o periodo",contagem:"2 fatos Â· 2 documentos"}
+  ],
+  cronologia:[
+    {data:"2008-2022",evento:"Atividade rural declarada",grau:"ALEGACAO",fonte:"D2 Â· pp. 22-24"},
+    {data:"14/08/2012",evento:"Compra de insumo rural",grau:"FATO COMPROVADO",fonte:"D1 Â· p. 10"}
+  ],
+  pendencias:{"Sem fonte na conversa":["F3 â€” ausencia de vinculo urbano"],"Pendente de leitura":["D3 â€” CNIS"],"Confirmar antes de usar":["Data e conteudo de D1","Periodo declarado em D2"]},
+  nodes:[
+    {id:"P1",label:"Requerente A.",x:100,y:205,color:"var(--accent)",detail:"Parte requerente Â· origem: relato inicial"},
+    {id:"D1",label:"Nota fiscal",x:260,y:100,color:"var(--ok)",detail:"Compra de arame Â· p. 10 Â· TEXTO NITIDO"},
+    {id:"F1",label:"Insumo rural em 2012",x:410,y:105,color:"var(--ok)",detail:"FATO COMPROVADO Â· origem: analise do PDF, p. 10"},
+    {id:"R1",label:"Segurada especial",x:555,y:175,color:"var(--partial)",detail:"PARCIALMENTE COMPROVADO Â· lacuna: CNIS nao lido"},
+    {id:"R2",label:"Carencia rural",x:420,y:310,color:"var(--risk)",detail:"CONTROVERTIDO Â· cobertura documental insuficiente"},
+    {id:"T1",label:"Ampliacao por prova oral",x:600,y:315,color:"var(--source)",detail:"Tese da requerente Â· forca PARCIAL"}
+  ],
+  edges:[{a:"P1",b:"D1",tipo:"titulariza"},{a:"D1",b:"F1",tipo:"comprova"},{a:"F1",b:"R1",tipo:"sustenta"},{a:"F1",b:"R2",tipo:"sustenta"},{a:"R2",b:"T1",tipo:"compoe"}]
+};
+const el=(tag,text,cls)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(cls)node.className=cls;return node};
+const cards=[[`2`,`provas`,`D1 e D2 lidos`],[`0 / 2`,`requisitos comprovados`,`R1 parcial Â· R2 controvertido`],[`1`,`fato sem fonte`,`F3`],[`1`,`documento nao lido`,`D3`]];
+for(const [value,label,detail] of cards){const card=el("article",undefined,"card");card.append(el("strong",value),el("span",label),el("small",detail));document.querySelector("#cards").append(card)}
+const renderProofs=()=>{const body=document.querySelector("#proof-body"),q=document.querySelector("#proof-search").value.toLowerCase();body.replaceChildren();for(const d of data.documentos.filter(x=>Object.values(x).join(" ").toLowerCase().includes(q))){const row=el("tr");for(const key of ["id","tipo","conteudo","titular","localizacao","qualidade","conferir"])row.append(el("td",d[key]));body.append(row)}};
+document.querySelector("#proof-search").addEventListener("input",renderProofs);renderProofs();
+for(const r of data.requisitos){const box=el("div",undefined,"requirement"),title=el("strong",`${r.id} Â· ${r.nome}`),state=el("span",r.situacao,"tag"),bar=el("div",undefined,"bar"),fill=el("span");fill.style.width="100%";fill.style.background=r.cor;bar.setAttribute("aria-label",`Situacao: ${r.situacao}`);bar.append(fill);box.append(title,el("p",` ${r.contagem} Â· ${r.lacuna}`),state,bar);document.querySelector("#requirements").append(box)}
+for(const c of data.cronologia){const item=el("article",undefined,"event");item.append(el("strong",`${c.data} Â· ${c.evento}`),el("p",`${c.grau} Â· ${c.fonte}`));document.querySelector("#timeline").append(item)}
+for(const [title,items] of Object.entries(data.pendencias)){document.querySelector("#pending").append(el("h2",title));const ul=el("ul");for(const item of items)ul.append(el("li",item));document.querySelector("#pending").append(ul)}
+const reportText="O material registra uma nota fiscal de 2012 e autodeclaracao rural de 2008 a 2022. A qualidade de segurada especial foi classificada como parcialmente comprovada e a carencia permanece controvertida. O CNIS esta pendente de leitura e a afirmacao sobre ausencia de vinculo urbano nao tem fonte identificada na conversa.";
+document.querySelector("#report").append(el("h2","Relatorio sintetico"),el("p",reportText));document.querySelector("#copy-report").addEventListener("click",()=>navigator.clipboard?.writeText(reportText));document.querySelector("#print-report").addEventListener("click",()=>window.print());
+const svg=document.querySelector("#graph"),ns="http://www.w3.org/2000/svg",byId=Object.fromEntries(data.nodes.map(n=>[n.id,n]));
+for(const e of data.edges){const line=document.createElementNS(ns,"line");line.setAttribute("x1",byId[e.a].x);line.setAttribute("y1",byId[e.a].y);line.setAttribute("x2",byId[e.b].x);line.setAttribute("y2",byId[e.b].y);line.setAttribute("class","edge");svg.append(line)}
+const showDetail=n=>{const box=document.querySelector("#detail");box.replaceChildren(el("h2",`${n.id} Â· ${n.label}`),el("p",n.detail));document.querySelectorAll(".node").forEach(x=>x.classList.toggle("selected",x.dataset.id===n.id))};
+for(const n of data.nodes){const g=document.createElementNS(ns,"g");g.setAttribute("class","node");g.setAttribute("tabindex","0");g.setAttribute("role","button");g.setAttribute("aria-label",`${n.id} ${n.label}`);g.dataset.id=n.id;const circle=document.createElementNS(ns,"circle");circle.setAttribute("cx",n.x);circle.setAttribute("cy",n.y);circle.setAttribute("r","27");circle.setAttribute("fill",n.color);const text=document.createElementNS(ns,"text");text.setAttribute("x",n.x);text.setAttribute("y",n.y+45);text.setAttribute("text-anchor","middle");text.textContent=n.label;g.append(circle,text);g.addEventListener("click",()=>showDetail(n));g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();showDetail(n)}});svg.append(g)}showDetail(data.nodes[4]);
+const tabs=[...document.querySelectorAll('[role="tab"]')];for(const tab of tabs){tab.addEventListener("click",()=>{for(const other of tabs){const selected=other===tab;other.setAttribute("aria-selected",String(selected));document.querySelector(`#${other.getAttribute("aria-controls")}`).hidden=!selected}})}
+</script>
+</body>
+</html>
+
