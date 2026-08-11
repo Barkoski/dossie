@@ -6,9 +6,17 @@ Transforma a análise de um caso jurídico feita na conversa com uma IA em **dos
 
 Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previdenciarista.
 
-## Versão 1.2
+## Versão 1.3
 
-O plugin distribuído está na versão **1.2.1**, uma atualização de manutenção que sincroniza o marketplace com todo o conteúdo da v1.2.
+O plugin distribuído está na versão **1.3.0**.
+
+- índice documental com início, fim, resumo e confiança da identificação;
+- famílias documentais estáveis e tipo normalizado, sem depender de uma enumeração rígida;
+- triagem com procedimento, assunto, questão central, controvérsias, palavras-chave e normas efetivamente invocadas;
+- comandos determinísticos `documents` e `screening` no validador CLI;
+- limites incertos preservados como `?` ou `INCERTA`, sem inventar eventos ou páginas.
+
+### Recursos da versão 1.2
 
 - estado persistente e versionado em `dossie.json`;
 - atualização incremental com IDs estáveis e histórico de alterações;
@@ -39,6 +47,8 @@ Lê a conversa e devolve a análise estruturada, separando o que tem lastro do q
 
 | Saída | Conteúdo |
 |---|---|
+| Índice documental | Família, tipo normalizado, evento e página inicial/final, resumo e confiança da identificação |
+| Triagem | Procedimento, assunto principal, questão central, controvérsias, palavras-chave e normas citadas nos autos |
 | Tabela de provas | Documento, conteúdo concreto, data, **titular**, localização, qualidade da leitura, o que prova, marcação de conferência |
 | Quadro de requisitos | Situação de cada requisito, fatos que o sustentam, lacuna e risco |
 | Cronologia | Evento, grau de comprovação, fonte e localização |
@@ -70,6 +80,8 @@ A mesma disciplina vale no grafo: aresta só existe se a relação foi **afirmad
 ```
 /dossie                # dossiê completo
 /dossie provas         # só a tabela de provas
+/dossie documentos     # índice, limites e classificação dos documentos
+/dossie triagem        # classe, assunto e questões do caso
 /dossie requisitos     # só o quadro requisito-prova-lacuna
 /dossie linha          # só a cronologia
 /dossie grafo          # só o grafo do caso
@@ -104,7 +116,7 @@ Um **único arquivo HTML**, sem nenhuma dependência externa. Abre com duplo cli
 
 O grafo é desenhado à mão em SVG e JavaScript puro — biblioteca de CDN é bloqueada em artifact e quebra offline. Layout dirigido por forças, calculado na carga.
 
-Seis abas: grafo, provas com busca e filtro, requisitos em barras, cronologia, pendências e relatório com copiar e imprimir.
+Sete abas: grafo, índice documental e triagem, provas com busca e filtro, requisitos em barras, cronologia, pendências e relatório com copiar e imprimir.
 
 Tema claro e escuro. Paleta em tons médios, e cor nunca é o único portador de significado — todo estado vem acompanhado de rótulo em texto.
 
@@ -124,6 +136,8 @@ python skills/dossie/scripts/dossie_tool.py explain examples/caso-ficticio.json 
 python skills/dossie/scripts/dossie_tool.py path examples/caso-ficticio.json D1 T1
 python skills/dossie/scripts/dossie_tool.py contradictions examples/caso-ficticio.json
 python skills/dossie/scripts/dossie_tool.py gaps examples/caso-ficticio.json
+python skills/dossie/scripts/dossie_tool.py documents examples/caso-ficticio.json
+python skills/dossie/scripts/dossie_tool.py screening examples/caso-ficticio.json
 ```
 
 ## Instalação
@@ -165,7 +179,7 @@ O fluxo automático do GitHub também gera um pacote `dossie-plugin` testado a c
 
 ### ChatGPT
 
-Cole o conteúdo de `SKILL.md` e dos cinco arquivos de `references/` nas instruções de um GPT personalizado. Depois é só analisar o caso e pedir o dossiê.
+Cole o conteúdo de `SKILL.md` e dos seis arquivos de `references/` nas instruções de um GPT personalizado. Depois é só analisar o caso e pedir o dossiê.
 
 ## Limites
 
@@ -177,3 +191,9 @@ Cole o conteúdo de `SKILL.md` e dos cinco arquivos de `references/` nas instru�
 ## Licença
 
 MIT — ver [LICENSE](LICENSE).
+
+## Inspiração
+
+A ideia geral de representar conhecimento como grafo auditável foi inspirada pelo projeto [Graphify](https://github.com/Graphify-Labs/graphify). O Dossiê não copia código, templates ou implementação do Graphify: sua ontologia, regras de prova, rastreabilidade jurídica, persistência e visualização foram desenvolvidas especificamente para análise de casos jurídicos.
+
+A camada de índice e delimitação de documentos foi inspirada pela proposta [`identificacao-doc`](https://github.com/ma-serra/st-prompt/blob/main/identificacao-doc), de Marcelo Serra. A implementação do Dossiê usa taxonomia, campos, graus de confiança e integração probatória próprios; nenhum texto, lista extensa de tipos ou schema do projeto de referência foi copiado.

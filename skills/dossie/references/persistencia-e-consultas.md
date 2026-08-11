@@ -4,13 +4,13 @@ Usar este modulo somente quando houver pedido de salvar, atualizar ou consultar 
 
 ## Arquivo canonico
 
-Salvar o estado em `dossie.json`, UTF-8, com `schema_version: "1.2"`. O JSON e a fonte das saidas Markdown e HTML; nao reconstruir o estado a partir do HTML.
+Salvar o estado em `dossie.json`, UTF-8, com `schema_version: "1.3"`. O JSON e a fonte das saidas Markdown e HTML; nao reconstruir o estado a partir do HTML.
 
 Acrescentar ao esquema de [extracao.md](extracao.md):
 
 ```json
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "gerado_em": "AAAA-MM-DDTHH:MM:SSZ",
   "atualizado_em": "AAAA-MM-DDTHH:MM:SSZ",
   "historico": [
@@ -37,6 +37,10 @@ Acrescentar ao esquema de [extracao.md](extracao.md):
 7. Acrescentar entrada em `historico` com resumo e origem.
 8. Validar novamente e mostrar ao usuario: adicionados, alterados, conflitos e itens inalterados.
 
+## Migracao da versao 1.2
+
+Ao abrir `schema_version: "1.2"`, nao descartar dados. Criar `triagem` com `?` e listas vazias, acrescentar aos documentos os campos de identificacao descritos em [identificacao-documental.md](identificacao-documental.md), usando `?` e `INCERTA` quando o material nao permitir recuperar limites. Registrar a migracao no historico e somente entao alterar para `1.3`.
+
 ## Consultas
 
 - `explicar <ID>`: mostrar entidade, grau/situacao, origem, fonte probatoria e arestas de entrada/saida.
@@ -47,4 +51,3 @@ Acrescentar ao esquema de [extracao.md](extracao.md):
 Responder somente com dados presentes no JSON. Ausencia de caminho e resultado valido: `NAO HA CAMINHO REGISTRADO NO DOSSIE`.
 
 Quando Python estiver disponivel, preferir as consultas deterministicas de `scripts/dossie_tool.py`. Sem Python, aplicar as mesmas regras diretamente ao JSON.
-

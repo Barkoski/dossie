@@ -64,6 +64,22 @@ class DossieToolTests(unittest.TestCase):
         errors, _ = TOOL.validate(data)
         self.assertTrue(any("requisito inexistente" in item for item in errors))
 
+    def test_document_requires_valid_family_and_boundaries(self):
+        data = json.loads(json.dumps(self.example))
+        data["documentos"][0]["familia"] = "DOCUMENTO GENERICO"
+        data["documentos"][0]["pagina_fim"] = ""
+        errors, _ = TOOL.validate(data)
+        self.assertTrue(any("familia documental invalida" in item for item in errors))
+        self.assertTrue(any("campo de delimitacao ausente: pagina_fim" in item for item in errors))
+
+    def test_triage_requires_lists_and_traceable_origin(self):
+        data = json.loads(json.dumps(self.example))
+        data["triagem"]["normas_invocadas"] = "nenhuma"
+        data["triagem"]["origem_conversa"] = ""
+        errors, _ = TOOL.validate(data)
+        self.assertTrue(any("normas_invocadas deve ser uma lista" in item for item in errors))
+        self.assertTrue(any("campo ausente: origem_conversa" in item for item in errors))
+
     def capture(self, function, **kwargs):
         output = io.StringIO()
         with redirect_stdout(output):
@@ -107,6 +123,23 @@ class DossieToolTests(unittest.TestCase):
         self.assertEqual(status, 0)
         self.assertIn("R1: PARCIALMENTE COMPROVADO", output)
         self.assertIn("nao_lidos: D3: CNIS", output)
+
+    def test_documents_lists_boundaries_and_confidence(self):
+        status, output = self.capture(
+            TOOL.command_documents,
+            json=ROOT / "examples" / "caso-ficticio.json",
+        )
+        self.assertEqual(status, 0)
+        self.assertIn("D1\tPROVA_ECONOMICA\tnota fiscal", output)
+        self.assertIn("anexo fiscal / 10", output)
+
+    def test_screening_returns_case_markers(self):
+        status, output = self.capture(
+            TOOL.command_screening,
+            json=ROOT / "examples" / "caso-ficticio.json",
+        )
+        self.assertEqual(status, 0)
+        self.assertIn('"assunto_principal": "Aposentadoria por idade rural"', output)
 
     def test_main_validate_command(self):
         argv = [

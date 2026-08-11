@@ -16,6 +16,7 @@
 <section class="cards" id="cards" aria-label="Indicadores"></section>
 <nav class="tabs" aria-label="Secoes do dossie" role="tablist">
 <button role="tab" aria-selected="true" aria-controls="grafo" id="tab-grafo">Grafo</button>
+<button role="tab" aria-selected="false" aria-controls="documentos" id="tab-documentos">Documentos</button>
 <button role="tab" aria-selected="false" aria-controls="provas" id="tab-provas">Provas</button>
 <button role="tab" aria-selected="false" aria-controls="requisitos" id="tab-requisitos">Requisitos</button>
 <button role="tab" aria-selected="false" aria-controls="cronologia" id="tab-cronologia">Cronologia</button>
@@ -23,6 +24,7 @@
 <button role="tab" aria-selected="false" aria-controls="relatorio" id="tab-relatorio">Relatorio</button>
 </nav>
 <section id="grafo" role="tabpanel" aria-labelledby="tab-grafo"><div class="graph-grid"><svg id="graph" viewBox="0 0 720 420" aria-label="Grafo do caso"></svg><aside class="panel" id="detail" aria-live="polite"></aside></div></section>
+<section id="documentos" role="tabpanel" aria-labelledby="tab-documentos" hidden><div class="panel"><h2>Indice documental</h2><div class="table-wrap"><table><thead><tr><th>ID</th><th>Familia</th><th>Tipo</th><th>Inicio</th><th>Fim</th><th>Resumo</th><th>Confianca</th></tr></thead><tbody><tr><td>D1</td><td>PROVA_ECONOMICA</td><td>Nota fiscal</td><td>anexo fiscal / p. 10</td><td>anexo fiscal / p. 10</td><td>Compra de arame em 14/08/2012</td><td>ALTA</td></tr><tr><td>D2</td><td>PROVA_PESSOAL</td><td>Autodeclaracao rural</td><td>anexo autodeclaracao / p. 22</td><td>anexo autodeclaracao / p. 24</td><td>Atividade rural declarada de 2008 a 2022</td><td>ALTA</td></tr><tr><td>D3</td><td>PROVA_LABORAL_PREVIDENCIARIA</td><td>CNIS</td><td>?</td><td>?</td><td>Documento mencionado, mas nao lido</td><td>BAIXA</td></tr></tbody></table></div><h2>Triagem</h2><p><strong>Recurso administrativo previdenciario · Aposentadoria por idade rural.</strong></p><p>Questao central: o conjunto apresentado demonstra atividade rural e carencia no periodo exigido?</p><p>Pontos controvertidos: continuidade da atividade rural; suficiencia da prova material.</p></div></section>
 <section id="provas" role="tabpanel" aria-labelledby="tab-provas" hidden><div class="panel"><div class="controls"><label>Buscar prova <input id="proof-search" type="search"></label></div><div class="table-wrap"><table><thead><tr><th>ID</th><th>Documento</th><th>Conteudo</th><th>Titular</th><th>Localizacao</th><th>Qualidade</th><th>Conferir</th></tr></thead><tbody id="proof-body"></tbody></table></div></div></section>
 <section id="requisitos" role="tabpanel" aria-labelledby="tab-requisitos" hidden><div class="panel" id="requirements"></div></section>
 <section id="cronologia" role="tabpanel" aria-labelledby="tab-cronologia" hidden><div class="panel timeline" id="timeline"></div></section>
