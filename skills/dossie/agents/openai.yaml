@@ -1,0 +1,5 @@
+interface:
+  display_name: "Dossiê Jurídico Auditável"
+  short_description: "Organize análises jurídicas com rastreabilidade"
+  default_prompt: "Use $dossie para transformar esta análise jurídica em um dossiê auditável, sem acrescentar fatos externos."
+
