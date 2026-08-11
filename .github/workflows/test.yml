@@ -1,0 +1,36 @@
+name: Testar e empacotar
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Executar testes
+        run: python -m unittest discover -s tests -v
+
+  package:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Montar plugin
+        run: zip -r dossie.plugin .claude-plugin skills README.md LICENSE -x "*/__pycache__/*" "*.pyc"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dossie-plugin-v1.2.1
+          path: dossie.plugin
+          if-no-files-found: error
