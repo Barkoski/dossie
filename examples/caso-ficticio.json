@@ -24,7 +24,7 @@
     {"id":"F3","enunciado":"Nao ha vinculo urbano no periodo.","data":"2008-2022","grau":"SEM FONTE NA CONVERSA","documentos":[],"origem_conversa":"afirmacao anterior sem fonte identificada","conferir":true}
   ],
   "requisitos": [
-    {"id":"R1","enunciado":"Qualidade de segurada especial","situacao":"PARCIALMENTE COMPROVADO","fatos":["F1","F2"],"lacuna":"CNIS nao lido e cobertura documental descontÃ­nua","origem_conversa":"quadro de requisitos anterior"},
+    {"id":"R1","enunciado":"Qualidade de segurada especial","situacao":"PARCIALMENTE COMPROVADO","fatos":["F1","F2"],"lacuna":"CNIS nao lido e cobertura documental descontínua","origem_conversa":"quadro de requisitos anterior"},
     {"id":"R2","enunciado":"Carencia rural no periodo exigido","situacao":"CONTROVERTIDO","fatos":["F1","F2"],"lacuna":"um documento isolado nao cobre todo o periodo","origem_conversa":"analise adversarial anterior"}
   ],
   "teses": [
@@ -48,4 +48,3 @@
     {"data":"2026-08-11T12:00:00Z","tipo":"criacao","resumo":"Dossie ficticio criado para demonstracao.","origem_conversa":"caso de exemplo do repositorio"}
   ]
 }
-
