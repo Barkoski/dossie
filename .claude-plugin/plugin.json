@@ -1,6 +1,6 @@
 {
   "name": "dossie",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "description": "Transforma a analise de um caso juridico feita na conversa em dossie estruturado e auditavel: tabela de provas com fonte e pagina, quadro de requisitos, cronologia, grafo do caso e relatorio. Nao instala nada.",
   "author": {
     "name": "Lucas Barkoski"
@@ -14,3 +14,4 @@
     "previdenciario"
   ]
 }
+
