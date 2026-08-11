@@ -177,7 +177,3 @@ Cole o conteúdo de `SKILL.md` e dos cinco arquivos de `references/` nas instru�
 ## Licença
 
 MIT — ver [LICENSE](LICENSE).
-
-## Inspiração
-
-A ideia geral de representar conhecimento como grafo auditável foi inspirada pelo projeto [Graphify](https://github.com/Graphify-Labs/graphify). O Dossiê não copia código, templates ou implementação do Graphify: sua ontologia, regras de prova, rastreabilidade jurídica, persistência e visualização foram desenvolvidas especificamente para análise de casos jurídicos.
