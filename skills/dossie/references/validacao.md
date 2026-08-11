@@ -41,3 +41,13 @@ O arquivo deve abrir offline sem executar conteudo, requisitar rede ou quebrar o
 
 Se qualquer verificacao falhar, corrigir e repetir a lista. Nao chamar a entrega de completa enquanto houver falha.
 
+## Validador opcional
+
+Quando Python estiver disponivel, executar:
+
+```text
+python scripts/dossie_tool.py validate dossie.json --html dossie.html
+```
+
+O utilitario usa somente a biblioteca padrao. Tambem oferece `explain`, `path`, `contradictions` e `gaps`. A validacao humana continua necessaria para conferir a fonte probatoria; o script verifica estrutura, referencias e restricoes tecnicas, nao a veracidade do caso.
+
