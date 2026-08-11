@@ -1,4 +1,4 @@
-# Dossie â€” caso rural ficticio
+# Dossie — caso rural ficticio
 
 > Exemplo exclusivamente demonstrativo. Nenhum dado corresponde a pessoa ou processo real.
 
@@ -24,7 +24,7 @@ Nenhuma linha foi conferida na fonte. A tabela e roteiro de conferencia.
 
 | Requisito | Situacao | Fatos | Prova | Lacuna | Risco | Origem na conversa |
 |---|---|---|---|---|---|---|
-| Qualidade de segurada especial | PARCIALMENTE COMPROVADO | F1, F2 | D1, D2 | CNIS nao lido; cobertura descontÃ­nua | Medio | Quadro anterior |
+| Qualidade de segurada especial | PARCIALMENTE COMPROVADO | F1, F2 | D1, D2 | CNIS nao lido; cobertura descontínua | Medio | Quadro anterior |
 | Carencia rural | CONTROVERTIDO | F1, F2 | D1, D2 | Um documento isolado nao cobre todo o periodo | Alto | Analise adversarial |
 
 ## Cronologia
@@ -43,11 +43,11 @@ Nenhuma linha foi conferida na fonte. A tabela e roteiro de conferencia.
 
 ## Sem fonte na conversa
 
-- F3 â€” ausencia de vinculo urbano entre 2008 e 2022.
+- F3 — ausencia de vinculo urbano entre 2008 e 2022.
 
 ## Pendente de leitura
 
-- D3 â€” CNIS mencionado, mas nao aberto.
+- D3 — CNIS mencionado, mas nao aberto.
 
 ## Confirmar antes de usar
 
@@ -55,4 +55,3 @@ Nenhuma linha foi conferida na fonte. A tabela e roteiro de conferencia.
 - Periodo declarado no documento D2.
 
 Documento gerado a partir da analise em conversa. Nenhuma linha foi conferida na fonte. Contem dados de caso: tratar como material sigiloso.
-
