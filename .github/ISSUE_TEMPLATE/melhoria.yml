@@ -1,0 +1,61 @@
+name: Melhoria no dossiê
+description: Propor regra, coluna, saída ou verificação nova
+labels: ["melhoria"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Não cole dados de caso real.** Descreva o caso que motivou a proposta sem identificar ninguém.
+
+        Toda proposta é medida pelo princípio do projeto: **o dossiê não produz conhecimento novo, ele estrutura o que já existe na conversa.** Proposta que faça o dossiê inferir, completar lacuna ou promover grau de comprovação será recusada, por melhor que fique a saída.
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: Que problema isso resolve
+      description: De preferência, um caso real que expôs a falha, anonimizado. O que o dossiê entregou de errado ou deixou de mostrar?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta
+      description: A regra, coluna ou verificação sugerida. Se for texto de módulo, escreva a redação exata.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Regra no SKILL.md
+        - Extração e entidades (extracao.md)
+        - Identificação documental e triagem
+        - Colunas e saídas em markdown (tabelas.md)
+        - Dossiê visual em HTML (html.md)
+        - Persistência e consultas
+        - Verificação nova no validador
+        - Conjunto fechado (entidade, grau, situação, família, confiança)
+        - Documentação
+    validations:
+      required: true
+
+  - type: textarea
+    id: verificavel
+    attributes:
+      label: Dá para verificar por código?
+      description: Se a regra for decidível por máquina, diga como o validador poderia recusar quem a violar. Se não for, diga por quê.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmacao
+    attributes:
+      label: Confirmação
+      options:
+        - label: Não incluí dado de caso real nesta issue.
+          required: true
+        - label: A proposta não faz o dossiê produzir conhecimento novo.
+          required: true
