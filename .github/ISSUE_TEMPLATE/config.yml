@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Execução de conteúdo no HTML, vazamento de sigilo ou falso verde do validador
+    url: https://github.com/Barkoski/dossie/security/advisories/new
+    about: Não abra issue pública. Use o relato privado de vulnerabilidade.
+  - name: Dúvida de uso, comandos e formatos de saída
+    url: https://github.com/Barkoski/dossie#uso
+    about: O README explica a instalação, os comandos e os formatos de exportação.

@@ -1,0 +1,82 @@
+name: Comportamento errado
+description: O dossiê afirmou algo sem lastro, escondeu uma pendência, ou o validador errou
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Antes de tudo: não cole dados de caso real, e não anexe um dossiê gerado a partir de caso real.** O HTML carrega o caso inteiro dentro dele.
+
+        Se o problema for execução de conteúdo no HTML, vazamento de sigilo ou falso verde do validador, **não abra issue** — use o relato privado em *Security*. Ver [SECURITY.md](../blob/master/SECURITY.md).
+
+  - type: textarea
+    id: o-que-aconteceu
+    attributes:
+      label: O que aconteceu
+      description: O que o dossiê produziu, já anonimizado. Cole a linha ou a seção problemática.
+    validations:
+      required: true
+
+  - type: textarea
+    id: o-que-deveria
+    attributes:
+      label: O que deveria ter acontecido
+      description: Qual regra foi contrariada. Cite o módulo, se souber.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Como reproduzir
+      description: O comando usado, e o tipo de análise que existia na conversa antes de invocar.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: comando
+    attributes:
+      label: Comando invocado
+      options:
+        - /dossie (completo)
+        - /dossie documentos
+        - /dossie triagem
+        - /dossie provas
+        - /dossie requisitos
+        - /dossie linha
+        - /dossie grafo
+        - /dossie relatorio
+        - /dossie salvar, atualizar ou consulta
+        - Outro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: onde
+    attributes:
+      label: Onde ocorreu
+      options:
+        - Claude Code
+        - Claude Desktop
+        - claude.ai
+        - Claude Cowork
+        - ChatGPT ou outra IA
+        - Outro
+    validations:
+      required: true
+
+  - type: input
+    id: versao
+    attributes:
+      label: Versão da skill
+      description: Veja em .claude-plugin/plugin.json, ou diga a data em que instalou.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmacao
+    attributes:
+      label: Confirmação
+      options:
+        - label: Não incluí dado de caso real nesta issue, nem anexei dossiê real.
+          required: true
