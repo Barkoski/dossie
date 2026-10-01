@@ -30,7 +30,7 @@ Regras:
 - **Origem na conversa** identifica a mensagem ou descricao de onde a linha foi extraida; nao substitui a localizacao probatoria.
 - **Conferir** e `SIM` obrigatorio quando: leitura veio de pagina digitalizada; ha numero, data ou valor que va para peca ou calculo; o titular nao e o requerente; a qualidade nao e `TEXTO NITIDO`; ou a prova e decisiva.
 
-Fechar a tabela com: **nenhuma linha foi conferida na fonte. A tabela e roteiro de conferencia.**
+Fechar a tabela com: **A tabela e roteiro de conferencia. Informar conferencias efetivamente registradas e o que permanece pendente.**
 
 Documento `NAO LIDO` **nao entra nesta tabela**. Vai para pendencias.
 
@@ -46,7 +46,7 @@ Requisito nao discutido na conversa entra com situacao `?` e lacuna `nao analisa
 | Data/Periodo | Evento | Grau | Fonte | Localizacao | Origem na conversa |
 |---|---|---|---|---|---|
 
-Ordem cronologica. Data aproximada vem com `~` e o grau rebaixado para `ALEGACAO`, salvo documento que a confirme.
+Ordem cronologica. Data aproximada preserva a indicacao original; a precisao temporal nao define o grau probatorio.
 
 Periodo em aberto: `desde 03/2019` ou `ate 12/2020`. Nao fechar intervalo por conta propria.
 
