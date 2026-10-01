@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dossie",
+  "version": "1.3.0",
+  "description": "Transforma analise juridica ja realizada em dossie estruturado, persistente e auditavel com indice documental, triagem, provas, requisitos, cronologia, grafo, relatorio, pendencias e validacao.",
+  "author": {
+    "name": "Lucas Barkoski",
+    "url": "https://github.com/Barkoski"
+  },
+  "homepage": "https://github.com/Barkoski/dossie",
+  "repository": "https://github.com/Barkoski/dossie",
+  "license": "MIT",
+  "keywords": [
+    "juridico",
+    "dossie",
+    "provas",
+    "cronologia",
+    "relatorio",
+    "previdenciario",
+    "auditoria"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Dossie Juridico Auditavel",
+        "shortDescription": "Estruture analises juridicas em dossies rastreaveis",
+        "longDescription": "Transforma a analise de um caso juridico ja presente na conversa em um dossie estruturado e auditavel, com indice documental, triagem, tabela de provas, requisitos, cronologia, grafo do caso, relatorio e pendencias. Nao pesquisa nem acrescenta fatos externos ao caso.",
+        "developerName": "Lucas Barkoski",
+        "category": "Productivity",
+        "capabilities": [
+          "Organizar analise juridica",
+          "Estruturar provas",
+          "Criar cronologia",
+          "Mapear requisitos e lacunas",
+          "Gerar relatorio auditavel"
+        ],
+        "websiteURL": "https://github.com/Barkoski/dossie",
+        "supportURL": "https://github.com/Barkoski/dossie/issues",
+        "privacyPolicyURL": "https://github.com/Barkoski/dossie/blob/master/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/Barkoski/dossie/blob/master/TERMS.md",
+        "defaultPrompt": [
+          "Use o Dossie Juridico Auditavel para estruturar esta analise sem acrescentar fatos externos.",
+          "Monte apenas a tabela de provas deste caso e indique o que esta sem fonte.",
+          "Crie a cronologia e o quadro requisito-prova-lacuna a partir do que ja foi analisado."
+        ]
+      },
+      "publication": {
+        "release_notes": "Primeira versao empacotada no formato portatil Agent Plugins da OpenAI, preservando a Skill /dossie v1.3."
+      }
+    }
+  }
+}
