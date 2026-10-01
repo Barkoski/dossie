@@ -1,9 +1,9 @@
 ---
 name: dossie
-description: Transforma uma analise juridica ja feita na conversa em dossie estruturado, persistente e auditavel, com indice e delimitacao de documentos, triagem, tabela de provas, requisitos, cronologia, grafo, relatorio, pendencias e consultas. Use quando o usuario pedir dossie, identificacao ou indice documental, classificacao de pecas, triagem processual, tabela ou quadro de provas, mapa ou grafo do caso, linha do tempo, relatorio, exportacao Markdown/JSON/HTML, atualizacao de dossie existente, caminho entre entidades, contradicoes, lacunas ou explicacao de item. Nao pesquisar nem acrescentar conhecimento externo ao caso.
+description: Organiza analise juridica da conversa ou documentos expressamente indicados em dossie estruturado, persistente e auditavel, com indice e delimitacao de documentos, triagem, tabela de provas, requisitos, cronologia, grafo, relatorio, pendencias e consultas. Use quando o usuario pedir dossie, identificacao ou indice documental, classificacao de pecas, triagem processual, tabela ou quadro de provas, mapa ou grafo do caso, linha do tempo, relatorio, exportacao Markdown/JSON/HTML, atualizacao de dossie existente, caminho entre entidades, contradicoes, lacunas ou explicacao de item. Nao pesquisar nem acrescentar conhecimento externo ao caso.
 ---
 
-# Dossie juridico — v1.3
+# Dossiê jurídico — revisão 1.4 (JSON 1.3 compatível)
 
 Transforma o que foi analisado na conversa em dossie estruturado: tabela de provas rastreavel, quadro de requisitos, cronologia, grafo do caso e relatorio.
 
@@ -34,7 +34,7 @@ Aceitar tambem pedidos em linguagem natural. Sem argumento, entregar o dossie co
 
 ## Principio inegociavel
 
-**O dossie nao produz conhecimento novo. Ele estrutura o que ja existe na conversa.**
+**O dossiê não inventa nem pesquisa conhecimento externo. Estrutura o material disponível no modo pedido: conversa ou documentos indicados.**
 
 Nao inferir fato, data, valor, pagina, parte ou documento que nao tenha sido dito. Nao completar lacuna com o que seria plausivel. Quando algo essencial faltar, o dossie mostra a falta — e essa e a sua funcao mais util.
 
@@ -44,9 +44,9 @@ Todo item carrega duas trilhas distintas: `origem_conversa` indica onde apareceu
 
 ### Passo 1 — Delimitar o caso
 
-Varrer a conversa e fixar: parte ou partes, materia, fase, decisao ou peca em discussao, e quais documentos foram efetivamente lidos. Se a conversa tratar de mais de um caso, perguntar qual antes de seguir. Nao misturar casos.
+Examinar o material disponivel e fixar: parte ou partes, materia, fase, decisao ou peca em discussao, e quais documentos foram efetivamente lidos. Se houver varios casos, usar o claramente indicado; perguntar apenas se persistir ambiguidade relevante. Nao misturar casos.
 
-Se a conversa nao contiver analise de caso nenhuma, dizer isso e parar. Nao inventar um caso para ter o que estruturar. Se houver mais de um caso e nao for possivel separa-los com seguranca, pedir ao usuario que escolha um.
+Se nao houver analise previa, mas o pedido indicar documentos para montar o dossie, ler os arquivos indicados localmente e registrar esse modo de origem e cobertura. Se nao houver nenhum material, informar o que falta; nao inventar caso. Se houver mais de um caso e nao for possivel separa-los com seguranca, pedir ao usuario que escolha um.
 
 ### Passo 2 — Extrair
 
@@ -85,6 +85,12 @@ Aplicar [references/validacao.md](references/validacao.md). Conferir integridade
 
 ## Sigilo
 
-O dossie e montado com o que ja esta na conversa. Nao buscar dado externo, nao consultar web, nao abrir conectores e nao enviar conteudo para fora para enriquecer o resultado.
+O dossie usa a conversa ou arquivos indicados para leitura local. Nao buscar dado externo, nao consultar web, nao abrir conectores e nao enviar conteudo para fora para enriquecer o resultado.
 
 Ao gerar arquivo, usar nome sem identificador pessoal e lembrar em uma linha que ele contem dados do caso e deve ser tratado como material sigiloso. Nao publicar, compartilhar ou enviar o arquivo sem pedido expresso.
+
+## Integração e modos
+
+Modo conversa apenas reorganiza o histórico disponível; modo documentos lê os arquivos expressamente indicados para produzir o dossiê, sem pesquisa jurídica externa. Registre `modo_origem` no caso. Não procure outras conversas por rotina. Para análise de mérito nova, use a skill jurídica pertinente quando disponível, sem bloquear a organização se ela faltar. No Codex, aceite `$dossie` e linguagem natural; a notação `/dossie` não pressupõe comando instalado.
+
+Mantenha separados original conferido, transcrição lida, fonte relatada e revisão humana. Dossiê parcial entrega o recorte solicitado e pendências pertinentes. Validar JSON não valida os fatos. Dados salvos localmente não tornam o modelo da conversa uma IA local. Para transpor JSON previdenciário, preserve IDs e fontes; as famílias documentais dos dois formatos são diferentes.

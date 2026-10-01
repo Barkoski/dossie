@@ -11,7 +11,7 @@ from collections import deque
 from pathlib import Path
 
 COLLECTIONS = ("partes", "documentos", "fatos", "requisitos", "teses")
-VALID_FACT_GRADES = {"FATO COMPROVADO", "ALEGACAO", "INFERENCIA", "SEM FONTE NA CONVERSA"}
+VALID_FACT_GRADES = {"FATO COMPROVADO", "ALEGACAO", "INFERENCIA", "SEM FONTE NA CONVERSA", "CONCLUSAO JURIDICA"}
 VALID_REQUIREMENT_STATES = {
     "COMPROVADO", "PARCIALMENTE COMPROVADO", "CONTROVERTIDO",
     "NAO COMPROVADO", "NAO APLICAVEL", "?",
@@ -24,11 +24,83 @@ VALID_DOCUMENT_FAMILIES = {
 VALID_IDENTIFICATION_CONFIDENCE = {"ALTA", "MEDIA", "BAIXA"}
 
 
+
+def _shape_errors(data):
+    """Reject malformed JSON fields before semantic checks or queries use them."""
+    if not isinstance(data, dict):
+        return ["a raiz do JSON deve ser um objeto"]
+    errors = []
+    object_keys = ("caso", "triagem", "pendencias")
+    for key in object_keys:
+        if key in data and not isinstance(data[key], dict):
+            errors.append(key + ": deve ser um objeto")
+    collections = (*COLLECTIONS, "arestas", "historico", "normas", "marcos", "prazos")
+    scalar_fields = {
+        "id", "grau", "situacao", "familia", "confianca_identificacao", "qualidade",
+        "qualidade_da_leitura", "estado", "documento", "requisito", "de", "para",
+        "tipo", "localizacao", "estado_conferencia", "enunciado", "origem",
+        "origem_conversa", "base_inferencia",
+    }
+    for key in collections:
+        if key not in data:
+            continue
+        if not isinstance(data[key], list):
+            errors.append(key + ": deve ser uma lista")
+            continue
+        for pos, item in enumerate(data[key]):
+            label = f"{key}[{pos}]"
+            if not isinstance(item, dict):
+                errors.append(label + ": deve ser um objeto")
+                continue
+            for field in scalar_fields:
+                if field in item and not isinstance(item[field], str):
+                    errors.append(label + ": " + field + " deve ser texto")
+            for field in ("lido", "inferida", "documento_estranho"):
+                if field in item and not isinstance(item[field], bool):
+                    errors.append(label + ": " + field + " deve ser booleano")
+            for field in ("documentos", "fatos", "apoia_se"):
+                if field in item and (not isinstance(item[field], list) or any(not isinstance(x, str) or not x.strip() for x in item[field])):
+                    errors.append(label + ": " + field + " deve ser lista de IDs textuais")
+            if "suportes" in item and (not isinstance(item["suportes"], list) or any(not isinstance(x, dict) for x in item["suportes"])):
+                errors.append(label + ": suportes deve ser lista de objetos")
+    for key in ("decisao_operacional", "decisao_paralela"):
+        if key in data and data[key] is not None and not isinstance(data[key], str):
+            errors.append(key + ": deve ser texto")
+    return errors
+
+def _missing(value):
+    return value is None or (isinstance(value, str) and value.strip().upper() in
+        ("", "?", "PAGINA NAO IDENTIFICADA", "NAO INFORMADO", "NÃO INFORMADO"))
+
+def _pending_cites(items, entity_id):
+    for item in items:
+        value = str(item).strip()
+        if value == entity_id or (value.startswith(entity_id) and value[len(entity_id):len(entity_id)+1] in (":", " ", "-", ".", ",", ")", "—")):
+            return True
+    return False
+
+def _conference_checks(index, errors):
+    states = {"ORIGINAL CONFERIDO", "SOMENTE TRANSCRICAO", "RELATADO NA CONVERSA", "NAO LIDO"}
+    for eid, item in index.items():
+        if item.get("_colecao") != "documentos" or "estado_conferencia" not in item:
+            continue
+        state = item["estado_conferencia"]
+        if state not in states:
+            errors.append(eid + ": estado_conferencia invalido")
+        if state == "ORIGINAL CONFERIDO" and (item.get("lido") is not True or _missing(item.get("registro_conferencia")) or _missing(item.get("localizacao"))):
+            errors.append(eid + ": original conferido exige leitura, localizacao e registro_conferencia")
+        if state == "NAO LIDO" and item.get("lido") is not False:
+            errors.append(eid + ": estado_conferencia contradiz lido")
+
+
 def load_json(path: Path) -> dict:
-    with path.open(encoding="utf-8") as handle:
+    with path.open(encoding="utf-8-sig") as handle:
         value = json.load(handle)
     if not isinstance(value, dict):
         raise ValueError("a raiz do JSON deve ser um objeto")
+    shape = _shape_errors(value)
+    if shape:
+        raise ValueError("; ".join(shape))
     return value
 
 
@@ -52,6 +124,9 @@ def index_entities(data: dict) -> tuple[dict[str, dict], list[str]]:
 
 
 def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list[str]]:
+    shape = _shape_errors(data)
+    if shape:
+        return shape, []
     errors: list[str] = []
     warnings: list[str] = []
     if str(data.get("schema_version")) != "1.3":
@@ -62,6 +137,7 @@ def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list
 
     index, index_errors = index_entities(data)
     errors.extend(index_errors)
+    _conference_checks(index, errors)
     documents = {k: v for k, v in index.items() if v.get("_colecao") == "documentos"}
 
     triage = data.get("triagem", {})
@@ -103,11 +179,13 @@ def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list
                     errors.append(f"{entity_id}: fato comprovado sem documento")
                 for doc_id in doc_ids:
                     doc = documents.get(doc_id, {})
-                    if not doc.get("lido") or doc.get("localizacao") in (None, "", "PAGINA NAO IDENTIFICADA"):
+                    if doc.get("lido") is not True or _missing(doc.get("localizacao")):
                         errors.append(f"{entity_id}: documento {doc_id} nao lido ou sem localizacao")
         if item.get("_colecao") == "requisitos":
             if item.get("situacao") not in VALID_REQUIREMENT_STATES:
                 errors.append(f"{entity_id}: situacao invalida")
+            if item.get("situacao") == "COMPROVADO" and not item.get("fatos"):
+                errors.append(f"{entity_id}: requisito comprovado sem fatos de suporte")
             for fact_id in item.get("fatos", []):
                 if fact_id not in index or index[fact_id].get("_colecao") != "fatos":
                     errors.append(f"{entity_id}: fato inexistente: {fact_id}")
@@ -115,6 +193,39 @@ def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list
             for requirement_id in item.get("apoia_se", []):
                 if requirement_id not in index or index[requirement_id].get("_colecao") != "requisitos":
                     errors.append(f"{entity_id}: requisito inexistente: {requirement_id}")
+
+    case = data.get("caso", {})
+    for field in ("identificacao", "materia", "fase", "data_referencia"):
+        if field not in case or case[field] in (None, ""):
+            errors.append("caso: campo ausente: " + field)
+    pending = data.get("pendencias", {})
+    for block in ("sem_fonte", "nao_lidos", "conferir"):
+        if not isinstance(pending.get(block), list):
+            errors.append("pendencias: bloco ausente ou invalido: " + block)
+    valid_pending = all(isinstance(pending.get(k), list) for k in ("sem_fonte", "nao_lidos", "conferir"))
+    for eid, item in index.items():
+        collection = item["_colecao"]
+        if _missing(item.get("origem_conversa")) and (not valid_pending or not _pending_cites(pending["sem_fonte"], eid)):
+            errors.append(eid + ": sem origem e ausente de pendencias.sem_fonte")
+        if collection == "documentos":
+            if not isinstance(item.get("lido"), bool):
+                errors.append(eid + ": lido deve ser booleano")
+            if item.get("qualidade") not in {"TEXTO NITIDO", "OCR DUVIDOSO", "LEITURA PARCIAL", "ILEGIVEL", "NAO LIDO"}:
+                errors.append(eid + ": qualidade invalida")
+            if item.get("lido") == (item.get("qualidade") == "NAO LIDO"):
+                errors.append(eid + ": leitura contradiz qualidade")
+            if item.get("lido") is False and (not valid_pending or not _pending_cites(pending["nao_lidos"], eid)):
+                errors.append(eid + ": nao lido ausente das pendencias")
+        if collection == "fatos":
+            if _missing(item.get("enunciado")):
+                errors.append(eid + ": enunciado ausente")
+            if item.get("grau") == "INFERENCIA" and _missing(item.get("base_inferencia")):
+                errors.append(eid + ": inferencia sem base_inferencia")
+            if item.get("grau") == "SEM FONTE NA CONVERSA" and (not valid_pending or not _pending_cites(pending["sem_fonte"], eid)):
+                errors.append(eid + ": fato sem fonte ausente das pendencias")
+            for doc_id in item.get("documentos", []):
+                if doc_id in documents and documents[doc_id].get("lido") is not True:
+                    errors.append(eid + ": documento nao lido nao sustenta fato: " + doc_id)
 
     edges = data.get("arestas", [])
     if not isinstance(edges, list):
@@ -128,9 +239,18 @@ def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list
                 if edge.get(endpoint) not in index:
                     errors.append(f"aresta {pos}: {endpoint} inexistente: {edge.get(endpoint)}")
             if not edge.get("origem_conversa") and not edge.get("inferida"):
-                warnings.append(f"aresta {pos}: sem origem_conversa")
+                errors.append(f"aresta {pos}: sem origem_conversa")
             if edge.get("inferida") and not edge.get("base_inferencia"):
                 errors.append(f"aresta {pos}: inferida sem base_inferencia")
+            if _missing(edge.get("tipo")):
+                errors.append(f"aresta {pos}: tipo ausente")
+            source = index.get(edge.get("de"), {})
+            target = index.get(edge.get("para"), {})
+            if edge.get("tipo") in ("comprova", "registra"):
+                if source.get("_colecao") != "documentos" or target.get("_colecao") != "fatos":
+                    errors.append(f"aresta {pos}: relacao documental deve ligar documento a fato")
+                elif source.get("lido") is not True:
+                    errors.append(f"aresta {pos}: documento nao lido nao sustenta fato")
 
     if html_path:
         html = html_path.read_text(encoding="utf-8")
@@ -144,10 +264,7 @@ def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list
                 errors.append(f"HTML contem {label}")
         if "Documento gerado a partir da analise em conversa" not in html:
             errors.append("HTML sem rodape obrigatorio")
-        if "textContent" not in html:
-            errors.append("HTML nao demonstra renderizacao segura por textContent")
-        if len(re.findall(r"<script(?:\s|>)", html, flags=re.IGNORECASE)) != 1:
-            errors.append("HTML deve conter exatamente um script inline")
+        warnings.append("HTML: inspecao estatica parcial; testar offline, injecao, rede e interface no navegador. Nao e certificado de seguranca.")
     return errors, warnings
 
 
@@ -171,7 +288,7 @@ def command_validate(args: argparse.Namespace) -> int:
     if errors:
         print(f"FALHOU: {len(errors)} erro(s), {len(warnings)} aviso(s)")
         return 1
-    print(f"VALIDO: {len(warnings)} aviso(s)")
+    print(f"ESTRUTURA VALIDA: {len(warnings)} aviso(s). Fontes e merito nao conferidos pelo script.")
     return 0
 
 

@@ -1,6 +1,6 @@
 # Extracao: da conversa para a estrutura
 
-Converter a analise feita na conversa em cinco entidades. Extrair somente o que foi dito. O que nao foi dito nao existe para o dossie.
+Converter o material do modo escolhido em cinco entidades. No modo conversa, extrair somente o que foi dito e esta disponivel; no modo documentos, somente o que foi efetivamente lido nos arquivos indicados. Nao acrescentar conhecimento externo.
 
 As cinco entidades servem tanto a processo administrativo quanto a processo judicial. O que muda entre eles:
 
@@ -38,6 +38,7 @@ Em caso judicial, incluir tambem como entidade `PARTE` o juizo e o perito quando
 - `ALEGACAO` — afirmado por alguem (parte, INSS, testemunha) sem documento que o sustente.
 - `INFERENCIA` — deduzido do conjunto, sem afirmacao direta. Registrar de que fatos foi deduzido.
 - `SEM FONTE NA CONVERSA` — apareceu na analise, mas nada na conversa diz de onde veio.
+- `CONCLUSAO JURIDICA` — avaliacao juridica ja presente no material; registrar origem, sem reclassificar como fato.
 
 O quarto grau e o mais importante do dossie. Ele nao e um erro a esconder: e o produto. Uma analise que gera muitas linhas assim esta mal ancorada, e o advogado precisa saber disso antes de levar o material adiante.
 
@@ -65,7 +66,7 @@ Documento que a conversa citou mas ninguem abriu entra como `NAO LIDO` e vai par
 
 ## Titular do documento
 
-Em nome de quem o documento foi emitido. Campo obrigatorio, e decisivo: documento em nome de terceiro sustenta prova por extensao, nao prova direta — e e frequentemente o ponto onde a parte contraria ataca.
+Em nome de quem o documento foi emitido. Campo obrigatorio, e decisivo: documento em nome de terceiro exige analise de pertinencia e alcance; nao sustenta extensao automaticamente — e e frequentemente o ponto onde a parte contraria ataca.
 
 Desconhecido: `?`. Nunca presumir que seja do requerente.
 
@@ -88,6 +89,8 @@ Nao criar aresta por semelhanca de tema, proximidade no texto ou coincidencia de
 
 ```json
 {
+  "schema_version": "1.3",
+  "historico": [],
   "caso": {
     "identificacao": "", "materia": "", "fase": "",
     "decisao_enfrentada": "", "data_referencia": ""
@@ -105,7 +108,7 @@ Nao criar aresta por semelhanca de tema, proximidade no texto ou coincidencia de
                   "confianca_identificacao":"","qualidade":"","lido":true,
                   "conteudo":"","origem_conversa":""}],
   "fatos":      [{"id":"F1","enunciado":"","data":"","grau":"",
-                  "documentos":["D1"],"origem_conversa":"","conferir":true}],
+                  "documentos":["D1"],"origem_conversa":"","base_inferencia":"","conferir":true}],
   "requisitos": [{"id":"R1","enunciado":"","situacao":"",
                   "fatos":["F1"],"lacuna":"","origem_conversa":""}],
   "teses":      [{"id":"T1","enunciado":"","polo":"",
@@ -131,3 +134,9 @@ Quando dois documentos se contradizerem, isso nao e erro de extracao: gerar ares
 - Nao duplicar entidade apenas por variacao de grafia; registrar alias em observacao.
 - Nao fundir homonimos ou documentos semelhantes sem base expressa.
 - Manter o mesmo enunciado e o mesmo grau em tabela, grafo, cronologia e relatorio.
+
+## Conferência e datas
+
+`origem_conversa` é o nome legado do campo de proveniência; no modo documentos pode registrar arquivo e página efetivamente lidos, sem inventar mensagem. Acrescente `estado_conferencia` e `registro_conferencia` ao documento quando disponíveis; valores: `ORIGINAL CONFERIDO`, `SOMENTE TRANSCRICAO`, `RELATADO NA CONVERSA`, `NAO LIDO`. Primeiro estado exige registro concreto; não inferi-lo de `lido: true`.
+
+Por fato, `suportes` pode detalhar documento, localização e trecho; revisão humana fica em registro separado. Data aproximada/ano/mês preserva a precisão original, sem inventar dia e sem rebaixar automaticamente o grau. A afirmação “o laudo conclui X” difere de “X ocorreu”.
