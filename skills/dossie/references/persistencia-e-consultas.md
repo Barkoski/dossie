@@ -39,7 +39,7 @@ Acrescentar ao esquema de [extracao.md](extracao.md):
 
 ## Migracao da versao 1.2
 
-Ao abrir `schema_version: "1.2"`, nao descartar dados. Criar `triagem` com `?` e listas vazias, acrescentar aos documentos os campos de identificacao descritos em [identificacao-documental.md](identificacao-documental.md), usando `?` e `INCERTA` quando o material nao permitir recuperar limites. Registrar a migracao no historico e somente entao alterar para `1.3`.
+Ao abrir `schema_version: "1.2"`, nao descartar dados. Criar `triagem` com `?` e listas vazias, acrescentar aos documentos os campos de identificacao descritos em [identificacao-documental.md](identificacao-documental.md), usando `?` para dado ausente e `BAIXA` para confianca nao recuperavel quando o material nao permitir recuperar limites. Registrar a migracao no historico e somente entao alterar para `1.3`.
 
 ## Consultas
 

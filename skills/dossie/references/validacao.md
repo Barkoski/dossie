@@ -27,7 +27,9 @@ Testar como texto inerte pelo menos estes valores ficticios:
 </script><script>alert(1)</script>
 <img src=x onerror=alert(1)>
 " ' ` & < >
-linha seguinte fim
+linha
+seguinte
+fim
 ```
 
 O arquivo deve abrir offline sem executar conteudo, requisitar rede ou quebrar o objeto de dados. Usar `textContent` para renderizar dados e serializacao segura dentro de `<script>`.
@@ -50,3 +52,7 @@ python scripts/dossie_tool.py validate dossie.json --html dossie.html
 ```
 
 O utilitario usa somente a biblioteca padrao. Tambem oferece `explain`, `path`, `contradictions` e `gaps`. A validacao humana continua necessaria para conferir a fonte probatoria; o script verifica estrutura, referencias e restricoes tecnicas, nao a veracidade do caso.
+
+## Limite da verificação automática
+
+A inspeção estática de HTML é triagem, não certificação de segurança nem teste visual. Ausência de erro não prova que abas, impressão, grafo e filtros funcionam. Testar no navegador quando disponível e declarar limitações. Um HTML seguro pode ter scripts separados e renderização por escape no gerador; não exigir a palavra textContent como prova de segurança. Conteúdo de exemplo malicioso exibido como texto não é execução.
