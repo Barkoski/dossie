@@ -6,9 +6,9 @@ Transforma a análise de um caso jurídico feita na conversa com uma IA em **dos
 
 Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previdenciarista.
 
-## Versão 1.3
+## Versão 1.4
 
-O plugin distribuído está na versão **1.3.0**.
+O plugin distribuído está na versão **1.4.0**.
 
 - índice documental com início, fim, resumo e confiança da identificação;
 - famílias documentais estáveis e tipo normalizado, sem depender de uma enumeração rígida;
