@@ -1,6 +1,6 @@
 {
   "name": "dossie",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Transforma analise juridica em dossie auditavel e persistente: indice documental, triagem, provas, requisitos, cronologia, grafo, relatorio, consultas e validacao deterministica. Sem dependencias externas.",
   "author": {
     "name": "Lucas Barkoski"
