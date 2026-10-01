@@ -26,7 +26,8 @@ class DossieToolTests(unittest.TestCase):
             self.example, ROOT / "examples" / "caso-ficticio.html"
         )
         self.assertEqual(errors, [])
-        self.assertEqual(warnings, [])
+        self.assertEqual(len(warnings), 1)
+        self.assertIn("inspecao estatica parcial", warnings[0])
 
     def test_duplicate_id_is_rejected(self):
         data = json.loads(json.dumps(self.example))
@@ -153,7 +154,7 @@ class DossieToolTests(unittest.TestCase):
         with patch.object(TOOL.sys, "argv", argv), redirect_stdout(output):
             status = TOOL.main()
         self.assertEqual(status, 0)
-        self.assertIn("VALIDO: 0 aviso(s)", output.getvalue())
+        self.assertIn("ESTRUTURA VALIDA: 1 aviso(s)", output.getvalue())
 
     def test_main_reports_missing_entity(self):
         argv = [
