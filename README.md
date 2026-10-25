@@ -6,9 +6,30 @@ Transforma a análise de um caso jurídico feita na conversa com uma IA em **dos
 
 Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previdenciarista.
 
-## Versão 1.4
+## Versão 1.5
 
-O plugin distribuído está na versão **1.4.0**.
+O plugin distribuído está na versão **1.5.0**.
+
+- painel Mapa claro, com busca sem acentos, zoom, cadeia selecionada e detalhes clicáveis;
+- histórico de navegação nas fichas e comparação de conflitos lado a lado;
+- vínculo temporário com PDF local para conferir a página indicada, sem upload;
+- conferências pessoais com responsável, data, observação e histórico, separadas da análise de origem;
+- salvamento no navegador e exportação/importação de backup para o mesmo dossiê;
+- relatório em linguagem humana para copiar, baixar ou imprimir;
+- HTML autocontido, sem rede, fontes remotas ou bibliotecas externas.
+
+### Gerar o painel
+
+```bash
+python skills/dossie/scripts/render_dashboard.py examples/caso-ficticio.json --output dossie-visual.html
+python skills/dossie/scripts/dossie_tool.py validate examples/caso-ficticio.json --html dossie-visual.html
+```
+
+Abra `dossie-visual.html` no navegador. O arquivo existente é preservado; use `--overwrite` somente para substituir uma saída intencionalmente. O exemplo contém somente dados fictícios.
+
+As conferências ficam neste navegador e não alteram os fatos nem a classificação de origem. Exporte um backup antes de limpar os dados ou trocar de dispositivo. O backup é vinculado ao conteúdo exato do dossiê; atualizações do JSON exigem conciliação humana. PDFs selecionados ficam vinculados apenas durante a sessão e precisam ser selecionados novamente ao reabrir o painel. Confira se o arquivo escolhido corresponde ao registro. O navegador pode abrir ou baixar o PDF e pode não respeitar a indicação de página.
+
+### Recursos preservados da versão 1.4
 
 - índice documental com início, fim, resumo e confiança da identificação;
 - famílias documentais estáveis e tipo normalizado, sem depender de uma enumeração rígida;

@@ -7,6 +7,7 @@ import argparse
 import json
 import re
 import sys
+from html.parser import HTMLParser
 from collections import deque
 from pathlib import Path
 
@@ -258,11 +259,24 @@ def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list
             (r"(?:src|href)\s*=\s*[\"']https?://|url\(\s*[\"']?https?://", "recurso externo"),
             (r"\bfetch\s*\(", "fetch"),
             (r"<script[^>]+src=", "script externo"),
-            (r"onerror\s*=|onclick\s*=", "evento inline"),
         ):
             if re.search(pattern, html, flags=re.IGNORECASE):
                 errors.append(f"HTML contem {label}")
-        if "Documento gerado a partir da analise em conversa" not in html:
+        class AttributeInspector(HTMLParser):
+            has_inline_event = False
+
+            def handle_starttag(self, tag, attrs):
+                if any(name.lower().startswith('on') for name, value in attrs):
+                    self.has_inline_event = True
+
+        inspector = AttributeInspector()
+        inspector.feed(html)
+        if inspector.has_inline_event:
+            errors.append("HTML contem evento inline")
+        if not any(footer in html for footer in (
+            "Documento gerado a partir da analise em conversa",
+            "Documento gerado a partir da análise disponível. Conferências e limites indicados por item.",
+        )):
             errors.append("HTML sem rodape obrigatorio")
         warnings.append("HTML: inspecao estatica parcial; testar offline, injecao, rede e interface no navegador. Nao e certificado de seguranca.")
     return errors, warnings
