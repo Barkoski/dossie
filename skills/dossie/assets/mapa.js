@@ -1,0 +1,40 @@
+// Interface Mapa: conexões explícitas, seleção contextual e navegação local.
+document.title='Mapa do caso / Dossiê';
+document.querySelector('.intro h1').textContent='Cada prova, no seu contexto.';
+document.querySelector('#requirements h2').textContent='Requisitos em análise.';
+document.querySelector('.intro h1').insertAdjacentElement('beforebegin',el('div','variant-label',''));
+const inspector=el('aside','inspector');inspector.setAttribute('aria-label','Detalhes da entidade selecionada');
+const inspectorTop=el('div','inspector-top'),inspectorLabel=el('span','','Em foco'),dot=el('i','status-dot');inspectorLabel.prepend(dot);inspectorTop.append(inspectorLabel,el('span','tiny','Explorar / conferir'));
+const inspectorBody=el('div','inspector-body');inspectorBody.id='inspector-body';inspectorBody.setAttribute('aria-live','polite');
+const inspectorFooter=el('div','inspector-footer');inspectorFooter.append(el('span','','Fontes antes de conclusões.'),action('Pendências',openPending,''));inspector.append(inspectorTop,inspectorBody,inspectorFooter);document.querySelector('.hero').append(inspector);
+const legend=el('div','map-legend');for(const title of ['Documentos','Fatos','Requisitos','Conflitos']){const item=el('span','',title);item.prepend(el('i'));legend.append(item)}document.querySelector('.map-bottom').before(legend);
+let mapZoom=1,mapPanX=0,mapPanY=0,mapPositions=new Map(),mapVisible=[],mapLayer,mapPaths=[],mapCurrent;
+const kindNames={partes:'Partes',documentos:'Documentos',fatos:'Fatos',requisitos:'Requisitos',teses:'Teses'};
+function inspectorField(name,value){const wrap=el('div','inspector-field');wrap.append(el('small','',name),el('div','',display(value)));inspectorBody.append(wrap)}
+function selectMapEntity(id){const item=index.get(id);if(!item)return;mapCurrent=id;graphSelected=id;inspectorBody.replaceChildren(el('div','inspector-id',kindNames[item.kind]+' / '+id),el('h3','',label(item)),badge(item.grau||item.situacao||item.qualidade||item.papel||'Registro'));
+ const summary=item.resumo||item.conteudo||item.lacuna;if(summary)inspectorBody.append(el('p','',summary));
+ const source=item.localizacao||item.origem_conversa;inspectorField('Origem registrada',source||'Não consta');
+ const direct=edges.filter(e=>e.de===id||e.para===id);const linked=new Set(direct.flatMap(e=>[e.de,e.para]).filter(other=>other!==id));
+ if(linked.size){const group=el('div','inspector-field'),buttons=el('div','inspector-links');group.append(el('small','','Conexões registradas'));for(const other of linked)if(index.has(other))buttons.append(action(other,()=>selectMapEntity(other),''));group.append(buttons);inspectorBody.append(group)}
+ inspectorBody.append(action('Abrir ficha completa ↗',()=>openEntity(id),'inspector-open'));
+ const neighbors=new Set([id,...linked]);$('graph').querySelectorAll('.node').forEach(node=>{node.classList.toggle('selected',node.dataset.id===id);node.classList.toggle('dim',!neighbors.has(node.dataset.id))});
+ for(const path of mapPaths)path.node.classList.toggle('dim',path.edge.de!==id&&path.edge.para!==id);
+}
+function mapTransform(){if(!mapLayer)return;mapLayer.style.transform='translate('+mapPanX+'px,'+mapPanY+'px) scale('+mapZoom+')';const output=$('map-zoom');if(output)output.textContent=Math.round(mapZoom*100)+'%'}
+function drawMapPaths(){for(const p of mapPaths){const a=mapPositions.get(p.edge.de),b=mapPositions.get(p.edge.para);if(!a||!b)continue;const x1=a.x*10,y1=a.y*5.6,x2=b.x*10,y2=b.y*5.6,mid=(x1+x2)/2;p.node.setAttribute('d',`M${x1},${y1} C${mid},${y1} ${mid},${y2} ${x2},${y2}`)}}
+renderGraph=function(){const graph=$('graph'),kind=$('graph-filter').value,filtered=entities.filter(x=>kind==='all'||x.kind===kind);mapVisible=filtered.slice(0,24);mapPositions=new Map();mapPaths=[];graph.replaceChildren();mapLayer=el('div','graph-layer');graph.append(mapLayer);const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 1000 560');svg.setAttribute('preserveAspectRatio','none');mapLayer.append(svg);
+ const activeKinds=collections.filter(k=>mapVisible.some(x=>x.kind===k));activeKinds.forEach((k,col)=>{const items=mapVisible.filter(x=>x.kind===k),x=activeKinds.length===1?50:10+col*80/(activeKinds.length-1),lane=el('span','lane-label',kindNames[k]);lane.style.left=x+'%';mapLayer.append(lane);items.forEach((item,i)=>mapPositions.set(item.id,{x,y:items.length===1?48:21+i*61/(items.length-1)}))});
+ for(const edge of edges){if(!mapPositions.has(edge.de)||!mapPositions.has(edge.para))continue;const path=document.createElementNS(svg.namespaceURI,'path');if(edge.tipo==='contradiz')path.classList.add('conflict');if(edge.inferida)path.classList.add('inferred');const title=document.createElementNS(svg.namespaceURI,'title');title.textContent=edge.de+' / '+edge.tipo+' / '+edge.para+(edge.inferida?' (inferida)':'');path.append(title);svg.append(path);mapPaths.push({node:path,edge})}
+ for(const item of mapVisible){const p=mapPositions.get(item.id),node=action('',()=>selectMapEntity(item.id),'node node-'+item.kind);node.dataset.id=item.id;node.style.left=p.x+'%';node.style.top=p.y+'%';node.setAttribute('aria-label',item.id+': '+label(item));node.append(el('b','',item.id+' / '+kindNames[item.kind]),el('span','node-label',label(item)));node.title=label(item);node.addEventListener('dblclick',()=>openEntity(item.id));node.addEventListener('keydown',event=>{if(event.key===' '){event.preventDefault();selectMapEntity(item.id)}});
+ let origin=null,moved=false;node.addEventListener('pointerdown',event=>{if(event.pointerType==='touch')return;origin={x:event.clientX,y:event.clientY,px:p.x,py:p.y};moved=false;node.setPointerCapture(event.pointerId)});node.addEventListener('pointermove',event=>{if(!origin)return;const bounds=mapLayer.getBoundingClientRect();if(Math.hypot(event.clientX-origin.x,event.clientY-origin.y)>4)moved=true;if(!moved)return;p.x=Math.max(8,Math.min(92,origin.px+(event.clientX-origin.x)/bounds.width*100));p.y=Math.max(15,Math.min(88,origin.py+(event.clientY-origin.y)/bounds.height*100));node.style.left=p.x+'%';node.style.top=p.y+'%';drawMapPaths()});node.addEventListener('pointerup',()=>{origin=null});node.addEventListener('pointercancel',()=>{origin=null});mapLayer.append(node)}
+ const controls=el('div','graph-tools');controls.setAttribute('aria-label','Controles de zoom');const zoomOut=action('−',()=>{mapZoom=Math.max(.65,mapZoom-.15);mapTransform()},''),zoomIn=action('+',()=>{mapZoom=Math.min(1.75,mapZoom+.15);mapTransform()},''),reset=action('↺',()=>{mapZoom=1;mapPanX=0;mapPanY=0;renderGraph()},'');zoomOut.setAttribute('aria-label','Diminuir zoom');zoomIn.setAttribute('aria-label','Aumentar zoom');reset.setAttribute('aria-label','Restaurar mapa');const output=el('output','','100%');output.id='map-zoom';controls.append(zoomOut,output,zoomIn,reset);graph.append(controls);
+ drawMapPaths();mapTransform();text('graph-count',mapVisible.length+' de '+entities.length+' entidades');text('graph-hint',matchMedia('(max-width:800px)').matches?'Deslize para explorar. Toque em um item para ver sua fonte.':'Selecione para explorar. Arraste os nós para organizar a leitura.');
+ const first=mapVisible.find(x=>x.id===mapCurrent)||mapVisible.find(x=>edges.some(e=>e.tipo==='contradiz'&&(e.de===x.id||e.para===x.id)))||mapVisible[0];if(first)selectMapEntity(first.id);else inspectorBody.replaceChildren(el('p','','Nenhuma entidade neste recorte.'));
+};
+$('graph-filter').onchange=()=>{mapZoom=1;mapPanX=0;mapPanY=0;renderGraph()};
+let panOrigin=null;
+$('graph').addEventListener('pointerdown',event=>{if(event.target.closest('button')||event.pointerType==='touch')return;panOrigin={x:event.clientX,y:event.clientY,px:mapPanX,py:mapPanY};$('graph').setPointerCapture(event.pointerId)});
+$('graph').addEventListener('pointermove',event=>{if(!panOrigin)return;mapPanX=panOrigin.px+event.clientX-panOrigin.x;mapPanY=panOrigin.py+event.clientY-panOrigin.y;mapTransform()});
+$('graph').addEventListener('pointerup',()=>{panOrigin=null});
+$('graph').addEventListener('pointercancel',()=>{panOrigin=null});
+renderGraph();
