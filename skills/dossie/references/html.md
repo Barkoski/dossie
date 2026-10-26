@@ -2,6 +2,18 @@
 
 ## Modelo interativo padrão
 
+### Recuperação documental da revisão 1.6
+
+Usar também `evidence.js` e `evidence.css`, incorporados pelo renderizador. Preservar a triagem visível, cobertura declarada, resumo documental com origem, teses com contra-argumentos, quadro requisito–prova–lacuna–risco, conteúdo concreto expansível dos documentos e filtros independentes por grau relacionado e conferência de origem. Não usar nome de pessoa, quantidade fixa de páginas ou conclusão de um caso como regra do template.
+
+Quando `marcos` existir e não estiver vazio, a cronologia deve usar todos esses registros, na ordem recebida, com `evento` (ou o legado `event`), data, fonte e localização. Não substituir essa coleção por fatos datados. Sem `marcos`, usar a cronologia dos fatos como alternativa. A coleção `contradicoes` contém textos explicativos que não podem ser descartados só porque existem arestas `contradiz`: mostrar ambas as representações sem fundi-las por ordem ou semelhança.
+
+O relatório inclui todos os marcos, textos de contradição, triagem e `resumo_documental`, além das entidades, relações e revisões pessoais. `origem_resumo_documental` deve indicar a origem da síntese; um texto importado não passa a ser conclusão novamente verificada.
+
+Para migrar um HTML legado, executar `python scripts/migrate_legacy_html.py antigo.html --output-json dossie-extraido.json`. O extrator lê apenas JSON reconhecido e texto literal de conclusão do relatório; não executa scripts. Preserva campos e coleções, recusa sobrescrever o JSON de saída e mantém o original. Validar o JSON e conferir o material antes de renderizar. Se o JSON não puder ser extraído, preservar o arquivo e informar a limitação.
+
+Em apresentação de caso real, manter aviso explícito de caso real com identificadores diretos suprimidos. Limpar nomes e identificadores em todos os campos, fontes, títulos, relatório e JSON incorporado, não apenas no texto visível. Conservar papéis, fontes e divergências; registrar supressões sem inventar substitutos factuais. Informar risco residual quando cronologia, áreas, valores ou combinação de eventos forem preservados. Nunca enviar o caso, o HTML de apresentação ou o mapa de substituições ao repositório da skill por rotina.
+
 Usar `scripts/render_dashboard.py` com os assets em `assets/` para gerar o arquivo a partir do JSON canônico. O padrão é Mapa claro, em branco e cinzas suaves, com cadeia selecionada, painel contextual, busca sem acentos, zoom e arraste. CSS e JavaScript são incorporados no HTML final; os arquivos auxiliares não precisam acompanhar a entrega. Comando: `python scripts/render_dashboard.py dossie.json --output dossie-caso.html`. A saída existente é preservada; `--overwrite` só quando a substituição tiver sido solicitada. Validar o JSON e a saída com `dossie_tool.py validate dossie.json --html dossie-caso.html`.
 
 ### Conferência pelo advogado
