@@ -1,0 +1,2500 @@
+{
+  "schema_version": "1.3",
+  "historico": [],
+  "caso": {
+    "identificacao": "Aposentadoria rural — recorte de caso real desidentificado",
+    "materia": "Direito previdenciário — segurada especial rural",
+    "fase": "indeferimento administrativo; avaliação de recurso",
+    "decisao_enfrentada": "Indeferimento de [DATA SUPRIMIDA], NB [NÚMERO DO BENEFÍCIO SUPRIMIDO]",
+    "data_referencia": "Suprimida na edição pública",
+    "modo_origem": "documentos e conversa",
+    "cobertura": "84 de 84 páginas examinadas"
+  },
+  "triagem": {
+    "tipo_procedimento": "requerimento administrativo de aposentadoria por idade rural",
+    "assunto_principal": "reconhecimento de atividade rural em regime de economia familiar",
+    "questao_central": "O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de atividade rural, apesar da prova em nome do companheiro e da área total declarada?",
+    "pontos_controvertidos": [
+      "participação ativa da requerente",
+      "efeito da área total de [QUANTIDADE SUPRIMIDA] ha",
+      "área efetivamente explorada de [QUANTIDADE SUPRIMIDA] ha",
+      "documentos em nome do companheiro",
+      "divergência de imóveis/localidades",
+      "endereço urbano e qualificação “do lar”",
+      "ausência de data de ciência"
+    ],
+    "palavras_chave": [
+      "aposentadoria rural",
+      "segurada especial",
+      "economia familiar",
+      "autodeclaração",
+      "prova material",
+      "área rural",
+      "recurso administrativo"
+    ],
+    "normas_invocadas": [
+      "EC 103/2019 — referência genérica na carta de indeferimento, PDF p. 52",
+      "Regra sobre período rural anterior a novembro de [ANO SUPRIMIDO] — menção genérica na carta, PDF p. 52"
+    ],
+    "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 1, 50-53, 72-75 e 82-84."
+  },
+  "partes": [
+    {
+      "id": "P1",
+      "nome": "[REQUERENTE]",
+      "natureza": "parte",
+      "papel": "requerente",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 1.",
+      "obs": "Titular do pedido administrativo."
+    },
+    {
+      "id": "P2",
+      "nome": "[COMPANHEIRO FALECIDO]",
+      "natureza": "parte",
+      "papel": "companheiro falecido e titular predominante das provas rurais",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 12-49.",
+      "obs": "Qualificado como agricultor na certidão de óbito."
+    },
+    {
+      "id": "P3",
+      "nome": "Instituto Nacional do Seguro Social — INSS",
+      "natureza": "ator_processual",
+      "papel": "órgão decisor administrativo",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 52-84.",
+      "obs": "Proferiu o indeferimento e gerou os relatórios internos."
+    }
+  ],
+  "documentos": [
+    {
+      "id": "D0",
+      "familia": "PROVA_LABORAL_PREVIDENCIARIA",
+      "tipo": "processo administrativo previdenciário completo",
+      "titular": "INSS",
+      "evento_inicio": "?",
+      "pagina_inicio": "1",
+      "evento_fim": "?",
+      "pagina_fim": "84",
+      "localizacao": "PDF pp. 1-84",
+      "resumo": "Relatório integral da tarefa administrativa de aposentadoria por idade rural.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Conjunto de 84 páginas contendo protocolo, documentos pessoais e rurais, autodeclaração, decisão, análises internas e CNIS.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 1-84.",
+      "estado_conferencia": "SOMENTE TRANSCRICAO",
+      "registro_conferencia": "Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D1",
+      "familia": "PROVA_LABORAL_PREVIDENCIARIA",
+      "tipo": "protocolo do requerimento",
+      "titular": "[REQUERENTE]",
+      "evento_inicio": "?",
+      "pagina_inicio": "1",
+      "evento_fim": "?",
+      "pagina_fim": "2",
+      "localizacao": "PDF pp. 1-2",
+      "resumo": "Protocolo da aposentadoria por idade rural, com DER, NB, identificação e lista de anexos.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "DER em [DATA SUPRIMIDA]; tarefa [PROTOCOLO SUPRIMIDO]; NB [NÚMERO DO BENEFÍCIO SUPRIMIDO]; data de nascimento [DATA PESSOAL SUPRIMIDA].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 1-2.",
+      "estado_conferencia": "SOMENTE TRANSCRICAO",
+      "registro_conferencia": "Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D2",
+      "familia": "PROVA_PESSOAL",
+      "tipo": "declaração de hipossuficiência",
+      "titular": "[REQUERENTE]",
+      "evento_inicio": "?",
+      "pagina_inicio": "3",
+      "evento_fim": "?",
+      "pagina_fim": "3",
+      "localizacao": "PDF p. 3",
+      "resumo": "Declaração subscrita pela requerente.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Documento datado de [DATA SUPRIMIDA] que qualifica a requerente como rurícola e informa endereço na [IMÓVEL RURAL PRINCIPAL].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 3.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D3",
+      "familia": "PROVA_CIVIL",
+      "tipo": "procuração",
+      "titular": "[REQUERENTE]",
+      "evento_inicio": "?",
+      "pagina_inicio": "4",
+      "evento_fim": "?",
+      "pagina_fim": "4",
+      "localizacao": "PDF p. 4",
+      "resumo": "Instrumento de mandato com qualificação e endereço.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Procuração datada de [DATA SUPRIMIDA]; qualifica a outorgante como rurícola e registra endereço na [IMÓVEL RURAL PRINCIPAL].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 4.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D4",
+      "familia": "PROVA_CIVIL",
+      "tipo": "documentos de identificação e representação",
+      "titular": "[REQUERENTE] / procurador",
+      "evento_inicio": "?",
+      "pagina_inicio": "5",
+      "evento_fim": "?",
+      "pagina_fim": "8",
+      "localizacao": "PDF pp. 5-8",
+      "resumo": "Carteira profissional, identidade e cópia de procuração.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Documentos de identificação da requerente e do procurador; procuração repetida nas páginas 7-8.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 5-8.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D5",
+      "familia": "OUTRO",
+      "tipo": "índice documental apresentado com o requerimento",
+      "titular": "[REQUERENTE]",
+      "evento_inicio": "?",
+      "pagina_inicio": "9",
+      "evento_fim": "?",
+      "pagina_fim": "11",
+      "localizacao": "PDF pp. 9-11",
+      "resumo": "Relação organizada de documentos rurais de [ANO SUPRIMIDO] a [ANO SUPRIMIDO].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Lista certidão de óbito, escritura, notas, recibos, energia rural e documentos do INDEA, com referência às páginas seguintes.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 9-11.",
+      "estado_conferencia": "SOMENTE TRANSCRICAO",
+      "registro_conferencia": "Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D6",
+      "familia": "PROVA_CIVIL",
+      "tipo": "certidão de óbito",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "12",
+      "evento_fim": "?",
+      "pagina_fim": "13",
+      "localizacao": "PDF pp. 12-13",
+      "resumo": "Certidão do óbito de [COMPANHEIRO FALECIDO], com profissão, residência e identificação da companheira.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Óbito em [DATA SUPRIMIDA]; profissão agricultor; residência urbana em [LOCALIDADE URBANA]; [REQUERENTE] é indicada como companheira.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 12-13.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D7",
+      "familia": "PROVA_CIVIL",
+      "tipo": "escritura pública de nomeação de inventariante",
+      "titular": "[ESPÓLIO DO COMPANHEIRO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "14",
+      "evento_fim": "?",
+      "pagina_fim": "17",
+      "localizacao": "PDF pp. 14-17",
+      "resumo": "Escritura que registra união estável, [DADO FAMILIAR SUPRIMIDO], qualificação e endereço da requerente.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Lavrada em [DATA SUPRIMIDA]; reconhece [REQUERENTE] como convivente, registra [DADO FAMILIAR SUPRIMIDO] e a qualifica como “do lar”, com endereço urbano em [LOCALIDADE URBANA].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 14-17.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D8",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "nota de peças de maquinário",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "18",
+      "evento_fim": "?",
+      "pagina_fim": "18",
+      "localizacao": "PDF p. 18",
+      "resumo": "Nota da [FORNECEDOR DE EQUIPAMENTOS] em nome de [COMPANHEIRO FALECIDO].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "MEDIA",
+      "qualidade": "LEITURA PARCIAL",
+      "lido": true,
+      "conteudo": "Documento de [ANO SUPRIMIDO] relativo a peças de maquinário; o endereço rural manuscrito não está plenamente legível.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 18.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D9",
+      "familia": "PROVA_RURAL",
+      "tipo": "comprovante de vacinação animal",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "19",
+      "evento_fim": "?",
+      "pagina_fim": "19",
+      "localizacao": "PDF p. 19",
+      "resumo": "Comprovante da [ENTIDADE SUPRIMIDA] vinculado a estabelecimento rural.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "MEDIA",
+      "qualidade": "LEITURA PARCIAL",
+      "lido": true,
+      "conteudo": "Documento de [ANO SUPRIMIDO] em nome de [COMPANHEIRO FALECIDO], [OUTRO IMÓVEL RURAL 1], [MUNICÍPIO RURAL 4].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 19.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D10",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "notas de produtos agropecuários e veterinários",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "20",
+      "evento_fim": "?",
+      "pagina_fim": "26",
+      "localizacao": "PDF pp. 20-26",
+      "resumo": "Conjunto de notas de [ANO SUPRIMIDO]-[ANO SUPRIMIDO] em nome de [COMPANHEIRO FALECIDO].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "MEDIA",
+      "qualidade": "LEITURA PARCIAL",
+      "lido": true,
+      "conteudo": "Registra insumos agropecuários, produtos veterinários e referências à [IMÓVEL RURAL PRINCIPAL] e a localidades em [MUNICÍPIO RURAL 1]/[MUNICÍPIO RURAL 3].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 20-26.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D11",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "faturas de energia rural",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "27",
+      "evento_fim": "?",
+      "pagina_fim": "30",
+      "localizacao": "PDF pp. 27-30",
+      "resumo": "Faturas rurais da [IMÓVEL RURAL PRINCIPAL], unidade [UNIDADE CONSUMIDORA SUPRIMIDA].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Referências de setembro a dezembro de [ANO SUPRIMIDO]; classificação rural e histórico de consumo desde outubro de [ANO SUPRIMIDO].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 27-30.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D12",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "nota de aquisição de itens rurais",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "31",
+      "evento_fim": "?",
+      "pagina_fim": "31",
+      "localizacao": "PDF p. 31",
+      "resumo": "Nota emitida para [COMPANHEIRO FALECIDO]/[IMÓVEL RURAL PRINCIPAL].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "MEDIA",
+      "qualidade": "LEITURA PARCIAL",
+      "lido": true,
+      "conteudo": "Documento datado de [DATA SUPRIMIDA] relativo a itens de uso rural.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 31.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D13",
+      "familia": "PROVA_RURAL",
+      "tipo": "certificado do INDEA de vacinação",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "32",
+      "evento_fim": "?",
+      "pagina_fim": "32",
+      "localizacao": "PDF p. 32",
+      "resumo": "Certificado oficial de vacinação de bezerras.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Registra [QUANTIDADE SUPRIMIDA] bezerras vacinadas contra brucelose em [DATA SUPRIMIDA], [IMÓVEL RURAL PRINCIPAL], registro estadual [REGISTRO ESTADUAL SUPRIMIDO]; emissão em [DATA SUPRIMIDA].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 32.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D14",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "recibo de compra de animais",
+      "titular": "?",
+      "evento_inicio": "?",
+      "pagina_inicio": "33",
+      "evento_fim": "?",
+      "pagina_fim": "33",
+      "localizacao": "PDF p. 33",
+      "resumo": "Recibo da [OUTRO IMÓVEL RURAL 2].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "BAIXA",
+      "qualidade": "LEITURA PARCIAL",
+      "lido": true,
+      "conteudo": "Documento de [DATA SUPRIMIDA], valor de [VALOR SUPRIMIDO] referente a [QUANTIDADE SUPRIMIDA] bezerros; o vínculo subjetivo precisa ser conferido no original.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 33.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D15",
+      "familia": "PROVA_RURAL",
+      "tipo": "nota fiscal de produtor rural",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "34",
+      "evento_fim": "?",
+      "pagina_fim": "34",
+      "localizacao": "PDF p. 34",
+      "resumo": "Nota oficial de venda de bezerros.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Emitida em [DATA SUPRIMIDA]; venda de [QUANTIDADE SUPRIMIDA] bezerros; valor total de [VALOR SUPRIMIDO]; inscrição estadual [INSCRIÇÃO ESTADUAL SUPRIMIDA]; endereço rural em [MUNICÍPIO RURAL 2].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 34.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D16",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "faturas e histórico anual de energia rural",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "35",
+      "evento_fim": "?",
+      "pagina_fim": "37",
+      "localizacao": "PDF pp. 35-37",
+      "resumo": "Contas e histórico da unidade rural.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Registros de consumo vinculados à [IMÓVEL RURAL PRINCIPAL] no ano de [ANO SUPRIMIDO].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 35-37.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D17",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "notas de insumos agropecuários",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "38",
+      "evento_fim": "?",
+      "pagina_fim": "40",
+      "localizacao": "PDF pp. 38-40",
+      "resumo": "Três notas da [FORNECEDOR DE INSUMOS] em [ANO SUPRIMIDO].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Compras para [COMPANHEIRO FALECIDO]/[IMÓVEL RURAL PRINCIPAL] em 07/02, 09/02 e [DATA SUPRIMIDA], nos valores de [VALOR SUPRIMIDO] [VALOR SUPRIMIDO] e [VALOR SUPRIMIDO]",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 38-40.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D18",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "nota fiscal eletrônica de sementes",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "41",
+      "evento_fim": "?",
+      "pagina_fim": "41",
+      "localizacao": "PDF p. 41",
+      "resumo": "NF-e de sementes destinada à [IMÓVEL RURAL PRINCIPAL].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Emitida em [DATA SUPRIMIDA]; valor total de [VALOR SUPRIMIDO]",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 41.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D19",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "nota fiscal eletrônica de óleo diesel",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "42",
+      "evento_fim": "?",
+      "pagina_fim": "42",
+      "localizacao": "PDF p. 42",
+      "resumo": "NF-e de combustível para a [IMÓVEL RURAL PRINCIPAL].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Emitida em [DATA SUPRIMIDA]; [QUANTIDADE SUPRIMIDA] litros de óleo diesel; valor total de [VALOR SUPRIMIDO]",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 42.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D20",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "nota fiscal eletrônica de insumos pecuários",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "43",
+      "evento_fim": "?",
+      "pagina_fim": "43",
+      "localizacao": "PDF p. 43",
+      "resumo": "NF-e de sal, mineral, milho e ureia.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Emitida em [DATA SUPRIMIDA]; valor total de [VALOR SUPRIMIDO]; destinatário vinculado à [IMÓVEL RURAL PRINCIPAL].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 43.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D21",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "nota fiscal eletrônica de ferramentas e produtos veterinários",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "44",
+      "evento_fim": "?",
+      "pagina_fim": "44",
+      "localizacao": "PDF p. 44",
+      "resumo": "NF-e de itens agropecuários diversos.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Emitida em [DATA SUPRIMIDA]; valor total de [VALOR SUPRIMIDO]; destinatário vinculado à [IMÓVEL RURAL PRINCIPAL].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 44.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D22",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "notas fiscais eletrônicas de ração e insumos",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "45",
+      "evento_fim": "?",
+      "pagina_fim": "46",
+      "localizacao": "PDF pp. 45-46",
+      "resumo": "Duas NF-e de produtos agropecuários em julho de [ANO SUPRIMIDO].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Documentos de [DATA SUPRIMIDA] e [DATA SUPRIMIDA], nos valores de [VALOR SUPRIMIDO] e [VALOR SUPRIMIDO]",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 45-46.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D23",
+      "familia": "PROVA_RURAL",
+      "tipo": "comunicação administrativa do INDEA",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "47",
+      "evento_fim": "?",
+      "pagina_fim": "47",
+      "localizacao": "PDF p. 47",
+      "resumo": "Comunicado relativo à vacinação contra brucelose.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Comunicação de [ANO SUPRIMIDO] por ausência de apresentação de relatório de vacinação da [IMÓVEL RURAL PRINCIPAL], etapa [DATA SUPRIMIDA].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 47.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D24",
+      "familia": "PROVA_ECONOMICA",
+      "tipo": "notas de medicamento veterinário e brita",
+      "titular": "[COMPANHEIRO FALECIDO]",
+      "evento_inicio": "?",
+      "pagina_inicio": "48",
+      "evento_fim": "?",
+      "pagina_fim": "49",
+      "localizacao": "PDF pp. 48-49",
+      "resumo": "Dois comprovantes de [ANO SUPRIMIDO] vinculados à [IMÓVEL RURAL PRINCIPAL].",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Compra de produtos veterinários em [DATA SUPRIMIDA], [VALOR SUPRIMIDO] e pedido de 18 unidades de brita em [DATA SUPRIMIDA], [VALOR SUPRIMIDO]",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 48-49.",
+      "estado_conferencia": "ORIGINAL CONFERIDO",
+      "registro_conferencia": "Conferência visual da página digitalizada em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D25",
+      "familia": "PROVA_PESSOAL",
+      "tipo": "autodeclaração do segurado especial rural",
+      "titular": "[REQUERENTE]",
+      "evento_inicio": "?",
+      "pagina_inicio": "50",
+      "evento_fim": "?",
+      "pagina_fim": "51",
+      "localizacao": "PDF pp. 50-51",
+      "resumo": "Autodeclaração de período e regime de trabalho rural.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Declara atividade de [DATA SUPRIMIDA] a [DATA SUPRIMIDA], economia familiar, condição de posseira, [IMÓVEL RURAL PRINCIPAL] com [QUANTIDADE SUPRIMIDA] ha totais e [QUANTIDADE SUPRIMIDA] ha explorados, criação/venda de gado, sem empregados ou outra atividade/renda.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 50-51.",
+      "estado_conferencia": "SOMENTE TRANSCRICAO",
+      "registro_conferencia": "Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D26",
+      "familia": "DECISAO",
+      "tipo": "carta de indeferimento",
+      "titular": "INSS",
+      "evento_inicio": "?",
+      "pagina_inicio": "52",
+      "evento_fim": "?",
+      "pagina_fim": "52",
+      "localizacao": "PDF p. 52",
+      "resumo": "Decisão administrativa comunicando o indeferimento.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Emitida em [DATA SUPRIMIDA]; denomina o pedido “aposentadoria programada”, invoca genericamente regras da EC 103/2019 e informa prazo recursal de 30 dias da ciência.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 52.",
+      "estado_conferencia": "SOMENTE TRANSCRICAO",
+      "registro_conferencia": "Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D27",
+      "familia": "PROVA_LABORAL_PREVIDENCIARIA",
+      "tipo": "perfis de cálculo e análise do benefício",
+      "titular": "INSS",
+      "evento_inicio": "?",
+      "pagina_inicio": "53",
+      "evento_fim": "?",
+      "pagina_fim": "74",
+      "localizacao": "PDF pp. 53-74",
+      "resumo": "Relatórios internos de carência, tempo e períodos rurais.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Registra zero carência/tempo, período rural de [DATA SUPRIMIDA] a [DATA SUPRIMIDA] como pendente e período de [DATA SUPRIMIDA] a [DATA SUPRIMIDA] como invalidado.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 53-74.",
+      "estado_conferencia": "SOMENTE TRANSCRICAO",
+      "registro_conferencia": "Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D28",
+      "familia": "ATO_PROCESSUAL",
+      "tipo": "despacho automatizado",
+      "titular": "INSS",
+      "evento_inicio": "?",
+      "pagina_inicio": "75",
+      "evento_fim": "?",
+      "pagina_fim": "75",
+      "localizacao": "PDF p. 75",
+      "resumo": "Despacho de conclusão da tarefa.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Registro automatizado datado de [DATA SUPRIMIDA].",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 75.",
+      "estado_conferencia": "SOMENTE TRANSCRICAO",
+      "registro_conferencia": "Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D29",
+      "familia": "PROVA_LABORAL_PREVIDENCIARIA",
+      "tipo": "extratos e consultas CNIS",
+      "titular": "[REQUERENTE]",
+      "evento_inicio": "?",
+      "pagina_inicio": "76",
+      "evento_fim": "?",
+      "pagina_fim": "81",
+      "localizacao": "PDF pp. 76-81",
+      "resumo": "Consultas previdenciárias vinculadas à requerente.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "CNIS cadastrado em [DATA SUPRIMIDA], sem vínculos ou contribuições; há bases listadas como não anexadas na página 81.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 76-81.",
+      "estado_conferencia": "SOMENTE TRANSCRICAO",
+      "registro_conferencia": "Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA]."
+    },
+    {
+      "id": "D30",
+      "familia": "PROVA_LABORAL_PREVIDENCIARIA",
+      "tipo": "análise automática do período de segurado especial",
+      "titular": "INSS",
+      "evento_inicio": "?",
+      "pagina_inicio": "82",
+      "evento_fim": "?",
+      "pagina_fim": "84",
+      "localizacao": "PDF pp. 82-84",
+      "resumo": "Resultado das validações automáticas da autodeclaração.",
+      "criterio_delimitacao": "Cabeçalho, conteúdo e sequência de páginas do processo administrativo.",
+      "confianca_identificacao": "ALTA",
+      "qualidade": "TEXTO NITIDO",
+      "lido": true,
+      "conteudo": "Invalida [DATA SUPRIMIDA] a [DATA SUPRIMIDA] por “exploração da atividade rural em área superior a 4 módulos fiscais” e mantém [DATA SUPRIMIDA] a [DATA SUPRIMIDA] pendente.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 82-84.",
+      "estado_conferencia": "SOMENTE TRANSCRICAO",
+      "registro_conferencia": "Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA]."
+    }
+  ],
+  "fatos": [
+    {
+      "id": "F1",
+      "enunciado": "[REQUERENTE] nasceu em [DATA PESSOAL SUPRIMIDA] e tinha [IDADE SUPRIMIDA] na DER.",
+      "data": "[DATA PESSOAL SUPRIMIDA] e [DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D1"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F2",
+      "enunciado": "A requerente apresentou pedido de aposentadoria por idade rural em [DATA SUPRIMIDA].",
+      "data": "[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D1"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F3",
+      "enunciado": "A certidão de óbito identifica [REQUERENTE] como companheira de [COMPANHEIRO FALECIDO], qualificado como agricultor.",
+      "data": "[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D6"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F4",
+      "enunciado": "A escritura registra união estável, [DADO FAMILIAR SUPRIMIDO] e qualifica [REQUERENTE] como “do lar”, com endereço urbano em [LOCALIDADE URBANA].",
+      "data": "[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D7"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F5",
+      "enunciado": "Há documentos rurais em nome de [COMPANHEIRO FALECIDO] desde [ANO SUPRIMIDO], com referências a imóveis/localidades diferentes antes da consolidação documental na [IMÓVEL RURAL PRINCIPAL].",
+      "data": "[ANO SUPRIMIDO]-[ANO SUPRIMIDO]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D8",
+        "D9",
+        "D10"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F6",
+      "enunciado": "Faturas registram energia classificada como rural na [IMÓVEL RURAL PRINCIPAL] e histórico de consumo desde outubro de [ANO SUPRIMIDO].",
+      "data": "[ANO SUPRIMIDO]-[ANO SUPRIMIDO]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D11",
+        "D16"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F7",
+      "enunciado": "O INDEA registrou vacinação de [QUANTIDADE SUPRIMIDA] bezerras na [IMÓVEL RURAL PRINCIPAL].",
+      "data": "[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D13"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F8",
+      "enunciado": "Nota fiscal de produtor registra venda de [QUANTIDADE SUPRIMIDA] bezerros por [VALOR SUPRIMIDO]",
+      "data": "[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D15"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F9",
+      "enunciado": "Notas em nome de [COMPANHEIRO FALECIDO] registram aquisição de insumos agropecuários em [ANO SUPRIMIDO].",
+      "data": "[ANO SUPRIMIDO]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D17"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F10",
+      "enunciado": "Notas em nome de [COMPANHEIRO FALECIDO] registram sementes, [QUANTIDADE SUPRIMIDA] litros de diesel, insumos, ferramentas e produtos veterinários em [ANO SUPRIMIDO]-[ANO SUPRIMIDO].",
+      "data": "[ANO SUPRIMIDO]-[ANO SUPRIMIDO]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D18",
+        "D19",
+        "D20",
+        "D21",
+        "D22"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F11",
+      "enunciado": "O comunicado do INDEA de [ANO SUPRIMIDO] vincula [COMPANHEIRO FALECIDO] à [IMÓVEL RURAL PRINCIPAL] e registra ausência de relatório de vacinação.",
+      "data": "[ANO SUPRIMIDO]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D23"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F12",
+      "enunciado": "Comprovantes de [ANO SUPRIMIDO] registram compra de produto veterinário e brita em nome de [COMPANHEIRO FALECIDO]/[IMÓVEL RURAL PRINCIPAL].",
+      "data": "[ANO SUPRIMIDO]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D24"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F13",
+      "enunciado": "A autodeclaração informa trabalho rural de [DATA SUPRIMIDA] a [DATA SUPRIMIDA], [QUANTIDADE SUPRIMIDA] ha totais, [QUANTIDADE SUPRIMIDA] ha explorados, gado e ausência de empregados ou outra renda.",
+      "data": "[DATA SUPRIMIDA]-[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D25"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F14",
+      "enunciado": "O conteúdo material da afirmação de que [REQUERENTE] trabalhou pessoalmente em regime de economia familiar durante todo o período declarado depende de corroboração.",
+      "data": "[DATA SUPRIMIDA]-[DATA SUPRIMIDA]",
+      "grau": "ALEGACAO",
+      "documentos": [
+        "D25"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F15",
+      "enunciado": "O CNIS examinado não registra vínculos ou contribuições da requerente.",
+      "data": "Consulta constante do processo de [ANO SUPRIMIDO]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D29"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F16",
+      "enunciado": "O INSS manteve pendente o período rural de [DATA SUPRIMIDA] a [DATA SUPRIMIDA].",
+      "data": "[DATA SUPRIMIDA]-[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D27",
+        "D30"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F17",
+      "enunciado": "O INSS invalidou o período de [DATA SUPRIMIDA] a [DATA SUPRIMIDA] por área superior a quatro módulos fiscais.",
+      "data": "[DATA SUPRIMIDA]-[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D27",
+        "D30"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F18",
+      "enunciado": "A carta de indeferimento foi emitida em [DATA SUPRIMIDA] sob a rubrica genérica de aposentadoria programada.",
+      "data": "[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D26"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F19",
+      "enunciado": "Não foi localizada exigência nas 84 páginas do processo administrativo examinado.",
+      "data": "[DATA SUPRIMIDA]-[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D0"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F20",
+      "enunciado": "A decisão foi emitida dois dias após a DER.",
+      "data": "[DATA SUPRIMIDA]-[DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D1",
+        "D26"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F21",
+      "enunciado": "A data de ciência do indeferimento não consta nas 84 páginas examinadas.",
+      "data": "Após [DATA SUPRIMIDA]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D0",
+        "D26"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F22",
+      "enunciado": "A maior parte da prova econômica e rural juntada está em nome de [COMPANHEIRO FALECIDO], não de [REQUERENTE].",
+      "data": "[ANO SUPRIMIDO]-[ANO SUPRIMIDO]",
+      "grau": "FATO COMPROVADO",
+      "documentos": [
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "D15",
+        "D16",
+        "D17",
+        "D18",
+        "D19",
+        "D20",
+        "D21",
+        "D22",
+        "D23",
+        "D24"
+      ],
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "base_inferencia": "",
+      "conferir": true
+    },
+    {
+      "id": "F23",
+      "enunciado": "O fluxo decisório aparenta ter sido predominantemente automático e sem apreciação individualizada do acervo.",
+      "data": "[DATA SUPRIMIDA]-[DATA SUPRIMIDA]",
+      "grau": "INFERENCIA",
+      "documentos": [
+        "D26",
+        "D27",
+        "D28",
+        "D30"
+      ],
+      "origem_conversa": "Análise jurídica anterior registrada nesta conversa, baseada no intervalo entre DER e decisão e nos relatórios automáticos do PDF pp. 52-84.",
+      "base_inferencia": "Decisão em dois dias, perfis zerados, despacho automatizado e tela de validação automática.",
+      "conferir": true
+    },
+    {
+      "id": "F24",
+      "enunciado": "Os documentos em nome de [COMPANHEIRO FALECIDO] podem integrar o início de prova material do núcleo familiar, mas não demonstram isoladamente a participação ativa de [REQUERENTE].",
+      "data": "[ANO SUPRIMIDO]-[ANO SUPRIMIDO]",
+      "grau": "CONCLUSAO JURIDICA",
+      "documentos": [
+        "D3",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D13",
+        "D15",
+        "D17",
+        "D18",
+        "D19",
+        "D20",
+        "D21",
+        "D22",
+        "D23",
+        "D24"
+      ],
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "base_inferencia": "",
+      "conferir": true
+    }
+  ],
+  "requisitos": [
+    {
+      "id": "R1",
+      "enunciado": "Idade mínima rural feminina",
+      "situacao": "COMPROVADO",
+      "fatos": [
+        "F1"
+      ],
+      "lacuna": "Nenhuma lacuna identificada no material examinado.",
+      "risco": "Baixo no recorte documental.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 1."
+    },
+    {
+      "id": "R2",
+      "enunciado": "Carência de 180 meses de atividade rural",
+      "situacao": "CONTROVERTIDO",
+      "fatos": [
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9",
+        "F10",
+        "F12",
+        "F13",
+        "F14",
+        "F16",
+        "F17"
+      ],
+      "lacuna": "Ausência de documentos diretos para parte de [ANO SUPRIMIDO]-[ANO SUPRIMIDO] e necessidade de demonstrar continuidade e participação pessoal.",
+      "risco": "O INSS computou zero meses e manteve/inviabilizou todo o período.",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84."
+    },
+    {
+      "id": "R3",
+      "enunciado": "Participação ativa e pessoal da requerente na atividade rural",
+      "situacao": "CONTROVERTIDO",
+      "fatos": [
+        "F3",
+        "F4",
+        "F13",
+        "F14",
+        "F22",
+        "F24"
+      ],
+      "lacuna": "Quase toda a prova está em nome do companheiro; faltam documentos próprios e prova oral sobre tarefas, rotina e período.",
+      "risco": "A escritura a qualifica como “do lar” e registra endereço urbano.",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 12-17, 18-51."
+    },
+    {
+      "id": "R4",
+      "enunciado": "Regime de economia familiar",
+      "situacao": "CONTROVERTIDO",
+      "fatos": [
+        "F7",
+        "F8",
+        "F10",
+        "F13",
+        "F14",
+        "F17"
+      ],
+      "lacuna": "Faltam registros completos de área efetivamente utilizada, renda, rebanho, mão de obra e estrutura produtiva.",
+      "risco": "Área total de [QUANTIDADE SUPRIMIDA] ha e compras relevantes permitem objeção sobre escala econômica.",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 32, 34, 41-46, 50-51 e 82-84."
+    },
+    {
+      "id": "R5",
+      "enunciado": "Início de prova material contemporânea",
+      "situacao": "PARCIALMENTE COMPROVADO",
+      "fatos": [
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9",
+        "F10",
+        "F11",
+        "F12",
+        "F22"
+      ],
+      "lacuna": "Predominância de titularidade de terceiro e divergências de imóveis/localidades.",
+      "risco": "A comunicação da prova ao núcleo depende de demonstrar efetiva vida e trabalho em comum.",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 18-49."
+    },
+    {
+      "id": "R6",
+      "enunciado": "Tempestividade do recurso administrativo",
+      "situacao": "?",
+      "fatos": [
+        "F18",
+        "F21"
+      ],
+      "lacuna": "Data de ciência não consta no processo examinado.",
+      "risco": "Não é possível calcular o termo final apenas pela emissão da carta.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 52 e ausência constatada nas pp. 1-84."
+    }
+  ],
+  "teses": [
+    {
+      "id": "T1",
+      "enunciado": "O indeferimento deve ser revisto porque a motivação não enfrentou concretamente o pedido rural nem as provas juntadas.",
+      "polo": "requerente",
+      "apoia_se": [
+        "R2",
+        "R5"
+      ],
+      "forca": "Relevante, condicionada à verificação do fluxo administrativo completo.",
+      "contra_argumento": "O INSS pode sustentar que a validação automática registrou causa objetiva suficiente para o resultado.",
+      "origem_conversa": "Conclusão jurídica da análise anterior; PDF pp. 52-84."
+    },
+    {
+      "id": "T2",
+      "enunciado": "A área total do imóvel não deveria ter sido usada isoladamente para invalidar o período rural.",
+      "polo": "requerente",
+      "apoia_se": [
+        "R4"
+      ],
+      "forca": "Relevante segundo a análise jurídica anterior, mas depende de prova da realidade produtiva.",
+      "contra_argumento": "O INSS pode invocar a área total e as compras de diesel/insumos como sinais de escala incompatível.",
+      "origem_conversa": "Conclusão jurídica da análise anterior; autodeclaração nas pp. 50-51 e motivo automático nas pp. 82-84."
+    },
+    {
+      "id": "T3",
+      "enunciado": "Os documentos em nome do companheiro podem servir ao núcleo familiar, desde que se prove a participação ativa de [REQUERENTE].",
+      "polo": "requerente",
+      "apoia_se": [
+        "R3",
+        "R5"
+      ],
+      "forca": "Defensável, mas atualmente limitada pela prova direta da atuação pessoal.",
+      "contra_argumento": "A qualificação “do lar”, o endereço urbano e a falta de documentos próprios podem afastar a extensão subjetiva.",
+      "origem_conversa": "Conclusão jurídica da análise anterior; PDF pp. 12-49."
+    },
+    {
+      "id": "T4",
+      "enunciado": "O INSS sustenta que nenhum período rural pode ser computado: o anterior ficou pendente e o posterior foi invalidado pela área.",
+      "polo": "INSS",
+      "apoia_se": [
+        "R2",
+        "R4"
+      ],
+      "forca": "Fundamento efetivamente registrado nos relatórios internos.",
+      "contra_argumento": "A análise anterior aponta ausência de apreciação individualizada e insuficiência do critério isolado da área.",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 53, 72-73 e 82-84."
+    }
+  ],
+  "arestas": [
+    {
+      "de": "D1",
+      "para": "F1",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D1",
+      "para": "F2",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D6",
+      "para": "F3",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D7",
+      "para": "F4",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D8",
+      "para": "F5",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D9",
+      "para": "F5",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D10",
+      "para": "F5",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D11",
+      "para": "F6",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D16",
+      "para": "F6",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D13",
+      "para": "F7",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D15",
+      "para": "F8",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D17",
+      "para": "F9",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D18",
+      "para": "F10",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D19",
+      "para": "F10",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D20",
+      "para": "F10",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D21",
+      "para": "F10",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D22",
+      "para": "F10",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D23",
+      "para": "F11",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D24",
+      "para": "F12",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D25",
+      "para": "F13",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D25",
+      "para": "F14",
+      "tipo": "registra",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D29",
+      "para": "F15",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D27",
+      "para": "F16",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D30",
+      "para": "F16",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D27",
+      "para": "F17",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D30",
+      "para": "F17",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D26",
+      "para": "F18",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D0",
+      "para": "F19",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D1",
+      "para": "F20",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D26",
+      "para": "F20",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D0",
+      "para": "F21",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D26",
+      "para": "F21",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D8",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D9",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D10",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D11",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D12",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D13",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D15",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D16",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D17",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D18",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D19",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D20",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D21",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D22",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D23",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D24",
+      "para": "F22",
+      "tipo": "comprova",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D26",
+      "para": "F23",
+      "tipo": "registra",
+      "origem_conversa": "Análise jurídica anterior registrada nesta conversa, baseada no intervalo entre DER e decisão e nos relatórios automáticos do PDF pp. 52-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D27",
+      "para": "F23",
+      "tipo": "registra",
+      "origem_conversa": "Análise jurídica anterior registrada nesta conversa, baseada no intervalo entre DER e decisão e nos relatórios automáticos do PDF pp. 52-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D28",
+      "para": "F23",
+      "tipo": "registra",
+      "origem_conversa": "Análise jurídica anterior registrada nesta conversa, baseada no intervalo entre DER e decisão e nos relatórios automáticos do PDF pp. 52-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D30",
+      "para": "F23",
+      "tipo": "registra",
+      "origem_conversa": "Análise jurídica anterior registrada nesta conversa, baseada no intervalo entre DER e decisão e nos relatórios automáticos do PDF pp. 52-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D3",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D6",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D7",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D8",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D9",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D10",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D11",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D13",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D15",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D17",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D18",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D19",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D20",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D21",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D22",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D23",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "D24",
+      "para": "F24",
+      "tipo": "registra",
+      "origem_conversa": "Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F1",
+      "para": "R1",
+      "tipo": "sustenta",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 1.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F5",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F6",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F7",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F8",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F9",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F10",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F12",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F13",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F14",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F16",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F17",
+      "para": "R2",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F3",
+      "para": "R3",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 12-17, 18-51.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F4",
+      "para": "R3",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 12-17, 18-51.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F13",
+      "para": "R3",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 12-17, 18-51.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F14",
+      "para": "R3",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 12-17, 18-51.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F22",
+      "para": "R3",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 12-17, 18-51.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F24",
+      "para": "R3",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 12-17, 18-51.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F7",
+      "para": "R4",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 32, 34, 41-46, 50-51 e 82-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F8",
+      "para": "R4",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 32, 34, 41-46, 50-51 e 82-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F10",
+      "para": "R4",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 32, 34, 41-46, 50-51 e 82-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F13",
+      "para": "R4",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 32, 34, 41-46, 50-51 e 82-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F14",
+      "para": "R4",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 32, 34, 41-46, 50-51 e 82-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F17",
+      "para": "R4",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 32, 34, 41-46, 50-51 e 82-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F5",
+      "para": "R5",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 18-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F6",
+      "para": "R5",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 18-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F7",
+      "para": "R5",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 18-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F8",
+      "para": "R5",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 18-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F9",
+      "para": "R5",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 18-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F10",
+      "para": "R5",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 18-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F11",
+      "para": "R5",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 18-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F12",
+      "para": "R5",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 18-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F22",
+      "para": "R5",
+      "tipo": "sustenta",
+      "origem_conversa": "Análise anterior desta conversa; PDF pp. 18-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F18",
+      "para": "R6",
+      "tipo": "sustenta",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 52 e ausência constatada nas pp. 1-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F21",
+      "para": "R6",
+      "tipo": "sustenta",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 52 e ausência constatada nas pp. 1-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "R2",
+      "para": "T1",
+      "tipo": "compõe",
+      "origem_conversa": "Conclusão jurídica da análise anterior; PDF pp. 52-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "R5",
+      "para": "T1",
+      "tipo": "compõe",
+      "origem_conversa": "Conclusão jurídica da análise anterior; PDF pp. 52-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "R4",
+      "para": "T2",
+      "tipo": "compõe",
+      "origem_conversa": "Conclusão jurídica da análise anterior; autodeclaração nas pp. 50-51 e motivo automático nas pp. 82-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "R3",
+      "para": "T3",
+      "tipo": "compõe",
+      "origem_conversa": "Conclusão jurídica da análise anterior; PDF pp. 12-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "R5",
+      "para": "T3",
+      "tipo": "compõe",
+      "origem_conversa": "Conclusão jurídica da análise anterior; PDF pp. 12-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "R2",
+      "para": "T4",
+      "tipo": "compõe",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 53, 72-73 e 82-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "R4",
+      "para": "T4",
+      "tipo": "compõe",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 53, 72-73 e 82-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P1",
+      "para": "D1",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 1-2.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P1",
+      "para": "D2",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 3.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P1",
+      "para": "D3",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 4.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P1",
+      "para": "D4",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 5-8.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P1",
+      "para": "D5",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 9-11.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P1",
+      "para": "D25",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 50-51.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P1",
+      "para": "D29",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 76-81.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D6",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 12-13.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D8",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 18.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D9",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 19.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D10",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 20-26.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D11",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 27-30.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D12",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 31.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D13",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 32.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D15",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 34.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D16",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 35-37.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D17",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 38-40.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D18",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 41.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D19",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 42.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D20",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 43.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D21",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 44.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D22",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 45-46.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D23",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 47.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P2",
+      "para": "D24",
+      "tipo": "titulariza",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 48-49.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P3",
+      "para": "D0",
+      "tipo": "produz",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 1-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P3",
+      "para": "D26",
+      "tipo": "produz",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 52.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P3",
+      "para": "D27",
+      "tipo": "produz",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 53-74.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P3",
+      "para": "D28",
+      "tipo": "produz",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 75.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "P3",
+      "para": "D30",
+      "tipo": "produz",
+      "origem_conversa": "processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 82-84.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F4",
+      "para": "F14",
+      "tipo": "contradiz",
+      "origem_conversa": "Análise anterior desta conversa; confronto entre PDF pp. 14-17 e 50-51.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F5",
+      "para": "F13",
+      "tipo": "contradiz",
+      "origem_conversa": "Análise anterior desta conversa; confronto entre PDF pp. 18-26 e 50-51.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "F10",
+      "para": "F14",
+      "tipo": "contradiz",
+      "origem_conversa": "Análise anterior desta conversa; dimensão das compras nas pp. 41-46 confrontada com o regime declarado nas pp. 50-51.",
+      "inferida": true,
+      "base_inferencia": "As compras podem ser usadas como objeção de escala, mas não provam, isoladamente, exploração empresarial."
+    },
+    {
+      "de": "T1",
+      "para": "T4",
+      "tipo": "opõe-se a",
+      "origem_conversa": "Teses em confronto registradas na análise anterior desta conversa.",
+      "inferida": false,
+      "base_inferencia": ""
+    },
+    {
+      "de": "T2",
+      "para": "T4",
+      "tipo": "opõe-se a",
+      "origem_conversa": "Teses em confronto registradas na análise anterior desta conversa.",
+      "inferida": false,
+      "base_inferencia": ""
+    }
+  ],
+  "marcos": [
+    {
+      "data": "[DATA SUPRIMIDA]",
+      "evento": "Data inicial de atividade declarada; [relação com dado familiar suprimida].",
+      "grau": "ALEGACAO",
+      "fonte": "D25 e D7",
+      "localizacao": "PDF pp. 50-51 e 14-17"
+    },
+    {
+      "data": "[ANO SUPRIMIDO]",
+      "evento": "Nota de peças de maquinário em nome de [COMPANHEIRO FALECIDO].",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D8",
+      "localizacao": "PDF p. 18"
+    },
+    {
+      "data": "[ANO SUPRIMIDO]",
+      "evento": "Comprovante de vacinação em estabelecimento rural de [MUNICÍPIO RURAL 4].",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D9",
+      "localizacao": "PDF p. 19"
+    },
+    {
+      "data": "[ANO SUPRIMIDO]-[ANO SUPRIMIDO]",
+      "evento": "Notas de insumos rurais em nome de [COMPANHEIRO FALECIDO], com referências territoriais diversas.",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D10",
+      "localizacao": "PDF pp. 20-26"
+    },
+    {
+      "data": "[ANO SUPRIMIDO]-[ANO SUPRIMIDO]",
+      "evento": "Energia rural na [IMÓVEL RURAL PRINCIPAL], com histórico desde outubro de [ANO SUPRIMIDO].",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D11",
+      "localizacao": "PDF pp. 27-30"
+    },
+    {
+      "data": "[DATA SUPRIMIDA]",
+      "evento": "Venda de [QUANTIDADE SUPRIMIDA] bezerros por [VALOR SUPRIMIDO]",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D15",
+      "localizacao": "PDF p. 34"
+    },
+    {
+      "data": "[DATA SUPRIMIDA]",
+      "evento": "Vacinação de [QUANTIDADE SUPRIMIDA] bezerras na [IMÓVEL RURAL PRINCIPAL].",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D13",
+      "localizacao": "PDF p. 32"
+    },
+    {
+      "data": "[ANO SUPRIMIDO]",
+      "evento": "Continuidade de energia rural na [IMÓVEL RURAL PRINCIPAL].",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D16",
+      "localizacao": "PDF pp. 35-37"
+    },
+    {
+      "data": "[ANO SUPRIMIDO]",
+      "evento": "Aquisições de insumos agropecuários.",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D17",
+      "localizacao": "PDF pp. 38-40"
+    },
+    {
+      "data": "[ANO SUPRIMIDO]-[ANO SUPRIMIDO]",
+      "evento": "Notas de sementes, diesel, insumos, ferramentas, produtos veterinários e ração.",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D18-D22",
+      "localizacao": "PDF pp. 41-46"
+    },
+    {
+      "data": "[MARCO ETÁRIO — ANO [ANO SUPRIMIDO]]",
+      "evento": "[REQUERENTE] completa [IDADE SUPRIMIDA].",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D1",
+      "localizacao": "PDF p. 1"
+    },
+    {
+      "data": "[ANO SUPRIMIDO]",
+      "evento": "Comunicação do INDEA sobre ausência de relatório de vacinação.",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D23",
+      "localizacao": "PDF p. 47"
+    },
+    {
+      "data": "[ANO SUPRIMIDO]",
+      "evento": "Compra de produtos veterinários e brita.",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D24",
+      "localizacao": "PDF pp. 48-49"
+    },
+    {
+      "data": "[DATA SUPRIMIDA]",
+      "evento": "Óbito de [COMPANHEIRO FALECIDO]; certidão o qualifica agricultor e registra [REQUERENTE] como companheira.",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D6",
+      "localizacao": "PDF pp. 12-13"
+    },
+    {
+      "data": "[DATA SUPRIMIDA]",
+      "evento": "Escritura registra união estável, [DADO FAMILIAR SUPRIMIDO], qualificação “do lar” e endereço urbano.",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D7",
+      "localizacao": "PDF pp. 14-17"
+    },
+    {
+      "data": "[DATA SUPRIMIDA]",
+      "evento": "DER e transmissão da autodeclaração.",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D1 e D25",
+      "localizacao": "PDF pp. 1 e 50-51"
+    },
+    {
+      "data": "[DATA SUPRIMIDA]",
+      "evento": "Carta de indeferimento e despacho automatizado.",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D26 e D28",
+      "localizacao": "PDF pp. 52 e 75"
+    },
+    {
+      "data": "Após [DATA SUPRIMIDA]",
+      "evento": "Data de ciência não localizada no processo examinado.",
+      "grau": "FATO COMPROVADO",
+      "fonte": "D0",
+      "localizacao": "Ausência nas PDF pp. 1-84"
+    }
+  ],
+  "pendencias": {
+    "sem_fonte": [],
+    "nao_lidos": [],
+    "conferir": [
+      "D8: conferir endereço manuscrito e itens no original.",
+      "D9-D10: confirmar imóveis, municípios e continuidade territorial.",
+      "D14: confirmar titular e natureza do negócio no recibo original.",
+      "D19-D22: conferir volumes, valores e destinação antes de uso em peça.",
+      "D25: confirmar condição de posseira, área total, [QUANTIDADE SUPRIMIDA] ha explorados, ausência de empregados e origem da data inicial.",
+      "F14/R3: colher documentos próprios e prova oral sobre participação ativa de [REQUERENTE].",
+      "R4: obter matrícula/posse, CCIR, ITR, CAR, histórico do INDEA, rebanho, renda e mão de obra.",
+      "R6/F21: obter comprovante de ciência no Meu INSS para cálculo da tempestividade.",
+      "D29: conferir as bases indicadas como não anexadas na PDF p. 81.",
+      "F19: confirmar no PAT integral e nos registros de andamento se houve exigência fora do relatório recebido."
+    ]
+  },
+  "contradicoes": [
+    {
+      "id": "C1",
+      "enunciado": "Autodeclaração de trabalho rural pessoal versus qualificação “do lar” e endereço urbano.",
+      "fontes": "D25, PDF pp. 50-51; D7, PDF pp. 14-17."
+    },
+    {
+      "id": "C2",
+      "enunciado": "[IMÓVEL RURAL PRINCIPAL] durante todo o período declarado versus documentos antigos de outros imóveis/localidades.",
+      "fontes": "D25, PDF pp. 50-51; D9-D10, PDF pp. 19-26."
+    },
+    {
+      "id": "C3",
+      "enunciado": "Economia familiar sem empregados versus área total e compras relevantes, sem dados completos da escala produtiva.",
+      "fontes": "D25, PDF pp. 50-51; D19-D22, PDF pp. 42-46."
+    }
+  ],
+  "resumo_documental": "O processo contém documentação rural continuada do núcleo familiar, sobretudo em nome de [COMPANHEIRO FALECIDO], mas não fecha sem controvérsia a participação ativa e pessoal de [REQUERENTE] nem a dimensão econômica real da atividade. A decisão administrativa deixou o período de [DATA SUPRIMIDA] a [DATA SUPRIMIDA] pendente e invalidou [DATA SUPRIMIDA] a [DATA SUPRIMIDA] por área superior a quatro módulos (D27 e D30, PDF pp. 53-74 e 82-84).",
+  "origem_resumo_documental": "Conclusão textual do relatório no HTML legado; preservada sem nova validação de mérito.",
+  "demonstracao": false,
+  "apresentacao": {
+    "caso_real": true,
+    "aviso": "Edição pública de caso real. Identificadores, localidades, datas exatas, anos, valores, quantidades e áreas suprimidos para reduzir a possibilidade de identificação. Não contém PDF original ou transcrições integrais. Preserva a organização e as controvérsias da análise importada, sem nova conferência dos autos. A desidentificação não garante impossibilidade absoluta de reconhecimento pelo contexto."
+  }
+}

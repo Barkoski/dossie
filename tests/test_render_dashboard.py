@@ -35,6 +35,20 @@ class DashboardTests(unittest.TestCase):
         RENDERER.render(self.example)
         self.assertEqual(json.dumps(self.example, ensure_ascii=False), before)
 
+    def test_full_document_preserves_long_text_and_inert_markup(self):
+        full = 'Página 1\n' + ('texto do documento\n' * 1000) + '</script><img src=x onerror=alert(1)>\nFIM DA ÍNTEGRA'
+        self.example['documentos'][0].update(texto_integral=full, texto_integral_status='COMPLETO', texto_integral_origem='documento fictício, pp. 1-2')
+        rendered = RENDERER.render(self.example)
+        payload = re.search(r'<script id="dossie-data" type="application/json">(.*?)</script>', rendered, re.S).group(1)
+        self.assertEqual(json.loads(payload)['documentos'][0]['texto_integral'], full)
+        self.assertNotIn('</script><img', rendered)
+
+    def test_legacy_document_does_not_gain_an_invented_transcript(self):
+        self.example['documentos'][0].pop('texto_integral', None)
+        rendered = RENDERER.render(self.example)
+        payload = re.search(r'<script id="dossie-data" type="application/json">(.*?)</script>', rendered, re.S).group(1)
+        self.assertNotIn('texto_integral', json.loads(payload)['documentos'][0])
+
     def test_self_contained_html_passes_existing_validation(self):
         with tempfile.TemporaryDirectory() as folder:
             output = Path(folder) / 'dossie.html'
