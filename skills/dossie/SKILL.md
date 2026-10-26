@@ -3,7 +3,7 @@ name: dossie
 description: Organiza analise juridica da conversa ou documentos expressamente indicados em dossie estruturado, persistente e auditavel, com indice e delimitacao de documentos, triagem, tabela de provas, requisitos, cronologia, grafo, relatorio, pendencias e consultas. Use quando o usuario pedir dossie, identificacao ou indice documental, classificacao de pecas, triagem processual, tabela ou quadro de provas, mapa ou grafo do caso, linha do tempo, relatorio, exportacao Markdown/JSON/HTML, atualizacao de dossie existente, caminho entre entidades, contradicoes, lacunas ou explicacao de item. Nao pesquisar nem acrescentar conhecimento externo ao caso.
 ---
 
-# Dossiê jurídico — revisão 1.5 (JSON 1.3 compatível)
+# Dossiê jurídico — revisão 1.6 (JSON 1.3 compatível)
 
 Transforma o que foi analisado na conversa em dossie estruturado: tabela de provas rastreavel, quadro de requisitos, cronologia, grafo do caso e relatorio.
 
@@ -61,6 +61,8 @@ Quando o usuario pedir salvar, atualizar ou consultar dossie persistente, ler [r
 Conforme o argumento recebido. As saidas em Markdown seguem [references/tabelas.md](references/tabelas.md). O dossie visual segue [references/html.md](references/html.md).
 
 Para exportar HTML, preferir o painel interativo autocontido de `assets/dashboard.html`, renderizado por `python scripts/render_dashboard.py <dossie.json> --output <dossie.html>`. Ele abre detalhes por clique, liga entidades e fontes e oferece busca, filtros, cronologia e relatório. Não entregar o template cru: o script incorpora o JSON com neutralização de conteúdo. O painel não modifica nem valida o mérito dos registros. Não usar dados de demonstração em dossiê real.
+
+Preservar integralmente `marcos`, `contradicoes`, triagem, riscos, contra-argumentos e cobertura já registrados. O painel da revisão 1.6 apresenta essas informações sem descartá-las em favor do grafo. Ao receber HTML antigo, usar `scripts/migrate_legacy_html.py` para extrair os dados sem executar o arquivo e conferir as contagens antes da conversão. Conclusão literal importada conserva sua origem e não é tratada como nova validação jurídica. Não reconstruir a interface antiga manualmente quando o renderizador estiver disponível; personalizar os dados e manter os recursos do modelo atualizado.
 
 ### Passo 4 — Fechar com o que falta
 

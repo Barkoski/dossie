@@ -19,6 +19,8 @@ def render(data):
     js += '\n' + (assets / 'mapa-flow.js').read_text(encoding='utf-8')
     css += '\n' + (assets / 'lawyer.css').read_text(encoding='utf-8')
     js += '\n' + (assets / 'lawyer.js').read_text(encoding='utf-8')
+    css += '\n' + (assets / 'evidence.css').read_text(encoding='utf-8')
+    js += '\n' + (assets / 'evidence.js').read_text(encoding='utf-8')
     return html.replace('</style>', '</style><style>' + css + '</style>', 1).replace('</body>', '<script>' + js + '</script></body>')
 
 

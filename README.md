@@ -6,9 +6,17 @@ Transforma a análise de um caso jurídico feita na conversa com uma IA em **dos
 
 Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previdenciarista.
 
-## Versão 1.5
+## Versão 1.6
 
-O plugin distribuído está na versão **1.5.0**.
+O plugin distribuído está na versão **1.6.0**.
+
+- recuperação integral de cronologia própria, contradições textuais, triagem, riscos e contra-argumentos;
+- tabela documental com conteúdo expansível, grau relacionado e filtros de conferência;
+- migração de HTML legado sem executar JavaScript, preservando campos e coleções;
+- grafo com recorte de dois passos e tipos combináveis, sem ocultar o registro selecionado;
+- indicação explícita de caso real desidentificado, sem tratar o caso como exemplo fictício.
+
+### Recursos preservados da versão 1.5
 
 - painel Mapa claro, com busca sem acentos, zoom, cadeia selecionada e detalhes clicáveis;
 - histórico de navegação nas fichas e comparação de conflitos lado a lado;
