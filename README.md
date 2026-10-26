@@ -6,9 +6,18 @@ Transforma a análise de um caso jurídico feita na conversa com uma IA em **dos
 
 Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previdenciarista.
 
-## Versão 1.6
+## Versão 1.7
 
-O plugin distribuído está na versão **1.6.0**.
+O plugin distribuído está na versão **1.7.0**.
+
+- ficha documental com resumo e transcrição completa separados, preservando a origem;
+- aviso explícito para transcrição parcial, sem origem ou ausente, sem reconstruir documentos a partir de resumos;
+- visualização do PDF local dentro da ficha, com escolha entre a paginação do processo completo e a do documento isolado;
+- [caso real desidentificado](examples/caso-real-desidentificado/README.md), com [relatório legível](examples/caso-real-desidentificado/relatorio.md), JSON e HTML interativo, publicado por solicitação do advogado responsável.
+
+O exemplo público suprime também datas, anos, valores, áreas, quantidades e dados familiares. Os PDFs originais e o mapa privado de substituições permanecem fora do repositório. Consulte os limites da desidentificação no diretório do exemplo.
+
+### Recursos preservados da versão 1.6
 
 - recuperação integral de cronologia própria, contradições textuais, triagem, riscos e contra-argumentos;
 - tabela documental com conteúdo expansível, grau relacionado e filtros de conferência;
