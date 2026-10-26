@@ -151,6 +151,12 @@ texto claro  #2C3230    texto escuro #E8E4DC
 
 Cor nunca e o unico portador de significado: acompanhar sempre de rotulo em texto, para leitura em preto e branco e para daltonismo.
 
+## Resumo e íntegra na ficha documental
+
+Toda ficha de documento mantém o resumo e a seção “Íntegra do documento”. O campo `conteudo` é conteúdo concreto para análise, não a íntegra. Renderizar `texto_integral` literalmente com `textContent`, preservando parágrafos, sem corte ou reticências. Exibir a origem e o estado de completude; texto parcial ou sem origem não pode aparecer como transcrição integral confirmada. Sem transcrição, indicar “A íntegra não está incorporada neste dossiê”, mantendo o resumo e permitindo vincular PDF local.
+
+Após vincular um PDF, mostrá-lo na própria janela, com opção de ocultar ou abrir em outra aba. O usuário escolhe se o arquivo contém o processo completo (página registrada) ou somente o documento (página 1). O visualizador permite navegar no arquivo inteiro e não recorta o intervalo automaticamente. O vínculo dura apenas a sessão, não altera os registros, não executa OCR e não salva nem envia o original. Navegadores sem visualizador PDF usam a abertura em outra aba. A transcrição incorporada fica dentro do HTML e requer o mesmo tratamento de sigilo dos autos.
+
 ## Rodape obrigatorio
 
 Toda geracao termina com, visivel no proprio arquivo:

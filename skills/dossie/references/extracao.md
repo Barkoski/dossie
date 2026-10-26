@@ -121,6 +121,12 @@ Nao criar aresta por semelhanca de tema, proximidade no texto ou coincidencia de
 
 Campo `conteudo` do documento: o que ele diz de concreto, com o dado que o individualiza — `venda de 320 litros de leite`, `compra de 10 parafusos`. Descricao generica como `comprovante de atividade` nao serve: nao permite conferencia nem sustenta argumento.
 
+### Íntegra do documento
+
+Manter `resumo` e `conteudo` separados da transcrição. Quando os documentos indicados estiverem disponíveis para leitura local, preservar também `texto_integral` (string, sem resumir nem truncar), `texto_integral_origem` (arquivo e intervalo de páginas) e `texto_integral_status` (`COMPLETO` ou `PARCIAL`). Só marcar `COMPLETO` quando todo o documento delimitado estiver transcrito. Preservar divisões de páginas, grafia original e trechos `[ilegível]`; identificar OCR sem tratá-lo como original conferido. Uma página ilegível ou ausente impede classificar a transcrição como completa. Se houver supressões para apresentação, informar isso na origem e usar `PARCIAL`.
+
+Se a conversa só trouxer um resumo ou excerto, não reconstruir o documento: deixar `texto_integral` ausente ou marcar o excerto como `PARCIAL`. O painel informa a falta da íntegra e permite vincular o PDF localmente. Vincular PDF não preenche o texto integral nem altera a conferência. Não buscar o original em serviço externo.
+
 ## Conflito na conversa
 
 Quando a conversa contiver duas versoes do mesmo dado, preservar ambas como conflito. Substituir a anterior somente quando houver correcao explicita do usuario ou fonte mais qualificada identificada na conversa; registrar a versao substituida e o motivo. Ordem temporal da mensagem, sozinha, nao define veracidade.
