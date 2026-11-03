@@ -8,14 +8,14 @@ Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previden
 
 ## Versão 1.7
 
-O plugin distribuído está na versão **2.0.2**.
+O plugin distribuído está na versão **2.1.0**.
 
 - ficha documental com resumo e transcrição completa separados, preservando a origem;
 - aviso explícito para transcrição parcial, sem origem ou ausente, sem reconstruir documentos a partir de resumos;
 - visualização do PDF local dentro da ficha, com escolha entre a paginação do processo completo e a do documento isolado;
-- [caso real desidentificado](examples/caso-real-desidentificado/README.md), com [relatório legível](examples/caso-real-desidentificado/relatorio.md), JSON e HTML interativo, publicado por solicitação do advogado responsável.
+- [caso rural fictício completo](examples/caso-ficticio-rural/README.md), com [relatório legível](examples/caso-ficticio-rural/relatorio.md), JSON e HTML interativo. Todos os nomes, locais, datas e valores são inventados.
 
-O exemplo público suprime também datas, anos, valores, áreas, quantidades e dados familiares. Os PDFs originais e o mapa privado de substituições permanecem fora do repositório. Consulte os limites da desidentificação no diretório do exemplo.
+Este repositório não contém dado de caso real. Os dois exemplos (`caso-ficticio` e `caso-ficticio-rural`) são inteiramente fictícios.
 
 ### Recursos preservados da versão 1.6
 
@@ -23,7 +23,7 @@ O exemplo público suprime também datas, anos, valores, áreas, quantidades e d
 - tabela documental com conteúdo expansível, grau relacionado e filtros de conferência;
 - migração de HTML legado sem executar JavaScript, preservando campos e coleções;
 - grafo com recorte de dois passos e tipos combináveis, sem ocultar o registro selecionado;
-- indicação explícita de caso real desidentificado, sem tratar o caso como exemplo fictício.
+- indicação explícita de apresentação de caso real, quando o usuário gera o painel a partir de um dossiê seu (sem tratá-lo como exemplo fictício).
 
 ### Recursos preservados da versão 1.5
 

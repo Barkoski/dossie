@@ -1,14 +1,14 @@
-# Relatório de caso real desidentificado
+# Relatório do caso rural fictício
 
-Edição pública de caso real. Identificadores, localidades, datas exatas, anos, valores, quantidades e áreas suprimidos para reduzir a possibilidade de identificação. Não contém PDF original ou transcrições integrais. Preserva a organização e as controvérsias da análise importada, sem nova conferência dos autos. A desidentificação não garante impossibilidade absoluta de reconhecimento pelo contexto.
+Caso inteiramente fictício, criado para demonstração. Nomes, locais, datas, valores e quantidades são inventados; qualquer semelhança com pessoas ou processos reais é coincidência.
 
 ## Resumo documental
 
-O processo contém documentação rural continuada do núcleo familiar, sobretudo em nome de [COMPANHEIRO FALECIDO], mas não fecha sem controvérsia a participação ativa e pessoal de [REQUERENTE] nem a dimensão econômica real da atividade. A decisão administrativa deixou o período de [DATA SUPRIMIDA] a [DATA SUPRIMIDA] pendente e invalidou [DATA SUPRIMIDA] a [DATA SUPRIMIDA] por área superior a quatro módulos (D27 e D30, PDF pp. 53-74 e 82-84).
+O processo contém documentação rural continuada do núcleo familiar, sobretudo em nome de Osvaldo Pereira Lima, mas não fecha sem controvérsia a participação ativa e pessoal de Rosa Maria Calixto nem a dimensão econômica real da atividade. A decisão administrativa deixou o período de 03/02/2019 a 27/08/2021 pendente e invalidou 14/12/2022 a 10/05/2023 por área superior a quatro módulos (D27 e D30, PDF pp. 53-74 e 82-84).
 
 ## Questão central
 
-O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de atividade rural, apesar da prova em nome do companheiro e da área total declarada?
+O conjunto comprova a participação pessoal de Rosa Maria Calixto e 180 meses de atividade rural, apesar da prova em nome do companheiro e da área total declarada?
 
 ## Documentos
 
@@ -29,12 +29,12 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conteudo:** Conjunto de 84 páginas contendo protocolo, documentos pessoais e rurais, autodeclaração, decisão, análises internas e CNIS.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 1-84.
 - **estado conferencia:** SOMENTE TRANSCRICAO
-- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA].
+- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em 15/03/2008.
 
 ### D1
 - **familia:** PROVA_LABORAL_PREVIDENCIARIA
 - **tipo:** protocolo do requerimento
-- **titular:** [REQUERENTE]
+- **titular:** Rosa Maria Calixto
 - **evento inicio:** ?
 - **pagina inicio:** 1
 - **evento fim:** ?
@@ -45,15 +45,15 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** DER em [DATA SUPRIMIDA]; tarefa [PROTOCOLO SUPRIMIDO]; NB [NÚMERO DO BENEFÍCIO SUPRIMIDO]; data de nascimento [DATA PESSOAL SUPRIMIDA].
+- **conteudo:** DER em 27/08/2021; tarefa 00000000; NB 000.000.000-0; data de nascimento 12/03/1966.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 1-2.
 - **estado conferencia:** SOMENTE TRANSCRICAO
-- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA].
+- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em 15/03/2008.
 
 ### D2
 - **familia:** PROVA_PESSOAL
 - **tipo:** declaração de hipossuficiência
-- **titular:** [REQUERENTE]
+- **titular:** Rosa Maria Calixto
 - **evento inicio:** ?
 - **pagina inicio:** 3
 - **evento fim:** ?
@@ -64,15 +64,15 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Documento datado de [DATA SUPRIMIDA] que qualifica a requerente como rurícola e informa endereço na [IMÓVEL RURAL PRINCIPAL].
+- **conteudo:** Documento datado de 15/03/2008 que qualifica a requerente como rurícola e informa endereço no Sítio Boa Esperança.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 3.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D3
 - **familia:** PROVA_CIVIL
 - **tipo:** procuração
-- **titular:** [REQUERENTE]
+- **titular:** Rosa Maria Calixto
 - **evento inicio:** ?
 - **pagina inicio:** 4
 - **evento fim:** ?
@@ -83,15 +83,15 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Procuração datada de [DATA SUPRIMIDA]; qualifica a outorgante como rurícola e registra endereço na [IMÓVEL RURAL PRINCIPAL].
+- **conteudo:** Procuração datada de 22/09/2011; qualifica a outorgante como rurícola e registra endereço no Sítio Boa Esperança.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 4.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D4
 - **familia:** PROVA_CIVIL
 - **tipo:** documentos de identificação e representação
-- **titular:** [REQUERENTE] / procurador
+- **titular:** Rosa Maria Calixto / procurador
 - **evento inicio:** ?
 - **pagina inicio:** 5
 - **evento fim:** ?
@@ -105,164 +105,164 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conteudo:** Documentos de identificação da requerente e do procurador; procuração repetida nas páginas 7-8.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 5-8.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D5
 - **familia:** OUTRO
 - **tipo:** índice documental apresentado com o requerimento
-- **titular:** [REQUERENTE]
+- **titular:** Rosa Maria Calixto
 - **evento inicio:** ?
 - **pagina inicio:** 9
 - **evento fim:** ?
 - **pagina fim:** 11
 - **localizacao:** PDF pp. 9-11
-- **resumo:** Relação organizada de documentos rurais de [ANO SUPRIMIDO] a [ANO SUPRIMIDO].
+- **resumo:** Relação organizada de documentos rurais de 2022 a 2023.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Lista certidão de óbito, escritura, notas, recibos, energia rural e documentos do INDEA, com referência às páginas seguintes.
+- **conteudo:** Lista certidão de óbito, escritura, notas, recibos, energia rural e documentos do órgão estadual de defesa agropecuária, com referência às páginas seguintes.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 9-11.
 - **estado conferencia:** SOMENTE TRANSCRICAO
-- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA].
+- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em 15/03/2008.
 
 ### D6
 - **familia:** PROVA_CIVIL
 - **tipo:** certidão de óbito
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 12
 - **evento fim:** ?
 - **pagina fim:** 13
 - **localizacao:** PDF pp. 12-13
-- **resumo:** Certidão do óbito de [COMPANHEIRO FALECIDO], com profissão, residência e identificação da companheira.
+- **resumo:** Certidão do óbito de Osvaldo Pereira Lima, com profissão, residência e identificação da companheira.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Óbito em [DATA SUPRIMIDA]; profissão agricultor; residência urbana em [LOCALIDADE URBANA]; [REQUERENTE] é indicada como companheira.
+- **conteudo:** Óbito em 27/08/2021; profissão agricultor; residência urbana em Vila Esperança; Rosa Maria Calixto é indicada como companheira.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 12-13.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D7
 - **familia:** PROVA_CIVIL
 - **tipo:** escritura pública de nomeação de inventariante
-- **titular:** [ESPÓLIO DO COMPANHEIRO]
+- **titular:** Espólio de Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 14
 - **evento fim:** ?
 - **pagina fim:** 17
 - **localizacao:** PDF pp. 14-17
-- **resumo:** Escritura que registra união estável, [DADO FAMILIAR SUPRIMIDO], qualificação e endereço da requerente.
+- **resumo:** Escritura que registra união estável, três filhos maiores de idade, qualificação e endereço da requerente.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Lavrada em [DATA SUPRIMIDA]; reconhece [REQUERENTE] como convivente, registra [DADO FAMILIAR SUPRIMIDO] e a qualifica como “do lar”, com endereço urbano em [LOCALIDADE URBANA].
+- **conteudo:** Lavrada em 03/02/2019; reconhece Rosa Maria Calixto como convivente, registra três filhos maiores de idade e a qualifica como “do lar”, com endereço urbano em Vila Esperança.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 14-17.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D8
 - **familia:** PROVA_ECONOMICA
 - **tipo:** nota de peças de maquinário
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 18
 - **evento fim:** ?
 - **pagina fim:** 18
 - **localizacao:** PDF p. 18
-- **resumo:** Nota da [FORNECEDOR DE EQUIPAMENTOS] em nome de [COMPANHEIRO FALECIDO].
+- **resumo:** Nota da Máquinas Exemplo S.A. em nome de Osvaldo Pereira Lima.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** MEDIA
 - **qualidade:** LEITURA PARCIAL
 - **lido:** True
-- **conteudo:** Documento de [ANO SUPRIMIDO] relativo a peças de maquinário; o endereço rural manuscrito não está plenamente legível.
+- **conteudo:** Documento de 2021 relativo a peças de maquinário; o endereço rural manuscrito não está plenamente legível.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 18.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D9
 - **familia:** PROVA_RURAL
 - **tipo:** comprovante de vacinação animal
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 19
 - **evento fim:** ?
 - **pagina fim:** 19
 - **localizacao:** PDF p. 19
-- **resumo:** Comprovante da [ENTIDADE SUPRIMIDA] vinculado a estabelecimento rural.
+- **resumo:** Comprovante da Sindicato Rural Exemplo vinculado a estabelecimento rural.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** MEDIA
 - **qualidade:** LEITURA PARCIAL
 - **lido:** True
-- **conteudo:** Documento de [ANO SUPRIMIDO] em nome de [COMPANHEIRO FALECIDO], [OUTRO IMÓVEL RURAL 1], [MUNICÍPIO RURAL 4].
+- **conteudo:** Documento de 2016 em nome de Osvaldo Pereira Lima, Fazenda Santa Luzia, Ouro Fino do Oeste.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 19.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D10
 - **familia:** PROVA_ECONOMICA
 - **tipo:** notas de produtos agropecuários e veterinários
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 20
 - **evento fim:** ?
 - **pagina fim:** 26
 - **localizacao:** PDF pp. 20-26
-- **resumo:** Conjunto de notas de [ANO SUPRIMIDO]-[ANO SUPRIMIDO] em nome de [COMPANHEIRO FALECIDO].
+- **resumo:** Conjunto de notas de 2019-2021 em nome de Osvaldo Pereira Lima.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** MEDIA
 - **qualidade:** LEITURA PARCIAL
 - **lido:** True
-- **conteudo:** Registra insumos agropecuários, produtos veterinários e referências à [IMÓVEL RURAL PRINCIPAL] e a localidades em [MUNICÍPIO RURAL 1]/[MUNICÍPIO RURAL 3].
+- **conteudo:** Registra insumos agropecuários, produtos veterinários e referências ao Sítio Boa Esperança e a localidades em Vila Nova do Rio/Pedra Branca do Sul.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 20-26.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D11
 - **familia:** PROVA_ECONOMICA
 - **tipo:** faturas de energia rural
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 27
 - **evento fim:** ?
 - **pagina fim:** 30
 - **localizacao:** PDF pp. 27-30
-- **resumo:** Faturas rurais da [IMÓVEL RURAL PRINCIPAL], unidade [UNIDADE CONSUMIDORA SUPRIMIDA].
+- **resumo:** Faturas rurais do Sítio Boa Esperança, unidade 0000000-0.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Referências de setembro a dezembro de [ANO SUPRIMIDO]; classificação rural e histórico de consumo desde outubro de [ANO SUPRIMIDO].
+- **conteudo:** Referências de setembro a dezembro de 2008; classificação rural e histórico de consumo desde outubro de 2011.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 27-30.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D12
 - **familia:** PROVA_ECONOMICA
 - **tipo:** nota de aquisição de itens rurais
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 31
 - **evento fim:** ?
 - **pagina fim:** 31
 - **localizacao:** PDF p. 31
-- **resumo:** Nota emitida para [COMPANHEIRO FALECIDO]/[IMÓVEL RURAL PRINCIPAL].
+- **resumo:** Nota emitida para Osvaldo Pereira Lima/Sítio Boa Esperança.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** MEDIA
 - **qualidade:** LEITURA PARCIAL
 - **lido:** True
-- **conteudo:** Documento datado de [DATA SUPRIMIDA] relativo a itens de uso rural.
+- **conteudo:** Documento datado de 15/03/2008 relativo a itens de uso rural.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 31.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D13
 - **familia:** PROVA_RURAL
-- **tipo:** certificado do INDEA de vacinação
-- **titular:** [COMPANHEIRO FALECIDO]
+- **tipo:** certificado do órgão estadual de defesa agropecuária de vacinação
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 32
 - **evento fim:** ?
@@ -273,10 +273,10 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Registra [QUANTIDADE SUPRIMIDA] bezerras vacinadas contra brucelose em [DATA SUPRIMIDA], [IMÓVEL RURAL PRINCIPAL], registro estadual [REGISTRO ESTADUAL SUPRIMIDO]; emissão em [DATA SUPRIMIDA].
+- **conteudo:** Registra 24 bezerras vacinadas contra brucelose em 15/03/2008, Sítio Boa Esperança, registro estadual 000.000.000; emissão em 22/09/2011.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 32.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D14
 - **familia:** PROVA_ECONOMICA
@@ -287,20 +287,20 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **evento fim:** ?
 - **pagina fim:** 33
 - **localizacao:** PDF p. 33
-- **resumo:** Recibo da [OUTRO IMÓVEL RURAL 2].
+- **resumo:** Recibo do Sítio Água Fria.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** BAIXA
 - **qualidade:** LEITURA PARCIAL
 - **lido:** True
-- **conteudo:** Documento de [DATA SUPRIMIDA], valor de [VALOR SUPRIMIDO] referente a [QUANTIDADE SUPRIMIDA] bezerros; o vínculo subjetivo precisa ser conferido no original.
+- **conteudo:** Documento de 10/05/2023, valor de R$ 12.400,00 referente a 42 bezerros; o vínculo subjetivo precisa ser conferido no original.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 33.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D15
 - **familia:** PROVA_RURAL
 - **tipo:** nota fiscal de produtor rural
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 34
 - **evento fim:** ?
@@ -311,15 +311,15 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Emitida em [DATA SUPRIMIDA]; venda de [QUANTIDADE SUPRIMIDA] bezerros; valor total de [VALOR SUPRIMIDO]; inscrição estadual [INSCRIÇÃO ESTADUAL SUPRIMIDA]; endereço rural em [MUNICÍPIO RURAL 2].
+- **conteudo:** Emitida em 27/08/2021; venda de 24 bezerros; valor total de R$ 12.400,00; inscrição estadual 000.000.000.000; endereço rural em Santa Rita do Vale.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 34.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D16
 - **familia:** PROVA_ECONOMICA
 - **tipo:** faturas e histórico anual de energia rural
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 35
 - **evento fim:** ?
@@ -330,72 +330,72 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Registros de consumo vinculados à [IMÓVEL RURAL PRINCIPAL] no ano de [ANO SUPRIMIDO].
+- **conteudo:** Registros de consumo vinculados ao Sítio Boa Esperança no ano de 2011.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 35-37.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D17
 - **familia:** PROVA_ECONOMICA
 - **tipo:** notas de insumos agropecuários
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 38
 - **evento fim:** ?
 - **pagina fim:** 40
 - **localizacao:** PDF pp. 38-40
-- **resumo:** Três notas da [FORNECEDOR DE INSUMOS] em [ANO SUPRIMIDO].
+- **resumo:** Três notas da Casa Agropecuária Exemplo Ltda. em 2016.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Compras para [COMPANHEIRO FALECIDO]/[IMÓVEL RURAL PRINCIPAL] em 07/02, 09/02 e [DATA SUPRIMIDA], nos valores de [VALOR SUPRIMIDO] [VALOR SUPRIMIDO] e [VALOR SUPRIMIDO]
+- **conteudo:** Compras para Osvaldo Pereira Lima/Sítio Boa Esperança em 09/03, 11/03 e 22/09/2011, nos valores de R$ 3.150,00 R$ 9.900,00 e R$ 2.600,00
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 38-40.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D18
 - **familia:** PROVA_ECONOMICA
 - **tipo:** nota fiscal eletrônica de sementes
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 41
 - **evento fim:** ?
 - **pagina fim:** 41
 - **localizacao:** PDF p. 41
-- **resumo:** NF-e de sementes destinada à [IMÓVEL RURAL PRINCIPAL].
+- **resumo:** NF-e de sementes destinada ao Sítio Boa Esperança.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Emitida em [DATA SUPRIMIDA]; valor total de [VALOR SUPRIMIDO]
+- **conteudo:** Emitida em 27/08/2021; valor total de R$ 7.350,00
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 41.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D19
 - **familia:** PROVA_ECONOMICA
 - **tipo:** nota fiscal eletrônica de óleo diesel
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 42
 - **evento fim:** ?
 - **pagina fim:** 42
 - **localizacao:** PDF p. 42
-- **resumo:** NF-e de combustível para a [IMÓVEL RURAL PRINCIPAL].
+- **resumo:** NF-e de combustível para a Sítio Boa Esperança.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Emitida em [DATA SUPRIMIDA]; [QUANTIDADE SUPRIMIDA] litros de óleo diesel; valor total de [VALOR SUPRIMIDO]
+- **conteudo:** Emitida em 19/11/2016; 18 litros de óleo diesel; valor total de R$ 4.800,00
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 42.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D20
 - **familia:** PROVA_ECONOMICA
 - **tipo:** nota fiscal eletrônica de insumos pecuários
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 43
 - **evento fim:** ?
@@ -406,15 +406,15 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Emitida em [DATA SUPRIMIDA]; valor total de [VALOR SUPRIMIDO]; destinatário vinculado à [IMÓVEL RURAL PRINCIPAL].
+- **conteudo:** Emitida em 14/12/2022; valor total de R$ 2.600,00; destinatário vinculado ao Sítio Boa Esperança.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 43.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D21
 - **familia:** PROVA_ECONOMICA
 - **tipo:** nota fiscal eletrônica de ferramentas e produtos veterinários
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 44
 - **evento fim:** ?
@@ -425,34 +425,34 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Emitida em [DATA SUPRIMIDA]; valor total de [VALOR SUPRIMIDO]; destinatário vinculado à [IMÓVEL RURAL PRINCIPAL].
+- **conteudo:** Emitida em 14/12/2022; valor total de R$ 2.600,00; destinatário vinculado ao Sítio Boa Esperança.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 44.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D22
 - **familia:** PROVA_ECONOMICA
 - **tipo:** notas fiscais eletrônicas de ração e insumos
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 45
 - **evento fim:** ?
 - **pagina fim:** 46
 - **localizacao:** PDF pp. 45-46
-- **resumo:** Duas NF-e de produtos agropecuários em julho de [ANO SUPRIMIDO].
+- **resumo:** Duas NF-e de produtos agropecuários em julho de 2022.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Documentos de [DATA SUPRIMIDA] e [DATA SUPRIMIDA], nos valores de [VALOR SUPRIMIDO] e [VALOR SUPRIMIDO]
+- **conteudo:** Documentos de 27/08/2021 e 14/12/2022, nos valores de R$ 9.900,00 e R$ 2.600,00
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 45-46.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D23
 - **familia:** PROVA_RURAL
-- **tipo:** comunicação administrativa do INDEA
-- **titular:** [COMPANHEIRO FALECIDO]
+- **tipo:** comunicação administrativa do órgão estadual de defesa agropecuária
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 47
 - **evento fim:** ?
@@ -463,34 +463,34 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Comunicação de [ANO SUPRIMIDO] por ausência de apresentação de relatório de vacinação da [IMÓVEL RURAL PRINCIPAL], etapa [DATA SUPRIMIDA].
+- **conteudo:** Comunicação de 2008 por ausência de apresentação de relatório de vacinação do Sítio Boa Esperança, etapa 03/02/2019.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 47.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D24
 - **familia:** PROVA_ECONOMICA
 - **tipo:** notas de medicamento veterinário e brita
-- **titular:** [COMPANHEIRO FALECIDO]
+- **titular:** Osvaldo Pereira Lima
 - **evento inicio:** ?
 - **pagina inicio:** 48
 - **evento fim:** ?
 - **pagina fim:** 49
 - **localizacao:** PDF pp. 48-49
-- **resumo:** Dois comprovantes de [ANO SUPRIMIDO] vinculados à [IMÓVEL RURAL PRINCIPAL].
+- **resumo:** Dois comprovantes de 2023 vinculados ao Sítio Boa Esperança.
 - **criterio delimitacao:** Cabeçalho, conteúdo e sequência de páginas do processo administrativo.
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Compra de produtos veterinários em [DATA SUPRIMIDA], [VALOR SUPRIMIDO] e pedido de 18 unidades de brita em [DATA SUPRIMIDA], [VALOR SUPRIMIDO]
+- **conteudo:** Compra de produtos veterinários em 03/02/2019, R$ 9.900,00 e pedido de 18 unidades de brita em 27/08/2021, R$ 2.600,00
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 48-49.
 - **estado conferencia:** ORIGINAL CONFERIDO
-- **registro conferencia:** Conferência visual da página digitalizada em [DATA SUPRIMIDA].
+- **registro conferencia:** Conferência visual da página digitalizada em 14/12/2022.
 
 ### D25
 - **familia:** PROVA_PESSOAL
 - **tipo:** autodeclaração do segurado especial rural
-- **titular:** [REQUERENTE]
+- **titular:** Rosa Maria Calixto
 - **evento inicio:** ?
 - **pagina inicio:** 50
 - **evento fim:** ?
@@ -501,10 +501,10 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Declara atividade de [DATA SUPRIMIDA] a [DATA SUPRIMIDA], economia familiar, condição de posseira, [IMÓVEL RURAL PRINCIPAL] com [QUANTIDADE SUPRIMIDA] ha totais e [QUANTIDADE SUPRIMIDA] ha explorados, criação/venda de gado, sem empregados ou outra atividade/renda.
+- **conteudo:** Declara atividade de 15/03/2008 a 22/09/2011, economia familiar, condição de posseira, Sítio Boa Esperança com 260 ha totais e 260 ha explorados, criação/venda de gado, sem empregados ou outra atividade/renda.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 50-51.
 - **estado conferencia:** SOMENTE TRANSCRICAO
-- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA].
+- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em 15/03/2008.
 
 ### D26
 - **familia:** DECISAO
@@ -520,10 +520,10 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Emitida em [DATA SUPRIMIDA]; denomina o pedido “aposentadoria programada”, invoca genericamente regras da EC 103/2019 e informa prazo recursal de 30 dias da ciência.
+- **conteudo:** Emitida em 08/05/2014; denomina o pedido “aposentadoria programada”, invoca genericamente regras da EC 103/2019 e informa prazo recursal de 30 dias da ciência.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 52.
 - **estado conferencia:** SOMENTE TRANSCRICAO
-- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA].
+- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em 15/03/2008.
 
 ### D27
 - **familia:** PROVA_LABORAL_PREVIDENCIARIA
@@ -539,10 +539,10 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Registra zero carência/tempo, período rural de [DATA SUPRIMIDA] a [DATA SUPRIMIDA] como pendente e período de [DATA SUPRIMIDA] a [DATA SUPRIMIDA] como invalidado.
+- **conteudo:** Registra zero carência/tempo, período rural de 03/02/2019 a 27/08/2021 como pendente e período de 14/12/2022 a 10/05/2023 como invalidado.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 53-74.
 - **estado conferencia:** SOMENTE TRANSCRICAO
-- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA].
+- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em 15/03/2008.
 
 ### D28
 - **familia:** ATO_PROCESSUAL
@@ -558,15 +558,15 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Registro automatizado datado de [DATA SUPRIMIDA].
+- **conteudo:** Registro automatizado datado de 03/02/2019.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF p. 75.
 - **estado conferencia:** SOMENTE TRANSCRICAO
-- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA].
+- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em 15/03/2008.
 
 ### D29
 - **familia:** PROVA_LABORAL_PREVIDENCIARIA
 - **tipo:** extratos e consultas CNIS
-- **titular:** [REQUERENTE]
+- **titular:** Rosa Maria Calixto
 - **evento inicio:** ?
 - **pagina inicio:** 76
 - **evento fim:** ?
@@ -577,10 +577,10 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** CNIS cadastrado em [DATA SUPRIMIDA], sem vínculos ou contribuições; há bases listadas como não anexadas na página 81.
+- **conteudo:** CNIS cadastrado em 22/09/2011, sem vínculos ou contribuições; há bases listadas como não anexadas na página 81.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 76-81.
 - **estado conferencia:** SOMENTE TRANSCRICAO
-- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA].
+- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em 15/03/2008.
 
 ### D30
 - **familia:** PROVA_LABORAL_PREVIDENCIARIA
@@ -596,16 +596,16 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **confianca identificacao:** ALTA
 - **qualidade:** TEXTO NITIDO
 - **lido:** True
-- **conteudo:** Invalida [DATA SUPRIMIDA] a [DATA SUPRIMIDA] por “exploração da atividade rural em área superior a 4 módulos fiscais” e mantém [DATA SUPRIMIDA] a [DATA SUPRIMIDA] pendente.
+- **conteudo:** Invalida 08/05/2014 a 19/11/2016 por “exploração da atividade rural em área superior a 4 módulos fiscais” e mantém 03/02/2019 a 27/08/2021 pendente.
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa, PDF pp. 82-84.
 - **estado conferencia:** SOMENTE TRANSCRICAO
-- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em [DATA SUPRIMIDA].
+- **registro conferencia:** Texto nativo extraído e confrontado com a estrutura do PDF em 15/03/2008.
 
 ## Fatos e afirmações
 
 ### F1
-- **enunciado:** [REQUERENTE] nasceu em [DATA PESSOAL SUPRIMIDA] e tinha [IDADE SUPRIMIDA] na DER.
-- **data:** [DATA PESSOAL SUPRIMIDA] e [DATA SUPRIMIDA]
+- **enunciado:** Rosa Maria Calixto nasceu em 12/03/1966 e tinha 55 anos na DER.
+- **data:** 12/03/1966 e 27/08/2021
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D1"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -613,8 +613,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F2
-- **enunciado:** A requerente apresentou pedido de aposentadoria por idade rural em [DATA SUPRIMIDA].
-- **data:** [DATA SUPRIMIDA]
+- **enunciado:** A requerente apresentou pedido de aposentadoria por idade rural em 15/03/2008.
+- **data:** 08/05/2014
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D1"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -622,8 +622,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F3
-- **enunciado:** A certidão de óbito identifica [REQUERENTE] como companheira de [COMPANHEIRO FALECIDO], qualificado como agricultor.
-- **data:** [DATA SUPRIMIDA]
+- **enunciado:** A certidão de óbito identifica Rosa Maria Calixto como companheira de Osvaldo Pereira Lima, qualificado como agricultor.
+- **data:** 08/05/2014
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D6"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -631,8 +631,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F4
-- **enunciado:** A escritura registra união estável, [DADO FAMILIAR SUPRIMIDO] e qualifica [REQUERENTE] como “do lar”, com endereço urbano em [LOCALIDADE URBANA].
-- **data:** [DATA SUPRIMIDA]
+- **enunciado:** A escritura registra união estável, três filhos maiores de idade e qualifica Rosa Maria Calixto como “do lar”, com endereço urbano em Vila Esperança.
+- **data:** 08/05/2014
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D7"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -640,8 +640,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F5
-- **enunciado:** Há documentos rurais em nome de [COMPANHEIRO FALECIDO] desde [ANO SUPRIMIDO], com referências a imóveis/localidades diferentes antes da consolidação documental na [IMÓVEL RURAL PRINCIPAL].
-- **data:** [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
+- **enunciado:** Há documentos rurais em nome de Osvaldo Pereira Lima desde 2014, com referências a imóveis/localidades diferentes antes da consolidação documental no Sítio Boa Esperança.
+- **data:** 2014-2016
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D8", "D9", "D10"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -649,8 +649,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F6
-- **enunciado:** Faturas registram energia classificada como rural na [IMÓVEL RURAL PRINCIPAL] e histórico de consumo desde outubro de [ANO SUPRIMIDO].
-- **data:** [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
+- **enunciado:** Faturas registram energia classificada como rural no Sítio Boa Esperança e histórico de consumo desde outubro de 2023.
+- **data:** 2014-2016
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D11", "D16"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -658,8 +658,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F7
-- **enunciado:** O INDEA registrou vacinação de [QUANTIDADE SUPRIMIDA] bezerras na [IMÓVEL RURAL PRINCIPAL].
-- **data:** [DATA SUPRIMIDA]
+- **enunciado:** O órgão estadual de defesa agropecuária registrou vacinação de 24 bezerras no Sítio Boa Esperança.
+- **data:** 08/05/2014
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D13"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -667,8 +667,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F8
-- **enunciado:** Nota fiscal de produtor registra venda de [QUANTIDADE SUPRIMIDA] bezerros por [VALOR SUPRIMIDO]
-- **data:** [DATA SUPRIMIDA]
+- **enunciado:** Nota fiscal de produtor registra venda de 18 bezerros por R$ 4.800,00
+- **data:** 08/05/2014
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D15"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -676,8 +676,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F9
-- **enunciado:** Notas em nome de [COMPANHEIRO FALECIDO] registram aquisição de insumos agropecuários em [ANO SUPRIMIDO].
-- **data:** [ANO SUPRIMIDO]
+- **enunciado:** Notas em nome de Osvaldo Pereira Lima registram aquisição de insumos agropecuários em 2019.
+- **data:** 2014
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D17"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -685,8 +685,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F10
-- **enunciado:** Notas em nome de [COMPANHEIRO FALECIDO] registram sementes, [QUANTIDADE SUPRIMIDA] litros de diesel, insumos, ferramentas e produtos veterinários em [ANO SUPRIMIDO]-[ANO SUPRIMIDO].
-- **data:** [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
+- **enunciado:** Notas em nome de Osvaldo Pereira Lima registram sementes, 18 litros de diesel, insumos, ferramentas e produtos veterinários em 2022-2023.
+- **data:** 2014-2016
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D18", "D19", "D20", "D21", "D22"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -694,8 +694,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F11
-- **enunciado:** O comunicado do INDEA de [ANO SUPRIMIDO] vincula [COMPANHEIRO FALECIDO] à [IMÓVEL RURAL PRINCIPAL] e registra ausência de relatório de vacinação.
-- **data:** [ANO SUPRIMIDO]
+- **enunciado:** O comunicado do órgão estadual de defesa agropecuária de 2016 vincula Osvaldo Pereira Lima ao Sítio Boa Esperança e registra ausência de relatório de vacinação.
+- **data:** 2014
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D23"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -703,8 +703,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F12
-- **enunciado:** Comprovantes de [ANO SUPRIMIDO] registram compra de produto veterinário e brita em nome de [COMPANHEIRO FALECIDO]/[IMÓVEL RURAL PRINCIPAL].
-- **data:** [ANO SUPRIMIDO]
+- **enunciado:** Comprovantes de 2019 registram compra de produto veterinário e brita em nome de Osvaldo Pereira Lima/Sítio Boa Esperança.
+- **data:** 2014
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D24"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -712,8 +712,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F13
-- **enunciado:** A autodeclaração informa trabalho rural de [DATA SUPRIMIDA] a [DATA SUPRIMIDA], [QUANTIDADE SUPRIMIDA] ha totais, [QUANTIDADE SUPRIMIDA] ha explorados, gado e ausência de empregados ou outra renda.
-- **data:** [DATA SUPRIMIDA]-[DATA SUPRIMIDA]
+- **enunciado:** A autodeclaração informa trabalho rural de 08/05/2014 a 19/11/2016, 260 ha totais, 260 ha explorados, gado e ausência de empregados ou outra renda.
+- **data:** 14/12/2022-10/05/2023
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D25"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -721,8 +721,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F14
-- **enunciado:** O conteúdo material da afirmação de que [REQUERENTE] trabalhou pessoalmente em regime de economia familiar durante todo o período declarado depende de corroboração.
-- **data:** [DATA SUPRIMIDA]-[DATA SUPRIMIDA]
+- **enunciado:** O conteúdo material da afirmação de que Rosa Maria Calixto trabalhou pessoalmente em regime de economia familiar durante todo o período declarado depende de corroboração.
+- **data:** 14/12/2022-10/05/2023
 - **grau:** ALEGACAO
 - **documentos:** ["D25"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -731,7 +731,7 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 
 ### F15
 - **enunciado:** O CNIS examinado não registra vínculos ou contribuições da requerente.
-- **data:** Consulta constante do processo de [ANO SUPRIMIDO]
+- **data:** Consulta constante do processo de 2011
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D29"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -739,8 +739,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F16
-- **enunciado:** O INSS manteve pendente o período rural de [DATA SUPRIMIDA] a [DATA SUPRIMIDA].
-- **data:** [DATA SUPRIMIDA]-[DATA SUPRIMIDA]
+- **enunciado:** O INSS manteve pendente o período rural de 08/05/2014 a 19/11/2016.
+- **data:** 14/12/2022-10/05/2023
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D27", "D30"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -748,8 +748,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F17
-- **enunciado:** O INSS invalidou o período de [DATA SUPRIMIDA] a [DATA SUPRIMIDA] por área superior a quatro módulos fiscais.
-- **data:** [DATA SUPRIMIDA]-[DATA SUPRIMIDA]
+- **enunciado:** O INSS invalidou o período de 14/12/2022 a 10/05/2023 por área superior a quatro módulos fiscais.
+- **data:** 14/12/2022-10/05/2023
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D27", "D30"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -757,8 +757,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F18
-- **enunciado:** A carta de indeferimento foi emitida em [DATA SUPRIMIDA] sob a rubrica genérica de aposentadoria programada.
-- **data:** [DATA SUPRIMIDA]
+- **enunciado:** A carta de indeferimento foi emitida em 14/12/2022 sob a rubrica genérica de aposentadoria programada.
+- **data:** 08/05/2014
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D26"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -767,7 +767,7 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 
 ### F19
 - **enunciado:** Não foi localizada exigência nas 84 páginas do processo administrativo examinado.
-- **data:** [DATA SUPRIMIDA]-[DATA SUPRIMIDA]
+- **data:** 14/12/2022-10/05/2023
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D0"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -776,7 +776,7 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 
 ### F20
 - **enunciado:** A decisão foi emitida dois dias após a DER.
-- **data:** [DATA SUPRIMIDA]-[DATA SUPRIMIDA]
+- **data:** 14/12/2022-10/05/2023
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D1", "D26"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -785,7 +785,7 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 
 ### F21
 - **enunciado:** A data de ciência do indeferimento não consta nas 84 páginas examinadas.
-- **data:** Após [DATA SUPRIMIDA]
+- **data:** Após 03/02/2019
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D0", "D26"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -793,8 +793,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F22
-- **enunciado:** A maior parte da prova econômica e rural juntada está em nome de [COMPANHEIRO FALECIDO], não de [REQUERENTE].
-- **data:** [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
+- **enunciado:** A maior parte da prova econômica e rural juntada está em nome de Osvaldo Pereira Lima, não de Rosa Maria Calixto.
+- **data:** 2014-2016
 - **grau:** FATO COMPROVADO
 - **documentos:** ["D8", "D9", "D10", "D11", "D12", "D13", "D15", "D16", "D17", "D18", "D19", "D20", "D21", "D22", "D23", "D24"]
 - **origem conversa:** processo-administrativo.pdf; leitura local registrada na análise anterior desta conversa; documentos e páginas indicados.
@@ -803,7 +803,7 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 
 ### F23
 - **enunciado:** O fluxo decisório aparenta ter sido predominantemente automático e sem apreciação individualizada do acervo.
-- **data:** [DATA SUPRIMIDA]-[DATA SUPRIMIDA]
+- **data:** 14/12/2022-10/05/2023
 - **grau:** INFERENCIA
 - **documentos:** ["D26", "D27", "D28", "D30"]
 - **origem conversa:** Análise jurídica anterior registrada nesta conversa, baseada no intervalo entre DER e decisão e nos relatórios automáticos do PDF pp. 52-84.
@@ -811,8 +811,8 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **conferir:** True
 
 ### F24
-- **enunciado:** Os documentos em nome de [COMPANHEIRO FALECIDO] podem integrar o início de prova material do núcleo familiar, mas não demonstram isoladamente a participação ativa de [REQUERENTE].
-- **data:** [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
+- **enunciado:** Os documentos em nome de Osvaldo Pereira Lima podem integrar o início de prova material do núcleo familiar, mas não demonstram isoladamente a participação ativa de Rosa Maria Calixto.
+- **data:** 2014-2016
 - **grau:** CONCLUSAO JURIDICA
 - **documentos:** ["D3", "D6", "D7", "D8", "D9", "D10", "D11", "D13", "D15", "D17", "D18", "D19", "D20", "D21", "D22", "D23", "D24"]
 - **origem conversa:** Conclusão jurídica da análise anterior desta conversa; base documental indicada nos IDs e páginas correspondentes.
@@ -833,7 +833,7 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **enunciado:** Carência de 180 meses de atividade rural
 - **situacao:** CONTROVERTIDO
 - **fatos:** ["F5", "F6", "F7", "F8", "F9", "F10", "F12", "F13", "F14", "F16", "F17"]
-- **lacuna:** Ausência de documentos diretos para parte de [ANO SUPRIMIDO]-[ANO SUPRIMIDO] e necessidade de demonstrar continuidade e participação pessoal.
+- **lacuna:** Ausência de documentos diretos para parte de 2014-2016 e necessidade de demonstrar continuidade e participação pessoal.
 - **risco:** O INSS computou zero meses e manteve/inviabilizou todo o período.
 - **origem conversa:** Análise anterior desta conversa; documentos PDF pp. 18-51 e relatórios pp. 53-84.
 
@@ -850,7 +850,7 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **situacao:** CONTROVERTIDO
 - **fatos:** ["F7", "F8", "F10", "F13", "F14", "F17"]
 - **lacuna:** Faltam registros completos de área efetivamente utilizada, renda, rebanho, mão de obra e estrutura produtiva.
-- **risco:** Área total de [QUANTIDADE SUPRIMIDA] ha e compras relevantes permitem objeção sobre escala econômica.
+- **risco:** Área total de 260 ha e compras relevantes permitem objeção sobre escala econômica.
 - **origem conversa:** Análise anterior desta conversa; PDF pp. 32, 34, 41-46, 50-51 e 82-84.
 
 ### R5
@@ -888,7 +888,7 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **origem conversa:** Conclusão jurídica da análise anterior; autodeclaração nas pp. 50-51 e motivo automático nas pp. 82-84.
 
 ### T3
-- **enunciado:** Os documentos em nome do companheiro podem servir ao núcleo familiar, desde que se prove a participação ativa de [REQUERENTE].
+- **enunciado:** Os documentos em nome do companheiro podem servir ao núcleo familiar, desde que se prove a participação ativa de Rosa Maria Calixto.
 - **polo:** requerente
 - **apoia se:** ["R3", "R5"]
 - **forca:** Defensável, mas atualmente limitada pela prova direta da atuação pessoal.
@@ -905,127 +905,127 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 
 ## Cronologia
 
-### [DATA SUPRIMIDA]
-- **data:** [DATA SUPRIMIDA]
-- **evento:** Data inicial de atividade declarada; [relação com dado familiar suprimida].
+### 14/12/2022
+- **data:** 08/05/2014
+- **evento:** Data inicial de atividade declarada; convivência com o companheiro.
 - **grau:** ALEGACAO
 - **fonte:** D25 e D7
 - **localizacao:** PDF pp. 50-51 e 14-17
 
-### [ANO SUPRIMIDO]
-- **data:** [ANO SUPRIMIDO]
-- **evento:** Nota de peças de maquinário em nome de [COMPANHEIRO FALECIDO].
+### 2016
+- **data:** 2014
+- **evento:** Nota de peças de maquinário em nome de Osvaldo Pereira Lima.
 - **grau:** FATO COMPROVADO
 - **fonte:** D8
 - **localizacao:** PDF p. 18
 
-### [ANO SUPRIMIDO]
-- **data:** [ANO SUPRIMIDO]
-- **evento:** Comprovante de vacinação em estabelecimento rural de [MUNICÍPIO RURAL 4].
+### 2016
+- **data:** 2014
+- **evento:** Comprovante de vacinação em estabelecimento rural de Ouro Fino do Oeste.
 - **grau:** FATO COMPROVADO
 - **fonte:** D9
 - **localizacao:** PDF p. 19
 
-### [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
-- **data:** [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
-- **evento:** Notas de insumos rurais em nome de [COMPANHEIRO FALECIDO], com referências territoriais diversas.
+### 2021-2022
+- **data:** 2014-2016
+- **evento:** Notas de insumos rurais em nome de Osvaldo Pereira Lima, com referências territoriais diversas.
 - **grau:** FATO COMPROVADO
 - **fonte:** D10
 - **localizacao:** PDF pp. 20-26
 
-### [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
-- **data:** [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
-- **evento:** Energia rural na [IMÓVEL RURAL PRINCIPAL], com histórico desde outubro de [ANO SUPRIMIDO].
+### 2021-2022
+- **data:** 2014-2016
+- **evento:** Energia rural no Sítio Boa Esperança, com histórico desde outubro de 2023.
 - **grau:** FATO COMPROVADO
 - **fonte:** D11
 - **localizacao:** PDF pp. 27-30
 
-### [DATA SUPRIMIDA]
-- **data:** [DATA SUPRIMIDA]
-- **evento:** Venda de [QUANTIDADE SUPRIMIDA] bezerros por [VALOR SUPRIMIDO]
+### 14/12/2022
+- **data:** 08/05/2014
+- **evento:** Venda de 55 bezerros por R$ 12.400,00
 - **grau:** FATO COMPROVADO
 - **fonte:** D15
 - **localizacao:** PDF p. 34
 
-### [DATA SUPRIMIDA]
-- **data:** [DATA SUPRIMIDA]
-- **evento:** Vacinação de [QUANTIDADE SUPRIMIDA] bezerras na [IMÓVEL RURAL PRINCIPAL].
+### 14/12/2022
+- **data:** 08/05/2014
+- **evento:** Vacinação de 28 bezerras no Sítio Boa Esperança.
 - **grau:** FATO COMPROVADO
 - **fonte:** D13
 - **localizacao:** PDF p. 32
 
-### [ANO SUPRIMIDO]
-- **data:** [ANO SUPRIMIDO]
-- **evento:** Continuidade de energia rural na [IMÓVEL RURAL PRINCIPAL].
+### 2016
+- **data:** 2014
+- **evento:** Continuidade de energia rural no Sítio Boa Esperança.
 - **grau:** FATO COMPROVADO
 - **fonte:** D16
 - **localizacao:** PDF pp. 35-37
 
-### [ANO SUPRIMIDO]
-- **data:** [ANO SUPRIMIDO]
+### 2016
+- **data:** 2014
 - **evento:** Aquisições de insumos agropecuários.
 - **grau:** FATO COMPROVADO
 - **fonte:** D17
 - **localizacao:** PDF pp. 38-40
 
-### [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
-- **data:** [ANO SUPRIMIDO]-[ANO SUPRIMIDO]
+### 2021-2022
+- **data:** 2014-2016
 - **evento:** Notas de sementes, diesel, insumos, ferramentas, produtos veterinários e ração.
 - **grau:** FATO COMPROVADO
 - **fonte:** D18-D22
 - **localizacao:** PDF pp. 41-46
 
-### [MARCO ETÁRIO — ANO [ANO SUPRIMIDO]]
-- **data:** [MARCO ETÁRIO — ANO [ANO SUPRIMIDO]]
-- **evento:** [REQUERENTE] completa [IDADE SUPRIMIDA].
+### [MARCO ETÁRIO — ANO 2019]
+- **data:** [MARCO ETÁRIO — ANO 2022]
+- **evento:** Rosa Maria Calixto completa 55 anos.
 - **grau:** FATO COMPROVADO
 - **fonte:** D1
 - **localizacao:** PDF p. 1
 
-### [ANO SUPRIMIDO]
-- **data:** [ANO SUPRIMIDO]
-- **evento:** Comunicação do INDEA sobre ausência de relatório de vacinação.
+### 2016
+- **data:** 2014
+- **evento:** Comunicação do órgão estadual de defesa agropecuária sobre ausência de relatório de vacinação.
 - **grau:** FATO COMPROVADO
 - **fonte:** D23
 - **localizacao:** PDF p. 47
 
-### [ANO SUPRIMIDO]
-- **data:** [ANO SUPRIMIDO]
+### 2016
+- **data:** 2014
 - **evento:** Compra de produtos veterinários e brita.
 - **grau:** FATO COMPROVADO
 - **fonte:** D24
 - **localizacao:** PDF pp. 48-49
 
-### [DATA SUPRIMIDA]
-- **data:** [DATA SUPRIMIDA]
-- **evento:** Óbito de [COMPANHEIRO FALECIDO]; certidão o qualifica agricultor e registra [REQUERENTE] como companheira.
+### 14/12/2022
+- **data:** 08/05/2014
+- **evento:** Óbito de Osvaldo Pereira Lima; certidão o qualifica agricultor e registra Rosa Maria Calixto como companheira.
 - **grau:** FATO COMPROVADO
 - **fonte:** D6
 - **localizacao:** PDF pp. 12-13
 
-### [DATA SUPRIMIDA]
-- **data:** [DATA SUPRIMIDA]
-- **evento:** Escritura registra união estável, [DADO FAMILIAR SUPRIMIDO], qualificação “do lar” e endereço urbano.
+### 14/12/2022
+- **data:** 08/05/2014
+- **evento:** Escritura registra união estável, três filhos maiores de idade, qualificação “do lar” e endereço urbano.
 - **grau:** FATO COMPROVADO
 - **fonte:** D7
 - **localizacao:** PDF pp. 14-17
 
-### [DATA SUPRIMIDA]
-- **data:** [DATA SUPRIMIDA]
+### 14/12/2022
+- **data:** 08/05/2014
 - **evento:** DER e transmissão da autodeclaração.
 - **grau:** FATO COMPROVADO
 - **fonte:** D1 e D25
 - **localizacao:** PDF pp. 1 e 50-51
 
-### [DATA SUPRIMIDA]
-- **data:** [DATA SUPRIMIDA]
+### 14/12/2022
+- **data:** 08/05/2014
 - **evento:** Carta de indeferimento e despacho automatizado.
 - **grau:** FATO COMPROVADO
 - **fonte:** D26 e D28
 - **localizacao:** PDF pp. 52 e 75
 
-### Após [DATA SUPRIMIDA]
-- **data:** Após [DATA SUPRIMIDA]
+### Após 03/02/2019
+- **data:** Após 03/02/2019
 - **evento:** Data de ciência não localizada no processo examinado.
 - **grau:** FATO COMPROVADO
 - **fonte:** D0
@@ -1038,7 +1038,7 @@ O conjunto comprova a participação pessoal de [REQUERENTE] e 180 meses de ativ
 - **fontes:** D25, PDF pp. 50-51; D7, PDF pp. 14-17.
 
 ### C2
-- **enunciado:** [IMÓVEL RURAL PRINCIPAL] durante todo o período declarado versus documentos antigos de outros imóveis/localidades.
+- **enunciado:** Sítio Boa Esperança durante todo o período declarado versus documentos antigos de outros imóveis/localidades.
 - **fontes:** D25, PDF pp. 50-51; D9-D10, PDF pp. 19-26.
 
 ### C3
@@ -1058,9 +1058,9 @@ Nenhuma pendência registrada neste bloco.
 - D9-D10: confirmar imóveis, municípios e continuidade territorial.
 - D14: confirmar titular e natureza do negócio no recibo original.
 - D19-D22: conferir volumes, valores e destinação antes de uso em peça.
-- D25: confirmar condição de posseira, área total, [QUANTIDADE SUPRIMIDA] ha explorados, ausência de empregados e origem da data inicial.
-- F14/R3: colher documentos próprios e prova oral sobre participação ativa de [REQUERENTE].
-- R4: obter matrícula/posse, CCIR, ITR, CAR, histórico do INDEA, rebanho, renda e mão de obra.
+- D25: confirmar condição de posseira, área total, 260 ha explorados, ausência de empregados e origem da data inicial.
+- F14/R3: colher documentos próprios e prova oral sobre participação ativa de Rosa Maria Calixto.
+- R4: obter matrícula/posse, CCIR, ITR, CAR, histórico do órgão estadual de defesa agropecuária, rebanho, renda e mão de obra.
 - R6/F21: obter comprovante de ciência no Meu INSS para cálculo da tempestividade.
 - D29: conferir as bases indicadas como não anexadas na PDF p. 81.
 - F19: confirmar no PAT integral e nos registros de andamento se houve exigência fora do relatório recebido.
