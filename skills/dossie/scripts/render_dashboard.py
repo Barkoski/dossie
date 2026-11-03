@@ -23,6 +23,8 @@ def render(data):
     js += '\n' + (assets / 'evidence.js').read_text(encoding='utf-8')
     css += '\n' + (assets / 'document.css').read_text(encoding='utf-8')
     js += '\n' + (assets / 'document.js').read_text(encoding='utf-8')
+    css += '\n' + (assets / 'tema.css').read_text(encoding='utf-8')
+    js += '\n' + (assets / 'tema.js').read_text(encoding='utf-8')
     return html.replace('</style>', '</style><style>' + css + '</style>', 1).replace('</body>', '<script>' + js + '</script></body>')
 
 
