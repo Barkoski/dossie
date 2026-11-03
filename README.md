@@ -1,12 +1,14 @@
 # /dossie
 
+> 🧩 **Peça independente.** Use este repositório sozinho ou junto com os outros: [consultor-primeiro](https://github.com/Barkoski/consultor-primeiro) (um fluxo de trabalho com agentes: um forte planeja, os econômicos executam) · [advocacia-previdenciaria-barkoski](https://github.com/Barkoski/advocacia-previdenciaria-barkoski) (análise, estratégia e redação em Direito Previdenciário). Cada um nasceu com uma proposta própria.
+
 Transforma a análise de um caso jurídico feita na conversa com uma IA em **dossiê estruturado e auditável**: tabela de provas rastreável, quadro de requisitos, cronologia, grafo do caso e relatório.
 
 **Sem dependências de execução.** Não exige `pip`, servidor, CDN ou biblioteca externa. Funciona no Codex, Claude Code, Claude Desktop, Cowork e ChatGPT.
 
 Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previdenciarista.
 
-## Versão 1.7
+## Versão 2.1
 
 O plugin distribuído está na versão **2.1.0**.
 
