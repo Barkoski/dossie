@@ -32,7 +32,7 @@ class DashboardTests(unittest.TestCase):
 
     def test_theme_layer_is_embedded_offline(self):
         html = RENDERER.render(self.example)
-        self.assertIn('Tema 1.8', html)
+        self.assertIn('Tema 2.0', html)
         self.assertNotRegex(html, r'(src|href)="https?://')
 
     def test_renderer_does_not_mutate_the_canonical_case(self):
