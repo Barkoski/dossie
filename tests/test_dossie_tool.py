@@ -29,6 +29,23 @@ class DossieToolTests(unittest.TestCase):
         self.assertEqual(len(warnings), 1)
         self.assertIn("inspecao estatica parcial", warnings[0])
 
+    def test_proven_requirement_rejects_non_proven_supporting_fact(self):
+        data = json.loads(json.dumps(self.example))
+        requirement = next(r for r in data["requisitos"] if r.get("fatos"))
+        requirement["situacao"] = "COMPROVADO"
+        fact = next(f for f in data["fatos"] if f["id"] == requirement["fatos"][0])
+        fact["grau"] = "ALEGACAO"
+        errors, _ = TOOL.validate(data)
+        self.assertTrue(any("requisito comprovado exige somente FATO COMPROVADO" in e for e in errors))
+
+    def test_proven_fact_rejects_illegible_document(self):
+        data = json.loads(json.dumps(self.example))
+        fact = next(f for f in data["fatos"] if f["grau"] == "FATO COMPROVADO" and f.get("documentos"))
+        doc = next(d for d in data["documentos"] if d["id"] == fact["documentos"][0])
+        doc["qualidade"] = "ILEGIVEL"
+        errors, _ = TOOL.validate(data)
+        self.assertTrue(any("documento ilegivel" in e for e in errors))
+
     def test_duplicate_id_is_rejected(self):
         data = json.loads(json.dumps(self.example))
         data["fatos"].append(dict(data["fatos"][0]))

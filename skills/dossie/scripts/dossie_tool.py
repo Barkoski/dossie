@@ -182,6 +182,8 @@ def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list
                     doc = documents.get(doc_id, {})
                     if doc.get("lido") is not True or _missing(doc.get("localizacao")):
                         errors.append(f"{entity_id}: documento {doc_id} nao lido ou sem localizacao")
+                    elif doc.get("qualidade") == "ILEGIVEL":
+                        errors.append(f"{entity_id}: fato comprovado apoiado em documento ilegivel: {doc_id}")
         if item.get("_colecao") == "requisitos":
             if item.get("situacao") not in VALID_REQUIREMENT_STATES:
                 errors.append(f"{entity_id}: situacao invalida")
@@ -190,6 +192,11 @@ def validate(data: dict, html_path: Path | None = None) -> tuple[list[str], list
             for fact_id in item.get("fatos", []):
                 if fact_id not in index or index[fact_id].get("_colecao") != "fatos":
                     errors.append(f"{entity_id}: fato inexistente: {fact_id}")
+                elif item.get("situacao") == "COMPROVADO" and index[fact_id].get("grau") != "FATO COMPROVADO":
+                    errors.append(
+                        f"{entity_id}: requisito comprovado exige somente FATO COMPROVADO documental; "
+                        f"{fact_id} e {index[fact_id].get('grau')}"
+                    )
         if item.get("_colecao") == "teses":
             for requirement_id in item.get("apoia_se", []):
                 if requirement_id not in index or index[requirement_id].get("_colecao") != "requisitos":
