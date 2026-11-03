@@ -7,6 +7,7 @@ Aplicar antes de cada entrega completa ou parcial.
 1. Cada item possui `origem_conversa` ou esta marcado `SEM FONTE NA CONVERSA`.
 2. Cada `FATO COMPROVADO` aponta documento lido e localizacao registrada.
 3. Documento `NAO LIDO` nao sustenta fato nem requisito.
+   Requisito so e `COMPROVADO` se TODOS os fatos de suporte forem `FATO COMPROVADO` em documento lido, legivel e com localizacao. Alegacao, inferencia ou conclusao juridica impedem o status (o validador recusa).
 4. Inferencia informa a base e nao foi promovida silenciosamente a fato.
 5. Conflitos permanecem visiveis; correcoes explicitas registram a versao substituida.
 6. Nenhuma lei, tese, data, valor ou pagina foi acrescentada para completar lacuna.
