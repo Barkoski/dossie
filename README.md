@@ -8,7 +8,7 @@ Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previden
 
 ## Versão 1.7
 
-O plugin distribuído está na versão **2.0.0**.
+O plugin distribuído está na versão **2.0.1**.
 
 - ficha documental com resumo e transcrição completa separados, preservando a origem;
 - aviso explícito para transcrição parcial, sem origem ou ausente, sem reconstruir documentos a partir de resumos;
@@ -27,7 +27,7 @@ O exemplo público suprime também datas, anos, valores, áreas, quantidades e d
 
 ### Recursos preservados da versão 1.5
 
-- painel Mapa claro, com busca sem acentos, zoom, cadeia selecionada e detalhes clicáveis;
+- painel interativo (tema Vidro desde a 2.0), com busca sem acentos, zoom, cadeia selecionada e detalhes clicáveis;
 - histórico de navegação nas fichas e comparação de conflitos lado a lado;
 - vínculo temporário com PDF local para conferir a página indicada, sem upload;
 - conferências pessoais com responsável, data, observação e histórico, separadas da análise de origem;
@@ -109,6 +109,8 @@ INFERENCIA              deduzido do conjunto, com registro de onde
 SEM FONTE NA CONVERSA   apareceu na análise e nada diz de onde veio
 ```
 
+**Regra estrita (1.7.1):** um requisito só pode ficar `COMPROVADO` se **todos** os fatos de suporte forem `FATO COMPROVADO`, em documento lido, legível e com localização. Alegação, inferência ou conclusão jurídica entre os fatos impedem o status, e o validador recusa o arquivo.
+
 O quarto grau é o produto. Em teste com um processo real, quatro afirmações caíram nele — todas citações legais que a IA tinha marcado "de memória" e nunca confirmou. A análise parecia sólida nos fatos, e estava; mas as **regras jurídicas** que sustentavam o quadro de requisitos inteiro estavam penduradas no vazio. O dossiê expôs isso em quatro linhas.
 
 A mesma disciplina vale no grafo: aresta só existe se a relação foi **afirmada**. Nada de ligar nós por semelhança de tema ou coincidência de data. E clicar num nó abre o painel com a origem — sem isso, grafo é enfeite.
@@ -156,7 +158,7 @@ O grafo é desenhado à mão em SVG e JavaScript puro — biblioteca de CDN é b
 
 Sete abas: grafo, índice documental e triagem, provas com busca e filtro, requisitos em barras, cronologia, pendências e relatório com copiar e imprimir.
 
-Tema claro e escuro. Paleta em tons médios, e cor nunca é o único portador de significado — todo estado vem acompanhado de rótulo em texto.
+Tema **Vidro** (versão 2.0): fundo atmosférico, cartões de vidro fosco, barra flutuante em pílula com ícones, indicadores com números grandes e barras de progresso coloridas por situação. Alterna sozinho entre escuro e claro conforme o sistema, funciona offline e respeita `prefers-reduced-motion`. A cor nunca é o único portador de significado: todo estado vem acompanhado de rótulo em texto. A aparência fica em `skills/dossie/assets/tema.css` e `tema.js`, que não alteram dados nem comportamento.
 
 ## Exemplo completo
 
