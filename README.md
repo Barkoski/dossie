@@ -8,7 +8,7 @@ Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previden
 
 ## Versão 1.7
 
-O plugin distribuído está na versão **2.0.1**.
+O plugin distribuído está na versão **2.0.2**.
 
 - ficha documental com resumo e transcrição completa separados, preservando a origem;
 - aviso explícito para transcrição parcial, sem origem ou ausente, sem reconstruir documentos a partir de resumos;

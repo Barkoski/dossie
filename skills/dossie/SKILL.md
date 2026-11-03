@@ -3,7 +3,7 @@ name: dossie
 description: Organiza analise juridica da conversa ou documentos expressamente indicados em dossie estruturado, persistente e auditavel, com indice e delimitacao de documentos, triagem, tabela de provas, requisitos, cronologia, grafo, relatorio, pendencias e consultas. Use quando o usuario pedir dossie, identificacao ou indice documental, classificacao de pecas, triagem processual, tabela ou quadro de provas, mapa ou grafo do caso, linha do tempo, relatorio, exportacao Markdown/JSON/HTML, atualizacao de dossie existente, caminho entre entidades, contradicoes, lacunas ou explicacao de item. Nao pesquisar nem acrescentar conhecimento externo ao caso.
 ---
 
-# Dossiê jurídico — revisão 1.7 (JSON 1.3 compatível)
+# Dossiê jurídico — revisão 2.0 (JSON 1.3 compatível)
 
 Transforma o que foi analisado na conversa em dossie estruturado: tabela de provas rastreavel, quadro de requisitos, cronologia, grafo do caso e relatorio.
 
@@ -38,6 +38,8 @@ Aceitar tambem pedidos em linguagem natural. Sem argumento, entregar o dossie co
 
 Nao inferir fato, data, valor, pagina, parte ou documento que nao tenha sido dito. Nao completar lacuna com o que seria plausivel. Quando algo essencial faltar, o dossie mostra a falta — e essa e a sua funcao mais util.
 
+Requisito só fica `COMPROVADO` se todos os fatos de suporte forem `FATO COMPROVADO` (documento lido, legível e com localização); alegação, inferência ou conclusão jurídica impedem o status, e o validador recusa.
+
 Todo item carrega duas trilhas distintas: `origem_conversa` indica onde apareceu na conversa; `fonte_probatoria` indica qual documento ou ato o sustenta. Origem na conversa nao transforma afirmacao em prova. Item sem origem identificavel e marcado `SEM FONTE NA CONVERSA` e aparece destacado, nunca omitido nem silenciosamente aceito.
 
 ## O que fazer quando invocado
@@ -60,7 +62,7 @@ Quando o usuario pedir salvar, atualizar ou consultar dossie persistente, ler [r
 
 Conforme o argumento recebido. As saidas em Markdown seguem [references/tabelas.md](references/tabelas.md). O dossie visual segue [references/html.md](references/html.md).
 
-Para exportar HTML, preferir o painel interativo autocontido de `assets/dashboard.html`, renderizado por `python scripts/render_dashboard.py <dossie.json> --output <dossie.html>`. Ele abre detalhes por clique, liga entidades e fontes e oferece busca, filtros, cronologia e relatório. Não entregar o template cru: o script incorpora o JSON com neutralização de conteúdo. O painel não modifica nem valida o mérito dos registros. Não usar dados de demonstração em dossiê real.
+O painel usa o tema Vidro (claro e escuro automáticos, offline), definido em `assets/tema.css` e `assets/tema.js`. Para exportar HTML, preferir o painel interativo autocontido de `assets/dashboard.html`, renderizado por `python scripts/render_dashboard.py <dossie.json> --output <dossie.html>`. Ele abre detalhes por clique, liga entidades e fontes e oferece busca, filtros, cronologia e relatório. Não entregar o template cru: o script incorpora o JSON com neutralização de conteúdo. O painel não modifica nem valida o mérito dos registros. Não usar dados de demonstração em dossiê real.
 
 As fichas devem mostrar resumo e íntegra separadamente. Quando os documentos indicados estiverem disponíveis localmente, preservar `texto_integral`, `texto_integral_origem` e `texto_integral_status` conforme `references/extracao.md`. Nunca reconstruir a íntegra a partir de resumo. Sem texto completo, registrar a ausência; a ficha permite vincular e visualizar o PDF original localmente, sem envio ou alteração da conferência.
 
