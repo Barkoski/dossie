@@ -31,6 +31,6 @@ jobs:
         run: zip -r dossie.plugin .claude-plugin skills README.md LICENSE -x "*/__pycache__/*" "*.pyc"
       - uses: actions/upload-artifact@v7
         with:
-          name: dossie-plugin-v2.0.2
+          name: dossie-plugin-v2.1.0
           path: dossie.plugin
           if-no-files-found: error
