@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="Dossiê: Da conversa sobre o caso à análise organizada e conferível.">
+<rect width="1200" height="380" rx="24" fill="#f3f1eb"/><path d="M895 0H1176Q1200 0 1200 24V356Q1200 380 1176 380H895Z" fill="#638b83"/>
+<circle cx="1070" cy="105" r="130" fill="none" stroke="#fff" stroke-opacity=".18"/><circle cx="1070" cy="105" r="88" fill="none" stroke="#fff" stroke-opacity=".23"/>
+<path d="M970 260h130m-105 22h105m-80 22h80" stroke="#fff" stroke-opacity=".6" stroke-width="4" stroke-linecap="round"/>
+<g font-family="Segoe UI,Arial,sans-serif"><text x="52" y="57" font-size="16" letter-spacing="2.5" font-weight="600" fill="#638b83">ORGANIZAÇÃO DA ANÁLISE</text>
+<text x="52" y="127" font-size="43" font-weight="700" fill="#304959">Dossiê</text><text x="52" y="171" font-size="22" fill="#536775">Da conversa sobre o caso à análise organizada e conferível.</text>
+<path d="M52 202h770" stroke="#d6dbd5"/><text x="52" y="244" font-size="18" fill="#536775">LUCAS BARKOSKI</text><text x="52" y="275" font-size="18" fill="#536775">Ferramentas para ler, organizar e trabalhar melhor.</text>
+<rect x="52" y="309" width="370" height="35" rx="17" fill="#e4e9e3"/><text x="72" y="332" font-size="16" fill="#3e5c5c">github.com/Barkoski</text><text x="947" y="166" font-size="63" font-weight="600" fill="#fff">B.</text></g></svg>
