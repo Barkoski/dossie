@@ -1,14 +1,42 @@
-# /dossie
+<p align="center">
+  <img src="assets/banner.svg" alt="Dossiê — Da conversa sobre o caso à análise organizada e conferível." width="100%">
+</p>
 
-> 🧩 **Peça independente.** Use este repositório sozinho ou junto com os outros: [consultor-primeiro](https://github.com/Barkoski/consultor-primeiro) (um fluxo de trabalho com agentes: um forte planeja, os econômicos executam) · [advocacia-previdenciaria-barkoski](https://github.com/Barkoski/advocacia-previdenciaria-barkoski) (análise, estratégia e redação em Direito Previdenciário). Cada um nasceu com uma proposta própria.
+<p align="center">
+<img alt="Versão 1.7.1" src="https://img.shields.io/badge/Vers%C3%A3o%201.7.1-638b83">
+<img alt="HTML offline" src="https://img.shields.io/badge/HTML%20offline-638b83">
+<img alt="MIT" src="https://img.shields.io/badge/MIT-638b83">
+</p>
 
-Transforma a análise de um caso jurídico feita na conversa com uma IA em **dossiê estruturado e auditável**: tabela de provas rastreável, quadro de requisitos, cronologia, grafo do caso e relatório.
+# 🗂️ Dossiê
 
-**Sem dependências de execução.** Não exige `pip`, servidor, CDN ou biblioteca externa. Funciona no Codex, Claude Code, Claude Desktop, Cowork e ChatGPT.
+> Organize a análise jurídica já feita em **provas, requisitos, cronologia, grafo e relatório**, preservando a origem de cada informação.
 
-Construído por [Lucas Barkoski](https://github.com/Barkoski), advogado previdenciarista.
+Criado por **[Lucas Barkoski](https://github.com/Barkoski)**.
 
-## Versão 2.1
+**Explore:** [📚 Documentação](#documentacao) · [🧭 Comece por uma análise já feita](#secao-1) · [✨ Versão 2.1](#secao-2) · [🔎 O problema](#secao-3) · [🚀 Instalação](#secao-10) · [🚧 Limites](#secao-11)
+
+<p align="center">
+  <img src="assets/fluxo.svg" alt="Análise existente → Provas e fontes → Cronologia e grafo → Revisão humana" width="100%">
+</p>
+
+<a id="secao-1"></a>
+## 🧭 Comece por uma análise já feita
+
+1. Analise os documentos no ambiente que você utiliza.
+2. Peça ao Dossiê para organizar a conversa, mantendo fontes e lacunas.
+3. Confira a tabela de provas antes de aproveitar o relatório.
+
+```text
+/dossie
+/dossie provas
+/dossie lacunas
+```
+
+O painel HTML pode funcionar offline. Isso não significa que o modelo usado na conversa rode localmente: o processamento da skill depende da plataforma e da conta.
+
+<a id="secao-2"></a>
+## ✨ Versão 2.1
 
 O plugin distribuído está na versão **2.1.0**.
 
@@ -75,13 +103,15 @@ As conferências ficam neste navegador e não alteram os fatos nem a classifica�
 - barras de requisitos sem transformar quantidade de documentos em chance de êxito;
 - metadados e instruções de instalação para o Codex.
 
-## O problema
+<a id="secao-3"></a>
+## 🔎 O problema
 
 Você passa uma hora analisando um processo com uma IA. Ao final tem uma conversa longa, cheia de achados bons — e nada que dê para levar para os autos, arquivar ou revisar depois.
 
 Pior: no meio dessa conversa há afirmações sólidas, com página citada, misturadas com afirmações que a IA soltou sem fonte nenhuma. Do jeito que ficam na tela, **as duas parecem iguais**.
 
-## O que ele faz
+<a id="secao-4"></a>
+## 📌 O que ele faz
 
 Lê a conversa e devolve a análise estruturada, separando o que tem lastro do que não tem.
 
@@ -96,7 +126,8 @@ Lê a conversa e devolve a análise estruturada, separando o que tem lastro do q
 | Relatório | Texto corrido gerado a partir do que foi estruturado, pronto para copiar ou imprimir |
 | Pendências | Três blocos: sem fonte, pendente de leitura, confirmar antes de usar |
 
-## O princípio
+<a id="secao-5"></a>
+## 📌 O princípio
 
 **O dossiê não produz conhecimento novo. Ele estrutura o que já existe na conversa.**
 
@@ -117,7 +148,8 @@ O quarto grau é o produto. Em teste com um processo real, quatro afirmações c
 
 A mesma disciplina vale no grafo: aresta só existe se a relação foi **afirmada**. Nada de ligar nós por semelhança de tema ou coincidência de data. E clicar num nó abre o painel com a origem — sem isso, grafo é enfeite.
 
-## Comandos
+<a id="secao-6"></a>
+## 💡 Comandos
 
 ```
 /dossie                # dossiê completo
@@ -140,7 +172,8 @@ A mesma disciplina vale no grafo: aresta só existe se a relação foi **afirmad
 
 Não é preciso preparar nada. Analise o caso normalmente e depois chame o comando ou peça em linguagem natural para organizar a análise como dossiê.
 
-## Administrativo e judicial
+<a id="secao-7"></a>
+## 📌 Administrativo e judicial
 
 Serve aos dois. As cinco entidades — parte, documento, fato, requisito, tese — são de litígio em geral.
 
@@ -152,7 +185,8 @@ Serve aos dois. As cinco entidades — parte, documento, fato, requisito, tese �
 
 Em processo judicial, juízo e perito entram como partes quando produzem ato relevante, e a decisão judicial entra como documento — é fonte de fato como qualquer peça.
 
-## O dossiê visual
+<a id="secao-8"></a>
+## 📌 O dossiê visual
 
 Um **único arquivo HTML**, sem nenhuma dependência externa. Abre com duplo clique, funciona offline, renderiza como artifact.
 
@@ -162,7 +196,8 @@ Sete abas: grafo, índice documental e triagem, provas com busca e filtro, requi
 
 Tema **Vidro** (versão 2.0): fundo atmosférico, cartões de vidro fosco, barra flutuante em pílula com ícones, indicadores com números grandes e barras de progresso coloridas por situação. Alterna sozinho entre escuro e claro conforme o sistema, funciona offline e respeita `prefers-reduced-motion`. A cor nunca é o único portador de significado: todo estado vem acompanhado de rótulo em texto. A aparência fica em `skills/dossie/assets/tema.css` e `tema.js`, que não alteram dados nem comportamento.
 
-## Exemplo completo
+<a id="secao-9"></a>
+## 💡 Exemplo completo
 
 O diretório [`examples/`](examples/) contém o mesmo caso inteiramente fictício em três formatos:
 
@@ -182,7 +217,8 @@ python skills/dossie/scripts/dossie_tool.py documents examples/caso-ficticio.jso
 python skills/dossie/scripts/dossie_tool.py screening examples/caso-ficticio.json
 ```
 
-## Instalação
+<a id="secao-10"></a>
+## 🚀 Instalação
 
 ### Claude Code
 
@@ -231,18 +267,30 @@ O fluxo automático do GitHub também gera um pacote `dossie-plugin` testado a c
 
 Cole o conteúdo de `SKILL.md` e dos seis arquivos de `references/` nas instruções de um GPT personalizado. Depois é só analisar o caso e pedir o dossiê.
 
-## Limites
+<a id="secao-11"></a>
+## 🚧 Limites
 
 - **Só estrutura o que está na conversa.** Não abre processo, não lê PDF, não pesquisa. Para isso existem outras ferramentas; esta entra depois delas.
 - **Não confere nada.** Toda linha sai marcada para conferência humana. A tabela é roteiro de conferência, não certificado de veracidade.
 - **Não decide.** Organiza a análise; a conclusão é do advogado.
 - **Não busca fora.** Nenhum dado do caso sai para serviço externo. O dossiê gerado contém dados sigilosos e deve ser tratado como tal.
 
-## Autoria
+<a id="secao-12"></a>
+## 👤 Autoria
 
 Lucas Barkoski — [github.com/Barkoski](https://github.com/Barkoski). Publicada no catálogo `barkoski-skills`.
 
-## Licença
+
+<a id="documentacao"></a>
+## 📚 Links para continuar
+
+- [Regras do dossiê](skills/dossie/SKILL.md)
+- [Exemplos](examples/)
+- [Contribuição](CONTRIBUTING.md)
+- [Segurança](SECURITY.md)
+
+
+<a id="secao-13"></a>
+## 📜 Licença
 
 MIT — ver [LICENSE](LICENSE).
-
