@@ -2,7 +2,7 @@
 
 Obrigado pelo interesse. Este repositório é uma skill: texto e instruções, mais um utilitário em Python sem dependências. Não é aplicação, não tem servidor e não guarda dados.
 
-## Regra nº 1 — nunca dados reais
+## Regra nº 1: nunca dados reais
 
 **Não inclua dados de caso real em lugar nenhum: issue, pull request, exemplo, teste, captura de tela, HTML gerado ou mensagem de commit.**
 
@@ -16,7 +16,7 @@ Contribuição que traga dado real será fechada sem merge, e o histórico terá
 
 **O dossiê não produz conhecimento novo. Ele estrutura o que já existe na conversa.**
 
-Toda proposta é medida por aí. Se uma mudança faz o dossiê inferir, completar lacuna com o plausível, promover grau de comprovação ou preencher campo por conveniência de layout, ela será recusada — por melhor que fique a saída.
+Toda proposta é medida por aí. Se uma mudança faz o dossiê inferir, completar lacuna com o plausível, promover grau de comprovação ou preencher campo por conveniência de layout, ela será recusada, por melhor que fique a saída.
 
 O bloco de pendências é a função mais útil do projeto, não uma seção a esconder. Proposta que reduza a visibilidade do que falta parte com o ônus invertido.
 
@@ -58,7 +58,7 @@ python -m unittest discover -s tests -v
 python skills/dossie/scripts/dossie_tool.py validate examples/caso-ficticio.json --html examples/caso-ficticio.html
 ```
 
-O CI roda em Python 3.9 e 3.13. **Regra nova precisa de teste que a proteja** — um teste que quebre a regra deliberadamente e exija recusa.
+O CI roda em Python 3.9 e 3.13. **Regra nova precisa de teste que a proteja**, um teste que quebre a regra deliberadamente e exija recusa.
 
 Mudança no HTML exige rodar a validação com `--html`: ela verifica ausência de recurso externo, `fetch`, script externo e evento inline, e a presença de renderização segura por `textContent`.
 

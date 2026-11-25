@@ -3,7 +3,7 @@ name: dossie
 description: Organiza analise juridica da conversa ou documentos expressamente indicados em dossie estruturado, persistente e auditavel, com indice e delimitacao de documentos, triagem, tabela de provas, requisitos, cronologia, grafo, relatorio, pendencias e consultas. Use quando o usuario pedir dossie, identificacao ou indice documental, classificacao de pecas, triagem processual, tabela ou quadro de provas, mapa ou grafo do caso, linha do tempo, relatorio, exportacao Markdown/JSON/HTML, atualizacao de dossie existente, caminho entre entidades, contradicoes, lacunas ou explicacao de item. Nao pesquisar nem acrescentar conhecimento externo ao caso.
 ---
 
-# Dossiê jurídico — revisão 2.1 (JSON 1.3 compatível)
+# Dossiê jurídico: revisão 2.1 (JSON 1.3 compatível)
 
 Transforma o que foi analisado na conversa em dossie estruturado: tabela de provas rastreavel, quadro de requisitos, cronologia, grafo do caso e relatorio.
 
@@ -36,7 +36,7 @@ Aceitar tambem pedidos em linguagem natural. Sem argumento, entregar o dossie co
 
 **O dossiê não inventa nem pesquisa conhecimento externo. Estrutura o material disponível no modo pedido: conversa ou documentos indicados.**
 
-Nao inferir fato, data, valor, pagina, parte ou documento que nao tenha sido dito. Nao completar lacuna com o que seria plausivel. Quando algo essencial faltar, o dossie mostra a falta — e essa e a sua funcao mais util.
+Nao inferir fato, data, valor, pagina, parte ou documento que nao tenha sido dito. Nao completar lacuna com o que seria plausivel. Quando algo essencial faltar, o dossie mostra a falta, e essa e a sua funcao mais util.
 
 Requisito só fica `COMPROVADO` se todos os fatos de suporte forem `FATO COMPROVADO` (documento lido, legível e com localização); alegação, inferência ou conclusão jurídica impedem o status, e o validador recusa.
 
@@ -44,13 +44,13 @@ Todo item carrega duas trilhas distintas: `origem_conversa` indica onde apareceu
 
 ## O que fazer quando invocado
 
-### Passo 1 — Delimitar o caso
+### Passo 1: Delimitar o caso
 
 Examinar o material disponivel e fixar: parte ou partes, materia, fase, decisao ou peca em discussao, e quais documentos foram efetivamente lidos. Se houver varios casos, usar o claramente indicado; perguntar apenas se persistir ambiguidade relevante. Nao misturar casos.
 
 Se nao houver analise previa, mas o pedido indicar documentos para montar o dossie, ler os arquivos indicados localmente e registrar esse modo de origem e cobertura. Se nao houver nenhum material, informar o que falta; nao inventar caso. Se houver mais de um caso e nao for possivel separa-los com seguranca, pedir ao usuario que escolha um.
 
-### Passo 2 — Extrair
+### Passo 2: Extrair
 
 Seguir [references/extracao.md](references/extracao.md). Ele define as cinco entidades (parte, documento, fato, requisito, tese), como classificar cada afirmacao pelo grau de comprovacao, e o que fazer com afirmacao sem fonte. Quando houver texto de autos, eventos, anexos ou paginas, ler tambem [references/identificacao-documental.md](references/identificacao-documental.md) para montar o indice documental e a triagem antes de relacionar provas e fatos.
 
@@ -58,7 +58,7 @@ O resultado interno e um JSON com a estrutura descrita la. Nao mostrar esse JSON
 
 Quando o usuario pedir salvar, atualizar ou consultar dossie persistente, ler [references/persistencia-e-consultas.md](references/persistencia-e-consultas.md). Manter IDs estaveis e historico de alteracoes. Nao sobrescrever arquivo existente sem pedido expresso.
 
-### Passo 3 — Montar as saidas
+### Passo 3: Montar as saidas
 
 Conforme o argumento recebido. As saidas em Markdown seguem [references/tabelas.md](references/tabelas.md). O dossie visual segue [references/html.md](references/html.md).
 
@@ -68,7 +68,7 @@ As fichas devem mostrar resumo e íntegra separadamente. Quando os documentos in
 
 Preservar integralmente `marcos`, `contradicoes`, triagem, riscos, contra-argumentos e cobertura já registrados. O painel da revisão 1.6 apresenta essas informações sem descartá-las em favor do grafo. Ao receber HTML antigo, usar `scripts/migrate_legacy_html.py` para extrair os dados sem executar o arquivo e conferir as contagens antes da conversão. Conclusão literal importada conserva sua origem e não é tratada como nova validação jurídica. Não reconstruir a interface antiga manualmente quando o renderizador estiver disponível; personalizar os dados e manter os recursos do modelo atualizado.
 
-### Passo 4 — Fechar com o que falta
+### Passo 4: Fechar com o que falta
 
 Toda entrega termina com tres blocos curtos:
 
@@ -76,9 +76,9 @@ Toda entrega termina com tres blocos curtos:
 - **Pendente de leitura**: documento citado na conversa que nao chegou a ser aberto.
 - **Confirmar antes de usar**: tudo que depende de conferencia humana.
 
-Se os tres estiverem vazios, dizer isso explicitamente — e uma informacao boa, nao uma secao a se omitir.
+Se os tres estiverem vazios, dizer isso explicitamente, e uma informacao boa, nao uma secao a se omitir.
 
-### Passo 5 — Validar antes de entregar
+### Passo 5: Validar antes de entregar
 
 Aplicar [references/validacao.md](references/validacao.md). Conferir integridade dos identificadores, correspondencia entre tabelas, grafo e relatorio, neutralizacao de conteudo no HTML, ausencia de conhecimento novo e completude dos blocos de pendencia. Quando Python estiver disponivel e houver `dossie.json`, executar `scripts/dossie_tool.py validate <arquivo>`, acrescentando `--html <arquivo>` quando houver HTML. Se uma verificacao falhar, corrigir antes de apresentar o dossie como completo.
 

@@ -15,7 +15,7 @@
 ## Antes de pedir revisão
 
 - [ ] **Nenhum dado de caso real** neste PR: código, exemplos, testes, capturas, HTML gerado ou mensagens de commit.
-- [ ] A mudança não faz o dossiê produzir conhecimento novo — nada de inferir, completar lacuna com o plausível ou promover grau de comprovação.
+- [ ] A mudança não faz o dossiê produzir conhecimento novo, nada de inferir, completar lacuna com o plausível ou promover grau de comprovação.
 - [ ] Os blocos de pendência continuam visíveis, inclusive quando vazios.
 - [ ] Uma mudança por PR.
 - [ ] Rótulo técnico em caixa alta e sem acento; o resto em português com acentuação.
@@ -25,7 +25,7 @@
 
 Entidades, graus de comprovação, situação de requisito, famílias documentais ou confiança de identificação. Marque tudo que atualizou:
 
-- [ ] `skills/dossie/scripts/dossie_tool.py` — `VALID_*` e `COLLECTIONS`
+- [ ] `skills/dossie/scripts/dossie_tool.py`, `VALID_*` e `COLLECTIONS`
 - [ ] `skills/dossie/references/extracao.md`
 - [ ] `skills/dossie/references/identificacao-documental.md`
 - [ ] `skills/dossie/references/tabelas.md`
@@ -38,7 +38,7 @@ Entidades, graus de comprovação, situação de requisito, famílias documentai
 
 ## Se mexi no HTML
 
-- [ ] Sem recurso externo, `fetch`, CDN, fonte remota ou telemetria — abre offline
+- [ ] Sem recurso externo, `fetch`, CDN, fonte remota ou telemetria, abre offline
 - [ ] Dados renderizados por `textContent`, não por `innerHTML`
 - [ ] Testei com os payloads de `references/validacao.md` e nada executou
 - [ ] Rodapé de sigilo visível
@@ -48,5 +48,5 @@ Entidades, graus de comprovação, situação de requisito, famílias documentai
 
 - [ ] `python -m unittest discover -s tests -v` passa
 - [ ] `python skills/dossie/scripts/dossie_tool.py validate examples/caso-ficticio.json --html examples/caso-ficticio.html` passa
-- [ ] Regra nova tem teste que a protege — quebra a regra de propósito e exige recusa
+- [ ] Regra nova tem teste que a protege, quebra a regra de propósito e exige recusa
 - [ ] Não se aplica: mudança só de texto, sem efeito no validador

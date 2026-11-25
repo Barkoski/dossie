@@ -29,6 +29,6 @@ Se o problema for conteúdo público que exponha dado pessoal ou de caso, sinali
 
 ## Consequências
 
-O mantenedor pode editar ou remover conteúdo, fechar issue ou PR, e bloquear quem descumprir — proporcionalmente à gravidade e à reincidência. Publicação de dado sigiloso enseja remoção imediata, sem aviso prévio.
+O mantenedor pode editar ou remover conteúdo, fechar issue ou PR, e bloquear quem descumprir, proporcionalmente à gravidade e à reincidência. Publicação de dado sigiloso enseja remoção imediata, sem aviso prévio.
 
 Decisões deste tipo são do mantenedor do projeto, e ele as explica quando pedido.

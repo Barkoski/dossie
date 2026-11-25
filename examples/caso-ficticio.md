@@ -1,4 +1,4 @@
-# Dossie — caso rural ficticio
+# Dossie: caso rural ficticio
 
 > Exemplo exclusivamente demonstrativo. Nenhum dado corresponde a pessoa ou processo real.
 
@@ -59,11 +59,11 @@ Nenhuma linha foi conferida na fonte. A tabela e roteiro de conferencia.
 
 ## Sem fonte na conversa
 
-- F3 — ausencia de vinculo urbano entre 2008 e 2022.
+- F3, ausencia de vinculo urbano entre 2008 e 2022.
 
 ## Pendente de leitura
 
-- D3 — CNIS mencionado, mas nao aberto.
+- D3, CNIS mencionado, mas nao aberto.
 
 ## Confirmar antes de usar
 

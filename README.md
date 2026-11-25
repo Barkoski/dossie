@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Dossiê — Da conversa sobre o caso à análise organizada e conferível." width="100%">
+  <img src="assets/banner.svg" alt="Dossiê: Da conversa sobre o caso à análise organizada e conferível." width="100%">
 </p>
 
 <p align="center">
@@ -205,20 +205,20 @@ O catálogo `barkoski-skills` traz também a skill [Advocacia Previdenciária Ba
 <details>
 <summary>Histórico de versões</summary>
 
-- **2.1** — ficha documental com resumo e transcrição separados; aviso de transcrição parcial ou ausente; PDF local dentro da ficha; caso rural fictício completo.
-- **2.0** — tema visual Vidro, com claro e escuro automáticos.
-- **1.8 e 1.9** — novos layouts do painel: claro e escuro, menu lateral e indicadores no topo.
-- **1.7.1** — regra estrita: requisito `COMPROVADO` só com `FATO COMPROVADO` documental.
-- **1.6** — recuperação de cronologia, contradições, triagem e riscos; migração segura de HTML antigo.
-- **1.5** — painel interativo, conferências pessoais, backup e vínculo com PDF local.
-- **1.4** — índice documental, triagem e comandos `documents` e `screening`.
-- **1.2** — estado persistente em `dossie.json`, atualização incremental, consultas e validador.
-- **1.1** — origem da conversa separada da fonte probatória; conflitos preservados; proteção do HTML.
+- **2.1**: ficha documental com resumo e transcrição separados; aviso de transcrição parcial ou ausente; PDF local dentro da ficha; caso rural fictício completo.
+- **2.0**: tema visual Vidro, com claro e escuro automáticos.
+- **1.8 e 1.9**: novos layouts do painel: claro e escuro, menu lateral e indicadores no topo.
+- **1.7.1**: regra estrita: requisito `COMPROVADO` só com `FATO COMPROVADO` documental.
+- **1.6**: recuperação de cronologia, contradições, triagem e riscos; migração segura de HTML antigo.
+- **1.5**: painel interativo, conferências pessoais, backup e vínculo com PDF local.
+- **1.4**: índice documental, triagem e comandos `documents` e `screening`.
+- **1.2**: estado persistente em `dossie.json`, atualização incremental, consultas e validador.
+- **1.1**: origem da conversa separada da fonte probatória; conflitos preservados; proteção do HTML.
 
 </details>
 
 ## 👤 Autor e licença
 
-Criado por **Lucas Barkoski** — [github.com/Barkoski](https://github.com/Barkoski). Publicado no catálogo `barkoski-skills`.
+Criado por **Lucas Barkoski**, [github.com/Barkoski](https://github.com/Barkoski). Publicado no catálogo `barkoski-skills`.
 
-Licença MIT — veja [LICENSE](LICENSE).
+Licença MIT, veja [LICENSE](LICENSE).

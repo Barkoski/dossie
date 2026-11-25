@@ -6,7 +6,7 @@ Este projeto é uma skill jurídica com um utilitário de validação. Não há 
 
 Trate como vulnerabilidade e reporte em privado:
 
-- **Execução de conteúdo no HTML gerado.** O dossiê embute texto vindo da conversa e dos autos num arquivo HTML. Se algum caminho permitir que esse conteúdo execute script, dispare evento inline, carregue recurso externo ou quebre o objeto de dados, é vulnerabilidade — e das graves, porque o texto dos autos é escrito por terceiros. Payloads de teste estão em `references/validacao.md`.
+- **Execução de conteúdo no HTML gerado.** O dossiê embute texto vindo da conversa e dos autos num arquivo HTML. Se algum caminho permitir que esse conteúdo execute script, dispare evento inline, carregue recurso externo ou quebre o objeto de dados, é vulnerabilidade, e das graves, porque o texto dos autos é escrito por terceiros. Payloads de teste estão em `references/validacao.md`.
 - **Requisição externa a partir do arquivo gerado.** Qualquer `fetch`, CDN, fonte remota, imagem externa ou telemetria no HTML. O dossiê tem de abrir offline. Um recurso externo transforma um documento sigiloso em requisição para fora.
 - **Vazamento de sigilo.** Instrução, exemplo ou caminho de código que leve a buscar dado externo, consultar web, abrir conector ou enviar conteúdo do caso para fora. O dossiê se monta só com o que já está na conversa.
 - **Nome de arquivo com dado pessoal.** O arquivo gerado não pode conter nome, CPF, NB ou número de processo no próprio nome.
@@ -14,7 +14,7 @@ Trate como vulnerabilidade e reporte em privado:
 - **Conhecimento novo introduzido pelo dossiê.** Caminho que faça o dossiê inferir fato, data, valor, página ou parte que não foi dito, ou promover grau de comprovação silenciosamente. É defeito de integridade, e aqui vale como vulnerabilidade.
 - **Dado real no repositório.** Se encontrar dado de caso real em qualquer arquivo ou no histórico, reporte em privado, não abra issue pública.
 
-Bug comum — mensagem de erro confusa, caso não coberto, incompatibilidade de versão — é issue normal.
+Bug comum, mensagem de erro confusa, caso não coberto, incompatibilidade de versão, é issue normal.
 
 ## Como reportar
 

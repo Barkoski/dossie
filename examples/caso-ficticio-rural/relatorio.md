@@ -975,8 +975,8 @@ O conjunto comprova a participação pessoal de Rosa Maria Calixto e 180 meses d
 - **fonte:** D18-D22
 - **localizacao:** PDF pp. 41-46
 
-### [MARCO ETÁRIO — ANO 2019]
-- **data:** [MARCO ETÁRIO — ANO 2022]
+### [MARCO ETÁRIO: ANO 2019]
+- **data:** [MARCO ETÁRIO, ANO 2022]
 - **evento:** Rosa Maria Calixto completa 55 anos.
 - **grau:** FATO COMPROVADO
 - **fonte:** D1
