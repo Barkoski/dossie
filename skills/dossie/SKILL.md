@@ -3,7 +3,7 @@ name: dossie
 description: Organiza analise juridica da conversa ou documentos expressamente indicados em dossie estruturado, persistente e auditavel, com indice e delimitacao de documentos, triagem, tabela de provas, requisitos, cronologia, grafo, relatorio, pendencias e consultas. Use quando o usuario pedir dossie, identificacao ou indice documental, classificacao de pecas, triagem processual, tabela ou quadro de provas, mapa ou grafo do caso, linha do tempo, relatorio, exportacao Markdown/JSON/HTML, atualizacao de dossie existente, caminho entre entidades, contradicoes, lacunas ou explicacao de item. Nao pesquisar nem acrescentar conhecimento externo ao caso.
 ---
 
-# Dossiê jurídico — revisão 2.0 (JSON 1.3 compatível)
+# Dossiê jurídico — revisão 2.1 (JSON 1.3 compatível)
 
 Transforma o que foi analisado na conversa em dossie estruturado: tabela de provas rastreavel, quadro de requisitos, cronologia, grafo do caso e relatorio.
 
