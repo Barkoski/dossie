@@ -3,212 +3,167 @@
 </p>
 
 <p align="center">
-<img alt="Versão 1.7.1" src="https://img.shields.io/badge/Vers%C3%A3o%201.7.1-638b83">
+<img alt="Versão 2.1.0" src="https://img.shields.io/badge/Vers%C3%A3o%202.1.0-638b83">
 <img alt="HTML offline" src="https://img.shields.io/badge/HTML%20offline-638b83">
 <img alt="MIT" src="https://img.shields.io/badge/MIT-638b83">
 </p>
 
 # 🗂️ Dossiê
 
-> Organize a análise jurídica já feita em **provas, requisitos, cronologia, grafo e relatório**, preservando a origem de cada informação.
+> Transforma a análise de um caso jurídico em **provas, requisitos, cronologia, grafo e relatório**, mostrando de onde veio cada informação.
 
 Criado por **[Lucas Barkoski](https://github.com/Barkoski)**.
 
-**Explore:** [📚 Documentação](#documentacao) · [🧭 Comece por uma análise já feita](#secao-1) · [✨ Versão 2.1](#secao-2) · [🔎 O problema](#secao-3) · [🚀 Instalação](#secao-10) · [🚧 Limites](#secao-11)
+**Navegue:** [🧭 O que é](#o-que-e) · [📌 O que entrega](#o-que-entrega) · [🚀 Instalação](#instalacao) · [💡 Como usar](#como-usar) · [🚧 Limites](#limites) · [📚 Documentação](#documentacao)
 
 <p align="center">
   <img src="assets/fluxo.svg" alt="Análise existente → Provas e fontes → Cronologia e grafo → Revisão humana" width="100%">
 </p>
 
-<a id="secao-1"></a>
-## 🧭 Comece por uma análise já feita
+<a id="o-que-e"></a>
+## 🧭 O que é
 
-1. Analise os documentos no ambiente que você utiliza.
-2. Peça ao Dossiê para organizar a conversa, mantendo fontes e lacunas.
-3. Confira a tabela de provas antes de aproveitar o relatório.
+O Dossiê é uma skill para Claude e Codex. Você analisa um caso com a IA e, depois, pede o dossiê. A skill organiza o que foi analisado em tabelas, linha do tempo, grafo e relatório. Cada informação mostra a fonte: documento e página. O que não tem fonte aparece destacado.
+
+**Princípio:** o dossiê não cria conhecimento novo. Ele não inventa data, valor, página ou documento. Quando algo falta, ele mostra a falta.
+
+### 👥 Para quem é
+
+- Advogados que analisam casos com IA e querem um resultado que possam conferir.
+- Quem precisa separar o que está provado do que só foi afirmado.
+- Serve para processo administrativo e judicial.
+
+<a id="o-que-entrega"></a>
+## 📌 O que entrega
+
+| Saída | O que mostra |
+|---|---|
+| Índice documental | Tipo de cada documento, onde começa e termina, resumo e grau de certeza da identificação |
+| Triagem | Procedimento, assunto, questão central, controvérsias, palavras-chave e normas citadas nos autos |
+| Tabela de provas | Documento, conteúdo concreto, data, titular, página, qualidade da leitura, o que prova e se precisa conferir |
+| Quadro de requisitos | Situação de cada requisito, fatos que o sustentam, lacuna e risco |
+| Cronologia | Evento, grau de comprovação, fonte e página |
+| Grafo do caso | Partes, documentos, fatos, requisitos e teses, ligados só pelas relações afirmadas na análise |
+| Relatório | Texto corrido, pronto para copiar ou imprimir |
+| Pendências | Três blocos: sem fonte, pendente de leitura e confirmar antes de usar |
+
+### Os quatro graus de cada fato
+
+```
+FATO COMPROVADO         documento identificado, com localização
+ALEGACAO                alguém afirmou, sem documento que sustente
+INFERENCIA              deduzido do conjunto, com registro da base
+SEM FONTE NA CONVERSA   apareceu na análise, sem origem identificável
+```
+
+Um requisito só fica `COMPROVADO` se **todos** os fatos que o sustentam forem `FATO COMPROVADO`, em documento lido, legível e com página. Alegação, inferência ou conclusão jurídica impedem esse status, e o validador recusa o arquivo.
+
+### O painel visual
+
+Um único arquivo HTML, sem dependências externas. Abre com duplo clique e funciona offline.
+
+- Abas de grafo, documentos, provas, requisitos, cronologia, pendências e relatório.
+- Busca sem acentos, filtros e fichas com resumo e transcrição completa separados.
+- Aviso quando a transcrição é parcial, sem origem ou ausente.
+- Abre o PDF do seu computador dentro da ficha para conferir a página, sem enviar o arquivo.
+- Conferências pessoais (responsável, data e observação) salvas no navegador, com backup exportável.
+- Tema claro e escuro automático. Todo estado tem rótulo em texto, não só cor.
+
+<a id="instalacao"></a>
+## 🚀 Instalação
+
+### Claude Code
 
 ```text
-/dossie
-/dossie provas
-/dossie lacunas
+/plugin marketplace add Barkoski/dossie
+/plugin install dossie@barkoski-skills
 ```
 
-O painel HTML pode funcionar offline. Isso não significa que o modelo usado na conversa rode localmente: o processamento da skill depende da plataforma e da conta.
+Para atualizar uma versão já instalada:
 
-<a id="secao-2"></a>
-## ✨ Versão 2.1
-
-O plugin distribuído está na versão **2.1.0**.
-
-- ficha documental com resumo e transcrição completa separados, preservando a origem;
-- aviso explícito para transcrição parcial, sem origem ou ausente, sem reconstruir documentos a partir de resumos;
-- visualização do PDF local dentro da ficha, com escolha entre a paginação do processo completo e a do documento isolado;
-- [caso rural fictício completo](examples/caso-ficticio-rural/README.md), com [relatório legível](examples/caso-ficticio-rural/relatorio.md), JSON e HTML interativo. Todos os nomes, locais, datas e valores são inventados.
-
-Este repositório não contém dado de caso real. Os dois exemplos (`caso-ficticio` e `caso-ficticio-rural`) são inteiramente fictícios.
-
-### Recursos preservados da versão 1.6
-
-- recuperação integral de cronologia própria, contradições textuais, triagem, riscos e contra-argumentos;
-- tabela documental com conteúdo expansível, grau relacionado e filtros de conferência;
-- migração de HTML legado sem executar JavaScript, preservando campos e coleções;
-- grafo com recorte de dois passos e tipos combináveis, sem ocultar o registro selecionado;
-- indicação explícita de apresentação de caso real, quando o usuário gera o painel a partir de um dossiê seu (sem tratá-lo como exemplo fictício).
-
-### Recursos preservados da versão 1.5
-
-- painel interativo (tema Vidro desde a 2.0), com busca sem acentos, zoom, cadeia selecionada e detalhes clicáveis;
-- histórico de navegação nas fichas e comparação de conflitos lado a lado;
-- vínculo temporário com PDF local para conferir a página indicada, sem upload;
-- conferências pessoais com responsável, data, observação e histórico, separadas da análise de origem;
-- salvamento no navegador e exportação/importação de backup para o mesmo dossiê;
-- relatório em linguagem humana para copiar, baixar ou imprimir;
-- HTML autocontido, sem rede, fontes remotas ou bibliotecas externas.
-
-### Gerar o painel
-
-```bash
-python skills/dossie/scripts/render_dashboard.py examples/caso-ficticio.json --output dossie-visual.html
-python skills/dossie/scripts/dossie_tool.py validate examples/caso-ficticio.json --html dossie-visual.html
+```text
+/plugin marketplace update barkoski-skills
+/plugin update dossie@barkoski-skills
+/reload-plugins
 ```
 
-Abra `dossie-visual.html` no navegador. O arquivo existente é preservado; use `--overwrite` somente para substituir uma saída intencionalmente. O exemplo contém somente dados fictícios.
+**Sem marketplace:** baixe o repositório e copie a pasta `skills/dossie` para `~/.claude/skills/` (no Windows, `C:\Users\SEU_USUARIO\.claude\skills\`). Reinicie a sessão. O arquivo deve ficar em `.claude/skills/dossie/SKILL.md`.
 
-As conferências ficam neste navegador e não alteram os fatos nem a classificação de origem. Exporte um backup antes de limpar os dados ou trocar de dispositivo. O backup é vinculado ao conteúdo exato do dossiê; atualizações do JSON exigem conciliação humana. PDFs selecionados ficam vinculados apenas durante a sessão e precisam ser selecionados novamente ao reabrir o painel. Confira se o arquivo escolhido corresponde ao registro. O navegador pode abrir ou baixar o PDF e pode não respeitar a indicação de página.
+### Codex
 
-### Recursos preservados da versão 1.4
+Copie a pasta `skills/dossie` para `~/.codex/skills/` (no Windows, `C:\Users\SEU_USUARIO\.codex\skills\`). Reinicie o Codex ou abra uma nova tarefa. O arquivo deve ficar em `.codex/skills/dossie/SKILL.md`. No Codex, chame com `$dossie` ou peça em linguagem natural.
 
-- índice documental com início, fim, resumo e confiança da identificação;
-- famílias documentais estáveis e tipo normalizado, sem depender de uma enumeração rígida;
-- triagem com procedimento, assunto, questão central, controvérsias, palavras-chave e normas efetivamente invocadas;
-- comandos determinísticos `documents` e `screening` no validador CLI;
-- limites incertos preservados como `?` ou `INCERTA`, sem inventar eventos ou páginas.
+### Claude Cowork
 
-### Recursos da versão 1.2
+O Cowork instala um arquivo `.plugin`. Para criá-lo:
 
-- estado persistente e versionado em `dossie.json`;
-- atualização incremental com IDs estáveis e histórico de alterações;
-- consultas de entidade, caminho, contradições e lacunas;
-- validador determinístico opcional, sem bibliotecas externas;
-- exemplos fictícios completos em Markdown, JSON e HTML offline;
-- testes de regressão para persistência, consultas e segurança.
+1. Baixe o repositório e selecione o **conteúdo** da pasta (`.claude-plugin`, `skills`, `README.md`, `LICENSE`), não a pasta que os contém.
+2. Compacte e renomeie de `.zip` para `.plugin`. A pasta `.claude-plugin` precisa ficar na raiz do arquivo compactado.
+3. Arraste o `.plugin` para uma conversa do Cowork e confirme.
 
-### Melhorias herdadas da versão 1.1
+A cada atualização, o GitHub Actions também gera esse pacote (`dossie-plugin-v2.1.0`) na aba **Actions** do repositório.
 
-- origem da conversa separada da fonte probatória em todas as entidades;
-- conflitos preservados, sem escolher automaticamente a última versão;
-- validação de integridade entre tabelas, grafo, cronologia e relatório;
-- proteção do HTML contra conteúdo executável vindo da conversa ou dos autos;
-- controles de acessibilidade e navegação por teclado;
-- barras de requisitos sem transformar quantidade de documentos em chance de êxito;
-- metadados e instruções de instalação para o Codex.
+### ChatGPT
 
-<a id="secao-3"></a>
-## 🔎 O problema
+Cole o conteúdo de `skills/dossie/SKILL.md` e dos seis arquivos de `skills/dossie/references/` nas instruções de um GPT personalizado.
 
-Você passa uma hora analisando um processo com uma IA. Ao final tem uma conversa longa, cheia de achados bons — e nada que dê para levar para os autos, arquivar ou revisar depois.
+<a id="como-usar"></a>
+## 💡 Como usar
 
-Pior: no meio dessa conversa há afirmações sólidas, com página citada, misturadas com afirmações que a IA soltou sem fonte nenhuma. Do jeito que ficam na tela, **as duas parecem iguais**.
+1. Analise os documentos do caso normalmente, no ambiente que você usa.
+2. Peça o dossiê: `/dossie` ou "organize esta análise como dossiê".
+3. Confira a tabela de provas antes de usar o relatório.
 
-<a id="secao-4"></a>
-## 📌 O que ele faz
+Também é possível indicar os documentos diretamente, sem análise prévia. Nesse caso, a skill lê só os arquivos que você apontar.
 
-Lê a conversa e devolve a análise estruturada, separando o que tem lastro do que não tem.
-
-| Saída | Conteúdo |
-|---|---|
-| Índice documental | Família, tipo normalizado, evento e página inicial/final, resumo e confiança da identificação |
-| Triagem | Procedimento, assunto principal, questão central, controvérsias, palavras-chave e normas citadas nos autos |
-| Tabela de provas | Documento, conteúdo concreto, data, **titular**, localização, qualidade da leitura, o que prova, marcação de conferência |
-| Quadro de requisitos | Situação de cada requisito, fatos que o sustentam, lacuna e risco |
-| Cronologia | Evento, grau de comprovação, fonte e localização |
-| Grafo do caso | Partes, documentos, fatos, requisitos e teses, com as relações **afirmadas** na conversa |
-| Relatório | Texto corrido gerado a partir do que foi estruturado, pronto para copiar ou imprimir |
-| Pendências | Três blocos: sem fonte, pendente de leitura, confirmar antes de usar |
-
-<a id="secao-5"></a>
-## 📌 O princípio
-
-**O dossiê não produz conhecimento novo. Ele estrutura o que já existe na conversa.**
-
-Nada de inferir data, valor, página ou documento que não foi dito. Quando algo essencial falta, o dossiê **mostra a falta** — e essa é a sua função mais útil.
-
-Todo fato entra com um de quatro graus:
-
-```
-FATO COMPROVADO         sustentado por documento identificado, com localização
-ALEGACAO                afirmado por alguém, sem documento que sustente
-INFERENCIA              deduzido do conjunto, com registro de onde
-SEM FONTE NA CONVERSA   apareceu na análise e nada diz de onde veio
-```
-
-**Regra estrita (1.7.1):** um requisito só pode ficar `COMPROVADO` se **todos** os fatos de suporte forem `FATO COMPROVADO`, em documento lido, legível e com localização. Alegação, inferência ou conclusão jurídica entre os fatos impedem o status, e o validador recusa o arquivo.
-
-O quarto grau é o produto. Em teste com um processo real, quatro afirmações caíram nele — todas citações legais que a IA tinha marcado "de memória" e nunca confirmou. A análise parecia sólida nos fatos, e estava; mas as **regras jurídicas** que sustentavam o quadro de requisitos inteiro estavam penduradas no vazio. O dossiê expôs isso em quatro linhas.
-
-A mesma disciplina vale no grafo: aresta só existe se a relação foi **afirmada**. Nada de ligar nós por semelhança de tema ou coincidência de data. E clicar num nó abre o painel com a origem — sem isso, grafo é enfeite.
-
-<a id="secao-6"></a>
-## 💡 Comandos
+### Comandos
 
 ```
 /dossie                # dossiê completo
 /dossie provas         # só a tabela de provas
-/dossie documentos     # índice, limites e classificação dos documentos
+/dossie documentos     # índice e classificação dos documentos
 /dossie triagem        # classe, assunto e questões do caso
 /dossie requisitos     # só o quadro requisito-prova-lacuna
 /dossie linha          # só a cronologia
 /dossie grafo          # só o grafo do caso
-/dossie relatorio      # relatório em prosa
-/dossie --md           # forçar saída só em markdown
-/dossie --html         # forçar o dossiê visual
-/dossie salvar         # persistir em dossie.json
-/dossie atualizar      # incorporar apenas mudanças novas
-/dossie explicar R1    # explicar entidade e conexões
-/dossie caminho D1 T1  # mostrar caminho entre entidades
+/dossie relatorio      # relatório em texto corrido
+/dossie --md           # só Markdown, sem HTML
+/dossie --html         # gerar o painel visual
+/dossie salvar         # salvar em dossie.json
+/dossie atualizar      # incorporar só o que é novo ou corrigido
+/dossie explicar R1    # explicar um item e suas ligações
+/dossie caminho D1 T1  # mostrar o caminho entre dois itens
 /dossie contradicoes   # listar conflitos registrados
 /dossie lacunas        # listar requisitos e leituras pendentes
 ```
 
-Não é preciso preparar nada. Analise o caso normalmente e depois chame o comando ou peça em linguagem natural para organizar a análise como dossiê.
-
-<a id="secao-7"></a>
-## 📌 Administrativo e judicial
-
-Serve aos dois. As cinco entidades — parte, documento, fato, requisito, tese — são de litígio em geral.
+### Administrativo e judicial
 
 | | Administrativo | Judicial |
 |---|---|---|
 | Localização | página do PDF, ID do anexo | evento, ID do documento, folha |
-| Requisito | requisito legal do benefício | requisito legal + pressuposto processual |
-| Tese | tese do requerente, motivo do indeferimento | tese de cada polo, fundamento da decisão |
+| Requisito | requisito legal do benefício | requisito legal e pressuposto processual |
+| Tese | tese do requerente, motivo do indeferimento | tese de cada parte, fundamento da decisão |
 
-Em processo judicial, juízo e perito entram como partes quando produzem ato relevante, e a decisão judicial entra como documento — é fonte de fato como qualquer peça.
+### Exemplos
 
-<a id="secao-8"></a>
-## 📌 O dossiê visual
+Os exemplos são **inteiramente fictícios**. Este repositório não contém dado de caso real.
 
-Um **único arquivo HTML**, sem nenhuma dependência externa. Abre com duplo clique, funciona offline, renderiza como artifact.
+- [`examples/caso-ficticio.md`](examples/caso-ficticio.md), [`.json`](examples/caso-ficticio.json) e [`.html`](examples/caso-ficticio.html): caso pequeno em três formatos.
+- [`examples/caso-ficticio-rural/`](examples/caso-ficticio-rural/README.md): caso rural grande, com [relatório](examples/caso-ficticio-rural/relatorio.md), JSON e painel interativo.
 
-O grafo é desenhado à mão em SVG e JavaScript puro — biblioteca de CDN é bloqueada em artifact e quebra offline. Layout dirigido por forças, calculado na carga.
+### Scripts opcionais
 
-Sete abas: grafo, índice documental e triagem, provas com busca e filtro, requisitos em barras, cronologia, pendências e relatório com copiar e imprimir.
-
-Tema **Vidro** (versão 2.0): fundo atmosférico, cartões de vidro fosco, barra flutuante em pílula com ícones, indicadores com números grandes e barras de progresso coloridas por situação. Alterna sozinho entre escuro e claro conforme o sistema, funciona offline e respeita `prefers-reduced-motion`. A cor nunca é o único portador de significado: todo estado vem acompanhado de rótulo em texto. A aparência fica em `skills/dossie/assets/tema.css` e `tema.js`, que não alteram dados nem comportamento.
-
-<a id="secao-9"></a>
-## 💡 Exemplo completo
-
-O diretório [`examples/`](examples/) contém o mesmo caso inteiramente fictício em três formatos:
-
-- `caso-ficticio.md` — entrega legível e copiável;
-- `caso-ficticio.json` — estado canônico persistente;
-- `caso-ficticio.html` — visual interativo e offline.
-
-Para validar e consultar o exemplo, use **Python 3.9 ou superior**. O script utiliza somente a biblioteca padrão:
+Precisam de **Python 3.9 ou superior**, sem bibliotecas externas.
 
 ```bash
-python skills/dossie/scripts/dossie_tool.py validate examples/caso-ficticio.json --html examples/caso-ficticio.html
+# gerar o painel (não sobrescreve arquivo existente; use --overwrite para isso)
+python skills/dossie/scripts/render_dashboard.py examples/caso-ficticio.json --output dossie-visual.html
+
+# validar o JSON e o HTML
+python skills/dossie/scripts/dossie_tool.py validate examples/caso-ficticio.json --html dossie-visual.html
+
+# consultas
 python skills/dossie/scripts/dossie_tool.py explain examples/caso-ficticio.json R1
 python skills/dossie/scripts/dossie_tool.py path examples/caso-ficticio.json D1 T1
 python skills/dossie/scripts/dossie_tool.py contradictions examples/caso-ficticio.json
@@ -217,80 +172,53 @@ python skills/dossie/scripts/dossie_tool.py documents examples/caso-ficticio.jso
 python skills/dossie/scripts/dossie_tool.py screening examples/caso-ficticio.json
 ```
 
-<a id="secao-10"></a>
-## 🚀 Instalação
+Painéis HTML antigos podem ser convertidos com `skills/dossie/scripts/migrate_legacy_html.py`, que extrai os dados sem executar o arquivo.
 
-### Claude Code
+<a id="limites"></a>
+## 🚧 Limites
 
-Instale pelo marketplace do próprio repositório:
+- **Só organiza o material indicado.** Usa a conversa ou os documentos que você apontar. Não pesquisa na internet nem acrescenta conhecimento externo.
+- **Não confere por você.** Toda linha sai para conferência humana. A tabela é um roteiro de conferência, não um certificado de veracidade.
+- **Não decide.** Organiza a análise; a conclusão é do advogado. Não estima chance de êxito.
+- **Validar o JSON não valida os fatos.** O validador confere estrutura e regras, não a verdade do conteúdo.
 
-```text
-/plugin marketplace add Barkoski/dossie
-/plugin install dossie@barkoski-skills
-```
+### 🔐 Sigilo
 
-O catálogo `barkoski-skills` traz também a skill [Advocacia Previdenciária Barkoski](https://github.com/Barkoski/advocacia-previdenciaria-barkoski), que lê autos e processo administrativo do INSS com rastreabilidade documental — o passo que vem antes do dossiê:
+- O dossiê gerado contém dados do caso. Trate o arquivo como sigiloso e não o publique.
+- O painel funciona offline, mas isso não torna local a IA da conversa. O processamento depende da plataforma e da conta que você usa.
+- As conferências ficam só no navegador onde foram feitas. Exporte um backup antes de limpar os dados ou trocar de computador. O PDF vinculado vale só durante a sessão e deve ser selecionado de novo ao reabrir o painel.
+
+<a id="documentacao"></a>
+## 📚 Documentação
+
+- [Regras da skill](skills/dossie/SKILL.md)
+- [Referências técnicas](skills/dossie/references/)
+- [Exemplos](examples/)
+- [Como contribuir](CONTRIBUTING.md) · [Segurança](SECURITY.md) · [Código de conduta](CODE_OF_CONDUCT.md)
+
+O catálogo `barkoski-skills` traz também a skill [Advocacia Previdenciária Barkoski](https://github.com/Barkoski/advocacia-previdenciaria-barkoski), que analisa autos e processos do INSS. Ela pode ser usada antes do dossiê, mas não é obrigatória:
 
 ```text
 /plugin install advocacia-previdenciaria-barkoski@barkoski-skills
 ```
 
-O mesmo catálogo é publicado nos dois repositórios, então `/plugin marketplace add Barkoski/advocacia-previdenciaria-barkoski` leva ao mesmo resultado.
+<details>
+<summary>Histórico de versões</summary>
 
-Quem já instalou uma versão anterior deve atualizar o catálogo e o plugin:
+- **2.1** — ficha documental com resumo e transcrição separados; aviso de transcrição parcial ou ausente; PDF local dentro da ficha; caso rural fictício completo.
+- **2.0** — tema visual Vidro, com claro e escuro automáticos.
+- **1.8 e 1.9** — novos layouts do painel: claro e escuro, menu lateral e indicadores no topo.
+- **1.7.1** — regra estrita: requisito `COMPROVADO` só com `FATO COMPROVADO` documental.
+- **1.6** — recuperação de cronologia, contradições, triagem e riscos; migração segura de HTML antigo.
+- **1.5** — painel interativo, conferências pessoais, backup e vínculo com PDF local.
+- **1.4** — índice documental, triagem e comandos `documents` e `screening`.
+- **1.2** — estado persistente em `dossie.json`, atualização incremental, consultas e validador.
+- **1.1** — origem da conversa separada da fonte probatória; conflitos preservados; proteção do HTML.
 
-```text
-/plugin marketplace update barkoski-skills
-/plugin update dossie@barkoski-skills
-/reload-plugins
-```
+</details>
 
-Como alternativa manual, baixe o repositório e copie a pasta `skills/dossie` para `~/.claude/skills/` (no Windows, `C:\Users\SEU_USUARIO\.claude\skills\`). Reinicie a sessão.
+## 👤 Autor e licença
 
-O resultado final deve ser `.claude/skills/dossie/SKILL.md`.
+Criado por **Lucas Barkoski** — [github.com/Barkoski](https://github.com/Barkoski). Publicado no catálogo `barkoski-skills`.
 
-### Codex
-
-Baixe o repositório e copie a pasta `skills/dossie` para `~/.codex/skills/` (no Windows, `C:\Users\SEU_USUARIO\.codex\skills\`). Reinicie o Codex ou inicie uma nova tarefa.
-
-O resultado final deve ser `.codex/skills/dossie/SKILL.md`. A skill também inclui `agents/openai.yaml` para nome, descrição e prompt sugerido na interface.
-
-### Claude Cowork
-
-Baixe o arquivo `dossie.plugin`, arraste para uma conversa do Cowork e confirme.
-
-Para gerar o `.plugin` a partir do repositório: selecione o **conteúdo** da pasta (`.claude-plugin`, `skills`, `README.md`) — não a pasta que os contém —, compacte e renomeie de `.zip` para `.plugin`. O `plugin.json` precisa ficar na raiz do arquivo compactado.
-
-O fluxo automático do GitHub também gera um pacote `dossie-plugin` testado a cada atualização.
-
-### ChatGPT
-
-Cole o conteúdo de `SKILL.md` e dos seis arquivos de `references/` nas instruções de um GPT personalizado. Depois é só analisar o caso e pedir o dossiê.
-
-<a id="secao-11"></a>
-## 🚧 Limites
-
-- **Só estrutura o que está na conversa.** Não abre processo, não lê PDF, não pesquisa. Para isso existem outras ferramentas; esta entra depois delas.
-- **Não confere nada.** Toda linha sai marcada para conferência humana. A tabela é roteiro de conferência, não certificado de veracidade.
-- **Não decide.** Organiza a análise; a conclusão é do advogado.
-- **Não busca fora.** Nenhum dado do caso sai para serviço externo. O dossiê gerado contém dados sigilosos e deve ser tratado como tal.
-
-<a id="secao-12"></a>
-## 👤 Autoria
-
-Lucas Barkoski — [github.com/Barkoski](https://github.com/Barkoski). Publicada no catálogo `barkoski-skills`.
-
-
-<a id="documentacao"></a>
-## 📚 Links para continuar
-
-- [Regras do dossiê](skills/dossie/SKILL.md)
-- [Exemplos](examples/)
-- [Contribuição](CONTRIBUTING.md)
-- [Segurança](SECURITY.md)
-
-
-<a id="secao-13"></a>
-## 📜 Licença
-
-MIT — ver [LICENSE](LICENSE).
+Licença MIT — veja [LICENSE](LICENSE).
